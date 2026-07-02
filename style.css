@@ -254,6 +254,27 @@ a { color: inherit; }
   border-radius: 0 10px 10px 0;
 }
 
+.article-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--panel-line);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+}
+
+.article-nav a {
+  color: var(--text);
+  text-decoration: none;
+  max-width: 46%;
+}
+
+.article-nav a:hover, .article-nav a:focus-visible { color: var(--gold-bright); }
+
+.article-nav .nav-next { text-align: right; margin-left: auto; }
+
 /* --- footer --- */
 
 .site-footer {
