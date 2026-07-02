@@ -285,6 +285,54 @@ a { color: inherit; }
 
 .article-nav .nav-next { text-align: right; margin-left: auto; }
 
+.chart {
+  margin: 28px 0;
+  padding: 20px;
+  background: var(--paper);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.chart svg { flex-shrink: 0; }
+
+.chart-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--gold-bright);
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.chart-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: var(--muted);
+  flex: 1;
+  min-width: 200px;
+}
+
+.chart-legend li { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.chart-legend .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+.bar-chart { margin: 8px 0 0; }
+.bar-row { margin-bottom: 14px; }
+.bar-row .bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.bar-track { background: var(--panel-line); border-radius: 6px; height: 10px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 6px; background: var(--gold); }
+.bar-fill.is-before { background: var(--muted); }
+
 /* --- footer --- */
 
 .site-footer {
