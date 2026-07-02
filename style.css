@@ -35,7 +35,6 @@ a { color: inherit; }
 .banner {
   width: 100%;
   aspect-ratio: 1983 / 793;
-  max-height: 420px;
   overflow: hidden;
 }
 
