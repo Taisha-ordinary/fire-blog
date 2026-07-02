@@ -244,6 +244,16 @@ a { color: inherit; }
 
 .article-body li { margin-bottom: 8px; }
 
+.article-body h3 {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  margin: 22px 0 8px;
+  color: var(--text);
+}
+
+.article-body h3 + p { margin: 0 0 22px; color: var(--muted); }
+
 .pull-note {
   border-left: 2px solid var(--gold);
   background: var(--paper);
