@@ -143,6 +143,82 @@ a { color: inherit; }
   fill: currentColor;
 }
 
+/* --- search & tag filter --- */
+
+.post-search {
+  width: 100%;
+  padding: 11px 16px;
+  border: 1px solid var(--panel-line);
+  border-radius: 999px;
+  font-size: 14px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: var(--text);
+  background: #fff;
+  margin: 40px 0 16px;
+}
+
+.post-search:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tag-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--panel-line);
+  background: #fff;
+  color: var(--muted);
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.tag-btn:hover { border-color: var(--gold); color: var(--gold-bright); }
+
+.tag-btn.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.no-results {
+  color: var(--muted);
+  font-size: 14px;
+  padding: 24px 0;
+  display: none;
+}
+
+/* tag pills shown on post-item / article header */
+.post-tags, .article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0 0;
+}
+
+.post-tags .tag-pill, .article-tags .tag-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold-bright);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 2px 9px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.article-tags { margin: 14px 0 0; }
+.article-tags .tag-pill:hover { background: var(--gold); color: #fff; }
+
 /* --- post list --- */
 
 .post-list-title {
