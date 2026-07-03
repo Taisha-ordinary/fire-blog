@@ -403,6 +403,49 @@ a { color: inherit; }
 
 .article-body h3 + p { margin: 0 0 22px; color: var(--muted); }
 
+.article-body p a,
+.article-body li a {
+  color: var(--gold-bright);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 2px;
+}
+
+.article-body p a:hover,
+.article-body li a:hover { text-decoration-color: var(--gold-bright); }
+
+.article-toc {
+  background: var(--paper);
+  border: 1px solid var(--panel-line);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 8px 0 36px;
+}
+
+.article-toc-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin: 0 0 12px;
+}
+
+.article-toc ol {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.article-toc li { margin-bottom: 6px; }
+
+.article-toc a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.article-toc a:hover, .article-toc a:focus-visible { color: var(--gold-bright); }
+
 .pull-note {
   border-left: 2px solid var(--gold);
   background: var(--paper);
