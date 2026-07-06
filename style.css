@@ -211,8 +211,8 @@ a { color: inherit; }
 }
 
 .site-links svg {
-  width: 13px;
-  height: 13px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
@@ -303,7 +303,9 @@ a { color: inherit; }
 }
 
 .post-item {
-  display: block;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
   padding: 22px 20px;
   margin: 0 -20px 4px;
   border-bottom: 1px solid var(--panel-line);
@@ -311,6 +313,25 @@ a { color: inherit; }
   color: var(--text);
   border-radius: 12px;
   transition: background 0.15s ease;
+}
+
+.post-eyecatch {
+  flex: 0 0 auto;
+  width: 118px;
+  height: 89px;
+  border: 1px solid var(--panel-line);
+  border-radius: 10px;
+  background: var(--paper);
+  object-fit: cover;
+}
+
+.post-body {
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .post-item { gap: 12px; }
+  .post-eyecatch { width: 84px; height: 64px; }
 }
 
 .post-item:hover,

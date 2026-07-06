@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="金沢の家賃相場を表す家と価格タグ"><title>金沢の家賃相場を表す家と価格タグ</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M34 54 L66 30 L98 54 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round"/>
+<rect x="42" y="54" width="48" height="26" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="52" y="62" width="12" height="18" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.8"/>
+<rect x="70" y="60" width="12" height="10" fill="none" stroke="#b8912f" stroke-width="1.8"/>
+<path d="M92 28 l16 0 l0 16 l-16 8 z" fill="#b8912f"/>
+<circle cx="104" cy="33" r="2.2" fill="#fbfaf7"/>
+<text x="99" y="47" font-family="serif" font-size="11" font-weight="700" fill="#fbfaf7">¥</text>
+<line x1="14" y1="80" x2="118" y2="80" stroke="#e7e5df" stroke-width="1.5"/></svg>

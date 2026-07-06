@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="インデックス投資の配分を表すドーナツチャート"><title>インデックス投資の配分を表すドーナツチャート</title><rect width="132" height="100" fill="#fbfaf7"/>
+<g transform="rotate(-90 52 50)" fill="none" stroke-width="14">
+<circle cx="52" cy="50" r="26" stroke="#b8912f" stroke-dasharray="81.7 81.7"/>
+<circle cx="52" cy="50" r="26" stroke="#e7d6a6" stroke-dasharray="49 114.4" stroke-dashoffset="-81.7"/>
+<circle cx="52" cy="50" r="26" stroke="#8f6f22" stroke-dasharray="32.7 130.7" stroke-dashoffset="-130.7"/></g>
+<polyline points="88,62 98,52 104,56 112,42" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M112 42 l-7 0 M112 42 l0 7" stroke="#b8912f" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
