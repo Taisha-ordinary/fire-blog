@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="ふるさと納税を表すリボン付きギフトボックスと返礼品タグ"><title>ふるさと納税を表すリボン付きギフトボックスと返礼品タグ</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="26" y="46" width="46" height="32" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<rect x="26" y="38" width="46" height="10" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<line x1="49" y1="38" x2="49" y2="78" stroke="#8f6f22" stroke-width="3"/>
+<path d="M49 38 C40 30 34 30 34 38 C34 42 42 42 49 38 Z" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2"/>
+<path d="M49 38 C58 30 64 30 64 38 C64 42 56 42 49 38 Z" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2"/>
+<g>
+<rect x="82" y="48" width="26" height="16" rx="3" fill="#fbfaf7" stroke="#b8912f" stroke-width="2" transform="rotate(-10 95 56)"/>
+<circle cx="88" cy="52" r="1.8" fill="#b8912f" transform="rotate(-10 95 56)"/>
+<text x="98" y="60" text-anchor="middle" font-family="serif" font-size="10" font-weight="700" fill="#8f6f22" transform="rotate(-10 95 56)">返礼</text>
+</g>
+<line x1="14" y1="86" x2="118" y2="86" stroke="#e7e5df" stroke-width="1.5"/></svg>
