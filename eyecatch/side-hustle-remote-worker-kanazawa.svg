@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="複業を表すノートPCとコイン"><title>複業を表すノートPCとコイン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="30" y="30" width="52" height="34" rx="3" fill="none" stroke="#b8912f" stroke-width="2.4"/>
+<rect x="36" y="36" width="40" height="22" rx="1.5" fill="#e7d6a6"/>
+<path d="M24 70 L88 70 L82 64 L30 64 Z" fill="#b8912f"/>
+<line x1="41" y1="42" x2="59" y2="42" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<line x1="41" y1="47" x2="66" y2="47" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<line x1="41" y1="52" x2="54" y2="52" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="102" cy="66" rx="13" ry="4.6" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<ellipse cx="102" cy="59" rx="13" ry="4.6" fill="#fbfaf7" stroke="#b8912f" stroke-width="1.6"/>
+<ellipse cx="102" cy="52" rx="13" ry="4.6" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<text x="102" y="55.5" text-anchor="middle" font-family="serif" font-size="9" font-weight="700" fill="#8f6f22">¥</text></svg>

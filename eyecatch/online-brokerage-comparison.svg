@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="証券口座の比較を表す天秤"><title>証券口座の比較を表す天秤</title><rect width="132" height="100" fill="#fbfaf7"/>
+<line x1="66" y1="18" x2="66" y2="72" stroke="#b8912f" stroke-width="2.6"/>
+<line x1="28" y1="30" x2="104" y2="30" stroke="#b8912f" stroke-width="2.6"/>
+<circle cx="66" cy="18" r="3" fill="#8f6f22"/>
+<path d="M28 30 l-9 15 h18 z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<path d="M104 30 l-9 15 h18 z" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<path d="M58 72 h16 l4 6 h-24 z" fill="#b8912f"/>
+<text x="66" y="14" text-anchor="middle" font-family="serif" font-size="12" font-weight="700" fill="#8f6f22">¥</text></svg>

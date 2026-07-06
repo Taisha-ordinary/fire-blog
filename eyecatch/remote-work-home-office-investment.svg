@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="在宅ワーク環境を表すモニターと机"><title>在宅ワーク環境を表すモニターと机</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="34" y="20" width="52" height="34" rx="3" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.4"/>
+<rect x="40" y="26" width="40" height="22" rx="1.5" fill="#fbfaf7"/>
+<rect x="56" y="54" width="8" height="7" fill="#b8912f"/>
+<line x1="46" y1="61" x2="74" y2="61" stroke="#b8912f" stroke-width="3" stroke-linecap="round"/>
+<line x1="20" y1="72" x2="100" y2="72" stroke="#b8912f" stroke-width="3" stroke-linecap="round"/>
+<line x1="28" y1="72" x2="28" y2="86" stroke="#b8912f" stroke-width="3" stroke-linecap="round"/>
+<line x1="92" y1="72" x2="92" y2="86" stroke="#b8912f" stroke-width="3" stroke-linecap="round"/>
+<path d="M104 58 q6 -7 10 0 l0 20" fill="none" stroke="#e7d6a6" stroke-width="3" stroke-linecap="round"/></svg>

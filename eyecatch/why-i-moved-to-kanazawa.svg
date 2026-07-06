@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="東京から金沢への移住を表す街並みと山"><title>東京から金沢への移住を表す街並みと山</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="16" y="44" width="10" height="26" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<rect x="28" y="34" width="10" height="36" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<rect x="40" y="48" width="10" height="22" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<path d="M78 70 L94 40 L110 70 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<path d="M88 52 l6 -12 l6 12 l-4 3 l-4 -3 l-4 3 z" fill="#fbfaf7"/>
+<path d="M52 30 q16 -12 30 0" fill="none" stroke="#8f6f22" stroke-width="2.4" stroke-dasharray="4 3"/>
+<path d="M82 30 l-7 -2 M82 30 l-2 7" stroke="#8f6f22" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+<line x1="14" y1="70" x2="118" y2="70" stroke="#e7e5df" stroke-width="1.5"/></svg>

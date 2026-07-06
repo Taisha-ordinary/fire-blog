@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="固定費の削減を表すハサミとコストバー"><title>固定費の削減を表すハサミとコストバー</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="20" y="44" width="76" height="14" rx="7" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<text x="31" y="55" text-anchor="middle" font-family="serif" font-size="12" font-weight="700" fill="#8f6f22">¥</text>
+<line x1="70" y1="30" x2="70" y2="72" stroke="#b8912f" stroke-width="1.6" stroke-dasharray="3 3"/>
+<g stroke="#8f6f22" stroke-width="2.4" fill="none" stroke-linecap="round">
+<circle cx="90" cy="30" r="4.6"/><circle cx="90" cy="42" r="4.6"/>
+<line x1="86" y1="32" x2="64" y2="44"/><line x1="86" y1="40" x2="64" y2="28"/></g>
+<line x1="14" y1="80" x2="118" y2="80" stroke="#e7e5df" stroke-width="1.5"/></svg>
