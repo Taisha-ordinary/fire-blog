@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="除雪費を表す除雪用スコップと車、積み上がる硬貨"><title>除雪費を表す除雪用スコップと車、積み上がる硬貨</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M16 74 L16 64 L24 64 L30 54 L54 54 L60 64 L68 64 L68 74 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="27" cy="74" r="5.5" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2.4"/>
+<circle cx="57" cy="74" r="5.5" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2.4"/>
+<path d="M28 54 Q34 44 40 54 Q46 44 52 54" fill="#fbfaf7" stroke="#b8912f" stroke-width="2" stroke-linejoin="round"/>
+<line x1="80" y1="34" x2="98" y2="70" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M92 62 L108 56 L112 66 L96 74 Z" fill="#b8912f" stroke="#8f6f22" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M92 76 Q100 68 108 76 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<g stroke="#b8912f" stroke-width="1.6" stroke-linecap="round">
+<line x1="20" y1="18" x2="20" y2="26"/><line x1="16" y1="22" x2="24" y2="22"/>
+<line x1="70" y1="14" x2="70" y2="20"/><line x1="67" y1="17" x2="73" y2="17"/>
+</g>
+<circle cx="110" cy="26" r="11" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<text x="110" y="31" text-anchor="middle" font-family="serif" font-size="13" font-weight="700" fill="#8f6f22">¥</text>
+<circle cx="118" cy="38" r="7" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.8"/>
+<line x1="10" y1="82" x2="122" y2="82" stroke="#8f6f22" stroke-width="1.6"/></svg>
