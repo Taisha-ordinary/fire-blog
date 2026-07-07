@@ -98,6 +98,29 @@ a { color: inherit; }
 
 .x-sidebar-handle:hover { color: var(--gold-bright); }
 
+.blogmura-badge {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--panel-line);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blogmura-badge img {
+  display: block;
+  border-radius: 3px;
+}
+
+.blogmura-badge a:last-child {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.blogmura-badge a:last-child:hover { color: var(--gold-bright); }
+
 @media (max-width: 880px) {
   .content-layout { flex-direction: column; }
   .x-sidebar { width: 100%; position: static; }
