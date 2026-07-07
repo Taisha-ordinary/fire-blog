@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="avatar.png">
+<link rel="canonical" href="https://taisha-ordinary.github.io/fire-blog/fire-simulator.html">
+<title>地方移住×FIREシミュレーター｜都内と地方移住を徹底比較 | FIRE Notes</title>
+<meta name="description" content="家賃・生活費・子供の教育費・車・インフレ率・投資利回りまで自分で調整できる、地方移住×FIRE到達年数の比較シミュレーター。都内在住と地方移住、どちらが早くFIREに近づくかを試算できる。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FIRE Notes">
+<meta property="og:title" content="地方移住×FIREシミュレーター">
+<meta property="og:description" content="家賃・生活費・子供の教育費・車・インフレ率・投資利回りまで自分で調整できる、地方移住×FIRE到達年数の比較シミュレーター。">
+<meta property="og:url" content="https://taisha-ordinary.github.io/fire-blog/fire-simulator.html">
+<meta property="og:image" content="https://taisha-ordinary.github.io/fire-blog/banner.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Taisha_ordinary">
+<meta name="twitter:title" content="地方移住×FIREシミュレーター">
+<meta name="twitter:description" content="家賃・生活費・子供の教育費・車・インフレ率・投資利回りまで自分で調整できる、地方移住×FIRE到達年数の比較シミュレーター。">
+<meta name="twitter:image" content="https://taisha-ordinary.github.io/fire-blog/banner.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "地方移住×FIREシミュレーター",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "description": "家賃・生活費・子供の教育費・車・住居費・インフレ率・投資利回り率を自分で調整し、都内在住と地方移住のFIRE到達年数を比較できる無料シミュレーター。",
+  "url": "https://taisha-ordinary.github.io/fire-blog/fire-simulator.html",
+  "author": { "@type": "Person", "name": "Taisha_ordinary" },
+  "isAccessibleForFree": true
+}
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVWHJLPW');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVWHJLPW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="banner">
+  <img src="banner.png" alt="">
+</div>
+<div class="wrap">
+
+  <article>
+    <header class="article-header">
+      <a class="back-link" href="index.html">&larr; 記事一覧に戻る</a>
+      <div class="post-meta">TOOL — お金・FIRE</div>
+      <h1 class="article-title">地方移住×FIREシミュレーター</h1>
+    </header>
+
+    <div class="article-body">
+      <p class="sim-lede">
+        家賃・生活費・子供の人数と教育費・車の有無・インフレ率・投資利回りまで、自分の状況に合わせて調整できます。「都内に住み続けた場合」と「地方移住した場合」の2シナリオで、FIRE目標額への到達年数を試算・比較できます。初期値には、当ブログで実際に公開している家賃・生活費のデータを目安として入れていますが、すべて自由に書き換えられます。
+      </p>
+
+      <div class="sim-section">
+        <p class="sim-section-title">1. 2つのシナリオを入力する</p>
+        <p class="sim-section-note">住宅ローン返済中の方は「家賃」の欄に月々の返済額を入力してください（簡易計算のため、持ち家による資産増加分は考慮していません）。</p>
+
+        <div class="sim-cols">
+          <div class="sim-col">
+            <p class="sim-col-title">シナリオA：都内在住</p>
+
+            <div class="sim-field">
+              <label for="tokyo-rent">家賃・住宅ローン返済額 <span class="sim-unit">円/月</span></label>
+              <input type="number" id="tokyo-rent" step="1000">
+            </div>
+            <div class="sim-field">
+              <label for="tokyo-living">生活費（家賃・車以外） <span class="sim-unit">円/月</span></label>
+              <input type="number" id="tokyo-living" step="1000">
+            </div>
+            <div class="sim-field">
+              <label>車の所持 <span class="sim-unit">維持費込み</span></label>
+              <div class="sim-toggle">
+                <button type="button" id="tokyo-hascar-yes">あり</button>
+                <button type="button" id="tokyo-hascar-no">なし</button>
+              </div>
+            </div>
+            <div class="sim-field" id="tokyo-carcost-field">
+              <label for="tokyo-carcost">車の維持費 <span class="sim-unit">円/月</span></label>
+              <input type="number" id="tokyo-carcost" step="1000">
+            </div>
+            <div class="sim-field-row">
+              <div class="sim-field">
+                <label for="tokyo-kids">子供の人数 <span class="sim-unit">人</span></label>
+                <input type="number" id="tokyo-kids" step="1" min="0">
+              </div>
+              <div class="sim-field">
+                <label for="tokyo-edu">教育費（1人あたり） <span class="sim-unit">円/月</span></label>
+                <input type="number" id="tokyo-edu" step="1000">
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-col">
+            <p class="sim-col-title">シナリオB：地方移住後</p>
+
+            <div class="sim-field">
+              <label for="local-rent">家賃・住宅ローン返済額 <span class="sim-unit">円/月</span></label>
+              <input type="number" id="local-rent" step="1000">
+            </div>
+            <div class="sim-field">
+              <label for="local-living">生活費（家賃・車以外） <span class="sim-unit">円/月</span></label>
+              <input type="number" id="local-living" step="1000">
+            </div>
+            <div class="sim-field">
+              <label>車の所持 <span class="sim-unit">維持費込み</span></label>
+              <div class="sim-toggle">
+                <button type="button" id="local-hascar-yes">あり</button>
+                <button type="button" id="local-hascar-no">なし</button>
+              </div>
+            </div>
+            <div class="sim-field" id="local-carcost-field">
+              <label for="local-carcost">車の維持費 <span class="sim-unit">円/月</span></label>
+              <input type="number" id="local-carcost" step="1000">
+            </div>
+            <div class="sim-field-row">
+              <div class="sim-field">
+                <label for="local-kids">子供の人数 <span class="sim-unit">人</span></label>
+                <input type="number" id="local-kids" step="1" min="0">
+              </div>
+              <div class="sim-field">
+                <label for="local-edu">教育費（1人あたり） <span class="sim-unit">円/月</span></label>
+                <input type="number" id="local-edu" step="1000">
+              </div>
+            </div>
+            <div class="sim-field">
+              <label for="local-moving">引っ越し初期費用（一括） <span class="sim-unit">円</span></label>
+              <input type="number" id="local-moving" step="10000">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sim-section">
+        <p class="sim-section-title">2. 共通の前提条件</p>
+        <p class="sim-section-note">インフレ率・投資利回りは将来を保証する数値ではありません。あくまで試算の前提としてご自身で調整してください。</p>
+
+        <div class="sim-cols">
+          <div class="sim-col">
+            <div class="sim-field-row">
+              <div class="sim-field">
+                <label for="common-assets">現在の資産 <span class="sim-unit">万円</span></label>
+                <input type="number" id="common-assets" step="10">
+              </div>
+              <div class="sim-field">
+                <label for="common-savings">現在の毎月の貯蓄額 <span class="sim-unit">円</span></label>
+                <input type="number" id="common-savings" step="1000">
+              </div>
+            </div>
+            <div class="sim-field">
+              <label for="common-target">FIRE目標資産額 <span class="sim-unit">万円</span></label>
+              <input type="number" id="common-target" step="100">
+            </div>
+          </div>
+          <div class="sim-col">
+            <div class="sim-field-row">
+              <div class="sim-field">
+                <label for="common-inflation">インフレ率 <span class="sim-unit">%/年</span></label>
+                <input type="number" id="common-inflation" step="0.1">
+              </div>
+              <div class="sim-field">
+                <label for="common-return">投資利回り <span class="sim-unit">%/年</span></label>
+                <input type="number" id="common-return" step="0.1">
+              </div>
+            </div>
+            <div class="sim-field">
+              <label for="common-years">試算する期間 <span class="sim-unit">年</span></label>
+              <input type="number" id="common-years" step="5" min="5" max="50">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="sim-run-btn" id="sim-run">2つのシナリオを比較する</button>
+
+      <div class="sim-results" id="sim-results" style="display:none;">
+        <p class="sim-section-title">試算結果</p>
+
+        <div class="sim-diff" id="sim-diff-text"></div>
+
+        <div class="sim-result-cards">
+          <div class="sim-result-card">
+            <p class="sim-result-card-label">シナリオA：都内在住</p>
+            <p class="sim-result-card-value">FIRE到達まで <span id="result-tokyo-years"></span></p>
+            <p class="sim-result-card-label" style="margin-top:12px;">月間支出：<span id="result-tokyo-expense"></span></p>
+          </div>
+          <div class="sim-result-card is-highlight">
+            <p class="sim-result-card-label">シナリオB：地方移住後</p>
+            <p class="sim-result-card-value">FIRE到達まで <span id="result-local-years"></span></p>
+            <p class="sim-result-card-label" style="margin-top:12px;">月間支出：<span id="result-local-expense"></span></p>
+          </div>
+        </div>
+
+        <figure class="chart">
+          <svg id="sim-chart-svg" viewBox="0 0 640 280" width="100%" height="280" role="img" aria-label="資産推移の比較グラフ"></svg>
+          <figcaption>
+            <ul class="sim-chart-legend">
+              <li><span class="dot" style="background:#57606a"></span>都内在住シナリオ</li>
+              <li><span class="dot" style="background:#b8912f"></span>地方移住シナリオ</li>
+            </ul>
+          </figcaption>
+        </figure>
+
+        <div class="sim-disclaimer">
+          この試算は入力値に基づく概算であり、将来の資産形成を保証するものではありません。実際の税金・社会保険料・資産運用の値動きは考慮していません。投資は自己判断・自己責任で行ってください。本シミュレーターは投資助言を目的としたものではありません。
+        </div>
+      </div>
+
+      <p class="sim-source-note">
+        初期値の根拠：<a href="kanazawa-rent-market.html">金沢の家賃相場</a>／<a href="kanazawa-living-cost.html">金沢の生活費内訳</a>／<a href="moving-cost-breakdown.html">引っ越し費用の実額</a>
+      </p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    © 2026. 金沢で叶える地方移住FIREライフ ／ <a href="privacy-policy.html">プライバシーポリシー</a>
+  </footer>
+
+</div>
+<script src="fire-simulator.js"></script>
+</body>
+</html>
