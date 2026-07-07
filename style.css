@@ -546,6 +546,301 @@ a { color: inherit; }
 .bar-fill { height: 100%; border-radius: 6px; background: var(--gold); }
 .bar-fill.is-before { background: var(--muted); }
 
+/* --- simulator --- */
+
+.sim-lede {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 32px;
+}
+.sim-section {
+  margin-bottom: 36px;
+}
+.sim-section-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--text);
+}
+.sim-section-note {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.sim-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 640px) {
+  .sim-cols { grid-template-columns: 1fr; }
+}
+.sim-col {
+  border: 1px solid var(--panel-line);
+  border-radius: 14px;
+  padding: 20px;
+  background: #fff;
+}
+.sim-col-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: var(--gold-bright);
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+.sim-field {
+  margin-bottom: 14px;
+}
+.sim-field label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+.sim-field label span.sim-unit {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+.sim-field input[type="number"],
+.sim-field select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--panel-line);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text);
+  background: var(--paper);
+}
+.sim-field input[type="number"]:focus,
+.sim-field select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.sim-field-row {
+  display: flex;
+  gap: 10px;
+}
+.sim-field-row .sim-field { flex: 1; }
+.sim-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.sim-toggle button {
+  flex: 1;
+  padding: 9px 10px;
+  border: 1px solid var(--panel-line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.sim-toggle button.is-active {
+  border-color: var(--gold);
+  color: var(--gold-bright);
+  background: #fff;
+  font-weight: 700;
+}
+.sim-run-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0 0;
+  border: none;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.sim-run-btn:hover { background: var(--gold-bright); }
+
+.sim-results {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--panel-line);
+}
+.sim-result-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+@media (max-width: 640px) {
+  .sim-result-cards { grid-template-columns: 1fr; }
+}
+.sim-result-card {
+  border-radius: 14px;
+  padding: 20px;
+  background: var(--paper);
+  border: 1px solid var(--panel-line);
+}
+.sim-result-card.is-highlight {
+  background: #fbf3e3;
+  border-color: var(--gold);
+}
+.sim-result-card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.sim-result-card-value {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.sim-result-card-value span {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 4px;
+}
+.sim-result-card.is-highlight .sim-result-card-value {
+  color: var(--gold-bright);
+}
+.sim-diff {
+  text-align: center;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold-bright);
+  padding: 18px;
+  background: #fbf3e3;
+  border-radius: 14px;
+  margin-bottom: 28px;
+}
+.sim-diff small {
+  display: block;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 4px;
+}
+.sim-chart-legend {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.sim-chart-legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+.sim-disclaimer {
+  font-size: 12px;
+  color: var(--muted);
+  background: var(--paper);
+  border: 1px solid var(--panel-line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 24px;
+  line-height: 1.7;
+}
+.sim-source-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.sim-source-note a { color: var(--gold-bright); text-decoration: underline; }
+
+/* --- guide (complete guide hub page) --- */
+
+.guide-lede {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+.guide-cta {
+  display: block;
+  margin: 24px 0 40px;
+  padding: 18px 22px;
+  border-radius: 14px;
+  background: #fbf3e3;
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  color: var(--text);
+}
+.guide-cta-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--gold-bright);
+  margin: 0 0 6px;
+}
+.guide-cta-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--text);
+}
+.guide-cta-desc {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+.guide-category {
+  margin-bottom: 40px;
+}
+.guide-category-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 10px;
+  margin: 0 0 18px;
+}
+.guide-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.guide-list li {
+  border-bottom: 1px solid var(--panel-line);
+}
+.guide-list a {
+  display: block;
+  padding: 16px 4px;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.15s ease;
+}
+.guide-list a:hover { color: var(--gold-bright); }
+.guide-list .guide-item-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.guide-list .guide-item-desc {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 0;
+}
+
 /* --- footer --- */
 
 .site-footer {
