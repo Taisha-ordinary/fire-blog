@@ -374,6 +374,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var tagFilter = document.getElementById('tag-filter');
   var noResults = document.getElementById('no-results');
   var activeTag = null;
+  var lastSearchTerm = null;
+
+  // 個人情報らしき検索語（メールアドレス・電話番号）はGA4に送信しない
+  var piiPatterns = [
+    /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i,   // メールアドレス
+    /0\d{1,4}[-\s]?\d{1,4}[-\s]?\d{3,4}/,        // 電話番号（市外局番あり・ハイフン有無）
+    /\b\d{10,11}\b/                               // 電話番号（ハイフンなし10〜11桁）
+  ];
+  function containsPII(str) {
+    return piiPatterns.some(function (re) { return re.test(str); });
+  }
 
   var tagSet = [];
   posts.forEach(function (p) {
@@ -417,6 +428,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       if (show) visibleCount++;
     });
     noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+
+    if (q && q !== lastSearchTerm) {
+      lastSearchTerm = q;
+      if (!containsPII(q)) {
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+          event: 'site_search',
+          search_term: q,
+          results_count: visibleCount,
+          search_location: 'article_list'
+        });
+      }
+    }
   }
 
   // clicking a tag pill inside a post card filters instead of navigating
