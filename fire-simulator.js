@@ -124,6 +124,50 @@
     svg.innerHTML = svgContent;
   }
 
+  // GA4トラッキング：入力された資産額・生活費・家賃・年収・子どもの人数などの生の値は一切送らない。
+  // 送るのは「どちらが速いか」「何年区分か」という分類のみ。
+  function yearBucket(years) {
+    if (years === null || years === undefined) return "not_reached";
+    if (years <= 5) return "0_5_years";
+    if (years <= 10) return "5_10_years";
+    if (years <= 20) return "10_20_years";
+    if (years <= 30) return "20_30_years";
+    return "over_30_years";
+  }
+
+  function trackSimulatorRun(tokyoYears, localYears) {
+    let resultType;
+    let winningYears;
+    if (tokyoYears === null && localYears === null) {
+      resultType = "unknown";
+      winningYears = null;
+    } else if (localYears === null) {
+      resultType = "tokyo_faster";
+      winningYears = tokyoYears;
+    } else if (tokyoYears === null) {
+      resultType = "local_faster";
+      winningYears = localYears;
+    } else if (localYears < tokyoYears) {
+      resultType = "local_faster";
+      winningYears = localYears;
+    } else if (tokyoYears < localYears) {
+      resultType = "tokyo_faster";
+      winningYears = tokyoYears;
+    } else {
+      resultType = "same";
+      winningYears = tokyoYears;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      event: "fire_simulator_run",
+      simulator_type: "relocation_fire",
+      scenario_count: 2,
+      fire_year_bucket: yearBucket(winningYears),
+      result_type: resultType,
+    });
+  }
+
   function run() {
     const tokyo = readScenario("tokyo");
     const local = readScenario("local");
@@ -140,6 +184,8 @@
 
     const tokyoResult = simulate(tokyo, common, baseMonthlySavings, tokyoExpense);
     const localResult = simulate(local, common, baseMonthlySavings, tokyoExpense);
+
+    trackSimulatorRun(tokyoResult.yearsToTarget, localResult.yearsToTarget);
 
     document.getElementById("sim-results").style.display = "block";
 
