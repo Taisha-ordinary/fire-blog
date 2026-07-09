@@ -1,3 +1,4 @@
 # 非公開の実態情報メモ（誤ってpushしないための保護）
 real-facts.md
 *.private.md
+.DS_Store
