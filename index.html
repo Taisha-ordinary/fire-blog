@@ -467,6 +467,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var noResults = document.getElementById('no-results');
   var activeTag = null;
   var lastSearchTerm = null;
+  var searchTrackTimer = null;
 
   // 個人情報らしき検索語（メールアドレス・電話番号）はGA4に送信しない
   var piiPatterns = [
@@ -521,17 +522,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
     noResults.style.display = visibleCount === 0 ? 'block' : 'none';
 
-    if (q && q !== lastSearchTerm) {
-      lastSearchTerm = q;
-      if (!containsPII(q)) {
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({
-          event: 'site_search',
-          search_term: q,
-          results_count: visibleCount,
-          search_location: 'article_list'
-        });
-      }
+    if (!q) {
+      lastSearchTerm = null;
+    }
+
+    if (searchTrackTimer) {
+      clearTimeout(searchTrackTimer);
+      searchTrackTimer = null;
+    }
+
+    if (q) {
+      searchTrackTimer = setTimeout(function () {
+        trackSearch(q, visibleCount);
+      }, 700);
+    }
+  }
+
+  function trackSearch(term, visibleCount) {
+    if (term && term !== lastSearchTerm && !containsPII(term)) {
+      lastSearchTerm = term;
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        event: 'site_search',
+        search_term: term,
+        results_count: visibleCount,
+        search_location: 'article_list'
+      });
     }
   }
 
@@ -542,6 +558,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         e.preventDefault();
         e.stopPropagation();
         var tag = pill.dataset.tag;
+
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+          event: 'article_tag_click',
+          tag_name: pill.textContent.trim(),
+          click_location: 'article_card'
+        });
+
         activeTag = activeTag === tag ? null : tag;
         updateTagButtons();
         applyFilter();
