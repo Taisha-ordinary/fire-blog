@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2000/Atom">
 <channel>
   <title>金沢で叶える 地方移住FIREライフ</title>
   <link>https://taisha-ordinary.github.io/fire-blog/</link>
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Wed, 15 Jul 2026 21:58:38 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 20 Jul 2026 18:18:50 +0900</lastBuildDate>
+  <item>
+    <title>新NISAとiDeCo、地方移住したフルリモート会社員はどちらを優先すべき？世帯年収1,650万円の判断基準</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/nisa-ideco-priority.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/nisa-ideco-priority.html</guid>
+    <pubDate>Mon, 20 Jul 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>世帯年収1,650万円、NISA年間360万円・iDeCo月2万円台の非課税枠、地方移住しFIREを目指す会社員はどちらを優先すべきか判断基準を整理する。</description>
+  </item>
   <item>
     <title>近江町市場とスーパー、金沢移住者はどう使い分ける？食費月7万円の内訳と判断基準</title>
     <link>https://taisha-ordinary.github.io/fire-blog/omicho-market-grocery-cost.html</link>
