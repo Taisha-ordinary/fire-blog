@@ -75,6 +75,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
+      <div class="profile-cta-card profile-x-cta">
+        <img class="profile-cta-avatar" src="avatar.png" alt="プロフィールアイコン">
+        <div class="profile-cta-body">
+          <p class="profile-cta-name">Xでも日々の記録を発信中</p>
+          <p class="profile-cta-text">資産形成の進捗や地方移住の気づきなど、ブログにする前の細かい記録はXで先に発信しています。</p>
+        </div>
+        <div class="profile-cta-actions">
+          <a class="profile-cta-btn is-primary" href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener" id="profile-page-x-cta">Xでフォローする（@Taisha_ordinary）</a>
+        </div>
+      </div>
+
       <h2 class="profile-sec-title">数字で見る現在地</h2>
       <div class="profile-stats">
         <div class="profile-stat"><span class="profile-stat-label">年代</span><span class="profile-stat-value">30代前半</span></div>
@@ -111,5 +122,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 </div>
 
+<script>
+(function () {
+  var link = document.getElementById('profile-page-x-cta');
+  if (!link) return;
+  link.addEventListener('click', function () {
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({ event: 'profile_cta_click', click_location: 'profile_page_top_cta', cta_target: 'x_profile' });
+  });
+})();
+</script>
 </body>
 </html>
