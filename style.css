@@ -919,3 +919,44 @@ a { color: inherit; }
 .profile-link:hover{border-color:var(--gold);background:var(--paper);}
 .profile-note{font-size:.78rem;color:var(--muted);line-height:1.7;margin-top:22px;border-top:1px solid var(--panel-line);padding-top:14px;}
 [id^="cat-"]{scroll-margin-top:16px;}
+
+/* ===== プロフィールページ：Xフォロー導線カード（2026-07-21 追加） ===== */
+.profile-x-cta{margin:18px 0 0;}
+
+/* ===== 記事末尾：あわせて読みたい＆プロフィールCTA（2026-07-21 追加） ===== */
+.post-extras{max-width:760px;margin:0 auto;padding:0 24px;}
+
+.related-posts{margin:0 0 28px;}
+.related-posts-title{font-family:"Shippori Mincho",serif;font-size:1rem;font-weight:700;color:var(--text);margin:0 0 14px;padding-left:12px;border-left:4px solid var(--gold);}
+.related-posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;}
+.related-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--panel-line);border-radius:10px;padding:16px 16px 14px;text-decoration:none;transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease;}
+.related-card:hover,.related-card:focus-visible{border-color:var(--gold);box-shadow:0 6px 18px rgba(184,145,47,.12);transform:translateY(-2px);}
+.related-card-cat{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.04em;color:var(--gold-bright);margin-bottom:6px;}
+.related-card-title{font-family:"Shippori Mincho",serif;font-size:.92rem;font-weight:700;line-height:1.55;color:var(--text);}
+
+.profile-cta-card{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:#fbf3e3;border:1px solid var(--gold);border-radius:14px;padding:20px;margin:0 0 40px;}
+.profile-cta-avatar{width:56px;height:56px;border-radius:50%;flex-shrink:0;object-fit:cover;border:2px solid #fff;}
+.profile-cta-body{flex:1;min-width:200px;}
+.profile-cta-name{font-family:"Shippori Mincho",serif;font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 4px;}
+.profile-cta-text{font-size:.82rem;line-height:1.7;color:var(--muted);margin:0;}
+.profile-cta-actions{display:flex;gap:8px;flex-wrap:wrap;}
+.profile-cta-btn{font-family:"JetBrains Mono",monospace;font-size:.74rem;letter-spacing:.02em;padding:9px 16px;border-radius:999px;text-decoration:none;white-space:nowrap;transition:border-color .15s ease,color .15s ease,background .15s ease;}
+.profile-cta-btn.is-primary{background:var(--gold);color:#fff;border:1px solid var(--gold);}
+.profile-cta-btn.is-primary:hover,.profile-cta-btn.is-primary:focus-visible{background:var(--gold-bright);border-color:var(--gold-bright);}
+.profile-cta-btn.is-secondary{background:#fff;color:var(--text);border:1px solid var(--panel-line);}
+.profile-cta-btn.is-secondary:hover,.profile-cta-btn.is-secondary:focus-visible{border-color:var(--gold);color:var(--gold-bright);}
+
+@media (max-width:480px){
+  .profile-cta-card{padding:16px;}
+  .profile-cta-actions{width:100%;}
+  .profile-cta-btn{flex:1;text-align:center;}
+}
+
+/* ===== ホーム：サイドバー人気記事ランキング（2026-07-21 追加） ===== */
+.x-sidebar-rank{margin-top:16px;padding-top:16px;border-top:1px solid var(--panel-line);}
+.rank-list{list-style:none;margin:0;padding:0;}
+.rank-item{margin-bottom:10px;}
+.rank-item:last-child{margin-bottom:0;}
+.rank-item a{display:flex;gap:8px;align-items:baseline;text-decoration:none;color:var(--text);font-size:.8rem;line-height:1.55;}
+.rank-item a:hover,.rank-item a:focus-visible{color:var(--gold-bright);}
+.rank-num{font-family:"JetBrains Mono",monospace;font-size:.72rem;color:var(--gold-bright);flex-shrink:0;}
