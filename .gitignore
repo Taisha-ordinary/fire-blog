@@ -2,3 +2,6 @@
 real-facts.md
 *.private.md
 .DS_Store
+
+# Claude Codeのローカル作業環境設定（記事とは無関係）
+.claude/
