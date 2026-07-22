@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2000/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>金沢で叶える 地方移住FIREライフ</title>
   <link>https://taisha-ordinary.github.io/fire-blog/</link>
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 20 Jul 2026 18:18:50 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 22 Jul 2026 19:20:57 +0900</lastBuildDate>
+  <item>
+    <title>オルカンとS&amp;amp;P500+NASDAQ100、地方移住3年目はどちらを選ぶべきか？配分の判断基準を公開</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/all-country-vs-sp500-nasdaq100.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/all-country-vs-sp500-nasdaq100.html</guid>
+    <pubDate>Wed, 22 Jul 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>オルカンとS&amp;amp;P500+NASDAQ100、資産5,800万円台の地方移住3年目はどちらを選んだか。米国比率80%と新興国株20%、配分の判断基準を公開する。</description>
+  </item>
   <item>
     <title>新NISAとiDeCo、地方移住したフルリモート会社員はどちらを優先すべき？世帯年収1,650万円の判断基準</title>
     <link>https://taisha-ordinary.github.io/fire-blog/nisa-ideco-priority.html</link>
