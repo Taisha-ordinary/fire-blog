@@ -78,7 +78,7 @@
       '</div>' +
       '<div class="profile-cta-actions">' +
         '<a class="profile-cta-btn is-secondary" href="profile.html" data-cta="profile">プロフィールを見る</a>' +
-        '<a class="profile-cta-btn is-primary" href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener" data-cta="x_profile">Xでフォローする</a>' +
+        '<a class="profile-cta-btn is-primary x-sidebar-handle" href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener" data-cta="x_profile">Xでフォローする</a>' +
       '</div>';
 
     Array.prototype.forEach.call(ctaContainer.querySelectorAll('[data-cta]'), function (a) {
