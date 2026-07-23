@@ -39,17 +39,25 @@
     return (n / 10000).toLocaleString("ja-JP", { maximumFractionDigits: 0 });
   }
 
+  // 家賃・生活費・車の維持費・教育費・引っ越し費用はマイナス入力を許容しない
+  // （0円未満の家賃等はあり得ず、そのまま計算すると「不自然に支出が少ない/収入化する」結果になるため）。
+  function nonNegative(value) {
+    const n = Number(value);
+    if (!isFinite(n) || n < 0) return 0;
+    return n;
+  }
+
   function readScenario(prefix) {
     const g = (id) => document.getElementById(prefix + "-" + id);
     const hasCar = g("hascar-yes").classList.contains("is-active");
     return {
-      rent: Number(g("rent").value) || 0,
-      livingCost: Number(g("living").value) || 0,
+      rent: nonNegative(g("rent").value),
+      livingCost: nonNegative(g("living").value),
       hasCar: hasCar,
-      carCost: hasCar ? Number(g("carcost").value) || 0 : 0,
-      kids: Number(g("kids").value) || 0,
-      eduCostPerKid: Number(g("edu").value) || 0,
-      movingCost: prefix === "local" ? Number(g("moving").value) || 0 : 0,
+      carCost: hasCar ? nonNegative(g("carcost").value) : 0,
+      kids: Math.max(0, Math.floor(Number(g("kids").value) || 0)),
+      eduCostPerKid: nonNegative(g("edu").value),
+      movingCost: prefix === "local" ? nonNegative(g("moving").value) : 0,
     };
   }
 
@@ -89,6 +97,8 @@
     function set(hasCar) {
       yesBtn.classList.toggle("is-active", hasCar);
       noBtn.classList.toggle("is-active", !hasCar);
+      yesBtn.setAttribute("aria-pressed", hasCar ? "true" : "false");
+      noBtn.setAttribute("aria-pressed", hasCar ? "false" : "true");
       costField.style.display = hasCar ? "block" : "none";
     }
     yesBtn.addEventListener("click", () => set(true));
@@ -99,12 +109,17 @@
   function drawChart(tokyoPath, localPath, years, target) {
     const svg = document.getElementById("sim-chart-svg");
     const W = 640, H = 280, padL = 50, padR = 16, padT = 16, padB = 30;
-    const maxAssets = Math.max(
+    // target・資産推移がすべて0（＝全入力欄を0にした場合など）だと maxAssets が0になり、
+    // 0除算でグラフの座標がNaNになって非表示になってしまうため、最低値を1円で下支えする。
+    const rawMaxAssets = Math.max(
       target,
       ...tokyoPath.map((p) => p.assets),
       ...localPath.map((p) => p.assets)
-    ) * 1.05;
-    const x = (year) => padL + (year / years) * (W - padL - padR);
+    );
+    const maxAssets = Math.max(rawMaxAssets, 1) * 1.05;
+    // years が想定外に0以下（通常は起こらないが念のため）でも0除算を避ける。
+    const safeYears = years > 0 ? years : 1;
+    const x = (year) => padL + (year / safeYears) * (W - padL - padR);
     const y = (val) => H - padB - (Math.max(val, 0) / maxAssets) * (H - padT - padB);
 
     function toPoints(path) {
@@ -114,12 +129,13 @@
     const targetY = y(target);
     let svgContent = "";
     svgContent += `<line x1="${padL}" y1="${targetY}" x2="${W - padR}" y2="${targetY}" stroke="#b8912f" stroke-width="1.4" stroke-dasharray="4 4" />`;
-    svgContent += `<text x="${W - padR}" y="${targetY - 6}" text-anchor="end" font-size="11" fill="#8f6f22" font-family="JetBrains Mono, monospace">FIRE目標</text>`;
+    svgContent += `<text x="${W - padR}" y="${targetY - 6}" text-anchor="end" font-size="13" fill="#8f6f22" font-family="JetBrains Mono, monospace">FIRE目標</text>`;
     svgContent += `<polyline points="${toPoints(tokyoPath)}" fill="none" stroke="#57606a" stroke-width="2.6" />`;
     svgContent += `<polyline points="${toPoints(localPath)}" fill="none" stroke="#b8912f" stroke-width="2.6" />`;
     svgContent += `<line x1="${padL}" y1="${H - padB}" x2="${W - padR}" y2="${H - padB}" stroke="#e7e5df" stroke-width="1" />`;
-    for (let yr = 0; yr <= years; yr += Math.ceil(years / 6)) {
-      svgContent += `<text x="${x(yr)}" y="${H - padB + 18}" text-anchor="middle" font-size="10" fill="#57606a" font-family="JetBrains Mono, monospace">${yr}年後</text>`;
+    const yStep = Math.ceil(safeYears / 6);
+    for (let yr = 0; yr <= safeYears; yr += yStep) {
+      svgContent += `<text x="${x(yr)}" y="${H - padB + 18}" text-anchor="middle" font-size="12" fill="#57606a" font-family="JetBrains Mono, monospace">${yr}年後</text>`;
     }
     svg.innerHTML = svgContent;
   }

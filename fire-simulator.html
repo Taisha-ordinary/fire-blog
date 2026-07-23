@@ -24,6 +24,7 @@
 <meta name="twitter:description" content="家賃・生活費・子供の教育費・車・インフレ率・投資利回りまで自分で調整できる、地方移住×FIRE到達年数の比較シミュレーター。">
 <meta name="twitter:image" content="https://taisha-ordinary.github.io/fire-blog/banner.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
@@ -91,22 +92,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="sim-field">
               <label for="tokyo-rent">家賃・住宅ローン返済額 <span class="sim-unit">円/月</span></label>
-              <input type="number" id="tokyo-rent" step="1000">
+              <input type="number" id="tokyo-rent" step="1000" min="0">
             </div>
             <div class="sim-field">
               <label for="tokyo-living">生活費（家賃・車以外） <span class="sim-unit">円/月</span></label>
-              <input type="number" id="tokyo-living" step="1000">
+              <input type="number" id="tokyo-living" step="1000" min="0">
             </div>
             <div class="sim-field">
               <label>車の所持 <span class="sim-unit">維持費込み</span></label>
               <div class="sim-toggle">
-                <button type="button" id="tokyo-hascar-yes">あり</button>
-                <button type="button" id="tokyo-hascar-no">なし</button>
+                <button type="button" id="tokyo-hascar-yes" aria-pressed="false">あり</button>
+                <button type="button" id="tokyo-hascar-no" aria-pressed="true">なし</button>
               </div>
             </div>
             <div class="sim-field" id="tokyo-carcost-field">
               <label for="tokyo-carcost">車の維持費 <span class="sim-unit">円/月</span></label>
-              <input type="number" id="tokyo-carcost" step="1000">
+              <input type="number" id="tokyo-carcost" step="1000" min="0">
             </div>
             <div class="sim-field-row">
               <div class="sim-field">
@@ -115,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <div class="sim-field">
                 <label for="tokyo-edu">教育費（1人あたり） <span class="sim-unit">円/月</span></label>
-                <input type="number" id="tokyo-edu" step="1000">
+                <input type="number" id="tokyo-edu" step="1000" min="0">
               </div>
             </div>
           </div>
@@ -125,22 +126,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="sim-field">
               <label for="local-rent">家賃・住宅ローン返済額 <span class="sim-unit">円/月</span></label>
-              <input type="number" id="local-rent" step="1000">
+              <input type="number" id="local-rent" step="1000" min="0">
             </div>
             <div class="sim-field">
               <label for="local-living">生活費（家賃・車以外） <span class="sim-unit">円/月</span></label>
-              <input type="number" id="local-living" step="1000">
+              <input type="number" id="local-living" step="1000" min="0">
             </div>
             <div class="sim-field">
               <label>車の所持 <span class="sim-unit">維持費込み</span></label>
               <div class="sim-toggle">
-                <button type="button" id="local-hascar-yes">あり</button>
-                <button type="button" id="local-hascar-no">なし</button>
+                <button type="button" id="local-hascar-yes" aria-pressed="true">あり</button>
+                <button type="button" id="local-hascar-no" aria-pressed="false">なし</button>
               </div>
             </div>
             <div class="sim-field" id="local-carcost-field">
               <label for="local-carcost">車の維持費 <span class="sim-unit">円/月</span></label>
-              <input type="number" id="local-carcost" step="1000">
+              <input type="number" id="local-carcost" step="1000" min="0">
             </div>
             <div class="sim-field-row">
               <div class="sim-field">
@@ -149,12 +150,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <div class="sim-field">
                 <label for="local-edu">教育費（1人あたり） <span class="sim-unit">円/月</span></label>
-                <input type="number" id="local-edu" step="1000">
+                <input type="number" id="local-edu" step="1000" min="0">
               </div>
             </div>
             <div class="sim-field">
               <label for="local-moving">引っ越し初期費用（一括） <span class="sim-unit">円</span></label>
-              <input type="number" id="local-moving" step="10000">
+              <input type="number" id="local-moving" step="10000" min="0">
             </div>
           </div>
         </div>
@@ -221,7 +222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <figure class="chart">
-          <svg id="sim-chart-svg" viewBox="0 0 640 280" width="100%" height="280" role="img" aria-label="資産推移の比較グラフ"></svg>
+          <svg id="sim-chart-svg" viewBox="0 0 640 280" width="100%" role="img" aria-label="資産推移の比較グラフ"></svg>
           <figcaption>
             <ul class="sim-chart-legend">
               <li><span class="dot" style="background:#57606a"></span>都内在住シナリオ</li>

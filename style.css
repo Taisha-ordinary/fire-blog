@@ -598,6 +598,7 @@ a { color: inherit; }
 }
 @media (max-width: 640px) {
   .sim-cols { grid-template-columns: 1fr; }
+  .sim-field-row { flex-direction: column; gap: 14px; }
 }
 .sim-col {
   border: 1px solid var(--panel-line);
@@ -754,6 +755,12 @@ a { color: inherit; }
   color: var(--muted);
   font-weight: 400;
   margin-top: 4px;
+}
+#sim-chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 640 / 280;
 }
 .sim-chart-legend {
   list-style: none;
