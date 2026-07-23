@@ -13,7 +13,6 @@
       kids: 0,
       eduCostPerKid: 30000,
       assets: 4000,
-      monthlySavings: 150000,
     },
     local: {
       rent: 80000,
@@ -29,6 +28,12 @@
       inflationRate: 2.0,
       returnRate: 4.0,
       years: 30,
+      // 世帯の手取り月収は移住しても変わらない前提（フルリモート等で同一収入を維持するケースを想定）。
+      // 旧実装は「都内シナリオの貯蓄額」を起点に地方シナリオとの支出差分だけを加減算しており、
+      // 都内シナリオ自身の貯蓄額がインフレの影響を受けない・地方シナリオとの差分が画面上どこにも
+      // 表示されないという2つの問題があった。手取り月収を唯一の共通入力にし、各シナリオの
+      // 実効貯蓄額（＝月収−その年のインフレ後支出）を両シナリオ対称に計算・表示する。
+      householdIncome: 470000,
     },
   };
 
@@ -62,9 +67,10 @@
   }
 
   // 年ごとに支出をインフレ調整しながら、資産推移をシミュレーションする。
-  // 簡易モデル：世帯の手取り収入は一定と仮定し、「基準の毎月貯蓄額」に
-  // 都内/地方の支出差額を加減算した額を、その年の実効貯蓄額とする。
-  function simulate(scenario, common, baseMonthlySavings, baselineExpense) {
+  // 簡易モデル：世帯の手取り月収（householdIncome）は移住の有無・年数によらず一定と仮定し、
+  // 各年の実効貯蓄額＝手取り月収−その年のインフレ後支出、を両シナリオ対称に計算する。
+  // 支出（家賃・生活費・車・教育費）はシナリオごとに異なるため、実効貯蓄額も自然にシナリオ間で分岐する。
+  function simulate(scenario, common, householdIncome) {
     const monthlyExpense =
       scenario.rent + scenario.livingCost + scenario.carCost + scenario.kids * scenario.eduCostPerKid;
     const inflation = common.inflationRate / 100;
@@ -73,13 +79,13 @@
     const path = [{ year: 0, assets: assets }];
     let yearsToTarget = null;
     const target = common.fireTarget * 10000;
+    const firstYearMonthlySavings = householdIncome - monthlyExpense;
 
     if (assets >= target) yearsToTarget = 0;
 
     for (let year = 1; year <= common.years; year++) {
       const inflatedExpense = monthlyExpense * Math.pow(1 + inflation, year - 1);
-      const expenseDiff = inflatedExpense - baselineExpense * Math.pow(1 + inflation, year - 1);
-      const effectiveMonthlySavings = baseMonthlySavings - expenseDiff;
+      const effectiveMonthlySavings = householdIncome - inflatedExpense;
       const annualSavings = effectiveMonthlySavings * 12;
       assets = assets * (1 + returnRate) + annualSavings;
       path.push({ year: year, assets: assets });
@@ -87,7 +93,12 @@
         yearsToTarget = year;
       }
     }
-    return { path: path, yearsToTarget: yearsToTarget, monthlyExpense: monthlyExpense };
+    return {
+      path: path,
+      yearsToTarget: yearsToTarget,
+      monthlyExpense: monthlyExpense,
+      firstYearMonthlySavings: firstYearMonthlySavings,
+    };
   }
 
   function setupToggle(prefix) {
@@ -108,7 +119,7 @@
 
   function drawChart(tokyoPath, localPath, years, target) {
     const svg = document.getElementById("sim-chart-svg");
-    const W = 640, H = 280, padL = 50, padR = 16, padT = 16, padB = 30;
+    const W = 640, H = 280, padL = 82, padR = 16, padT = 16, padB = 30;
     // target・資産推移がすべて0（＝全入力欄を0にした場合など）だと maxAssets が0になり、
     // 0除算でグラフの座標がNaNになって非表示になってしまうため、最低値を1円で下支えする。
     const rawMaxAssets = Math.max(
@@ -128,6 +139,16 @@
 
     const targetY = y(target);
     let svgContent = "";
+
+    // Y軸（左側）：資産額のグリッド線とラベル。何年後にいくらになるかを直感的に読み取れるようにする。
+    const yStepsCount = 4;
+    for (let i = 0; i <= yStepsCount; i++) {
+      const val = (maxAssets / yStepsCount) * i;
+      const yy = y(val);
+      svgContent += `<line x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}" stroke="#e7e5df" stroke-width="1" />`;
+      svgContent += `<text x="${padL - 8}" y="${yy + 4}" text-anchor="end" font-size="11" fill="#57606a" font-family="JetBrains Mono, monospace">${man(val)}万円</text>`;
+    }
+
     svgContent += `<line x1="${padL}" y1="${targetY}" x2="${W - padR}" y2="${targetY}" stroke="#b8912f" stroke-width="1.4" stroke-dasharray="4 4" />`;
     svgContent += `<text x="${W - padR}" y="${targetY - 6}" text-anchor="end" font-size="13" fill="#8f6f22" font-family="JetBrains Mono, monospace">FIRE目標</text>`;
     svgContent += `<polyline points="${toPoints(tokyoPath)}" fill="none" stroke="#57606a" stroke-width="2.6" />`;
@@ -194,12 +215,10 @@
       years: Number(document.getElementById("common-years").value) || 30,
       startAssets: Number(document.getElementById("common-assets").value) || 0,
     };
-    const baseMonthlySavings = Number(document.getElementById("common-savings").value) || 0;
+    const householdIncome = Number(document.getElementById("common-income").value) || 0;
 
-    const tokyoExpense = tokyo.rent + tokyo.livingCost + tokyo.carCost + tokyo.kids * tokyo.eduCostPerKid;
-
-    const tokyoResult = simulate(tokyo, common, baseMonthlySavings, tokyoExpense);
-    const localResult = simulate(local, common, baseMonthlySavings, tokyoExpense);
+    const tokyoResult = simulate(tokyo, common, householdIncome);
+    const localResult = simulate(local, common, householdIncome);
 
     trackSimulatorRun(tokyoResult.yearsToTarget, localResult.yearsToTarget);
 
@@ -210,6 +229,8 @@
     document.getElementById("result-local-years").textContent = fmtYears(localResult.yearsToTarget);
     document.getElementById("result-tokyo-expense").textContent = yen(tokyoResult.monthlyExpense) + "円";
     document.getElementById("result-local-expense").textContent = yen(localResult.monthlyExpense) + "円";
+    document.getElementById("result-tokyo-savings").textContent = yen(tokyoResult.firstYearMonthlySavings) + "円";
+    document.getElementById("result-local-savings").textContent = yen(localResult.firstYearMonthlySavings) + "円";
 
     if (tokyoResult.yearsToTarget !== null && localResult.yearsToTarget !== null) {
       const diff = tokyoResult.yearsToTarget - localResult.yearsToTarget;
@@ -248,7 +269,7 @@
     document.getElementById("local-moving").value = DEFAULTS.local.movingCost;
 
     document.getElementById("common-assets").value = DEFAULTS.tokyo.assets;
-    document.getElementById("common-savings").value = DEFAULTS.tokyo.monthlySavings;
+    document.getElementById("common-income").value = DEFAULTS.common.householdIncome;
     document.getElementById("common-target").value = DEFAULTS.common.fireTarget;
     document.getElementById("common-inflation").value = DEFAULTS.common.inflationRate;
     document.getElementById("common-return").value = DEFAULTS.common.returnRate;

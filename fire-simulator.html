@@ -173,10 +173,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <input type="number" id="common-assets" step="10">
               </div>
               <div class="sim-field">
-                <label for="common-savings">現在の毎月の貯蓄額 <span class="sim-unit">円</span></label>
-                <input type="number" id="common-savings" step="1000">
+                <label for="common-income">世帯の手取り月収 <span class="sim-unit">円</span></label>
+                <input type="number" id="common-income" step="1000">
               </div>
             </div>
+            <p class="sim-section-note">毎月の貯蓄額は、この手取り月収から各シナリオの支出を差し引いて自動計算されます。地方移住で生活費が下がる分、地方シナリオの貯蓄額は自動的に増える計算になります。</p>
             <div class="sim-field">
               <label for="common-target">FIRE目標資産額 <span class="sim-unit">万円</span></label>
               <input type="number" id="common-target" step="100">
@@ -213,11 +214,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="sim-result-card-label">シナリオA：都内在住</p>
             <p class="sim-result-card-value">FIRE到達まで <span id="result-tokyo-years"></span></p>
             <p class="sim-result-card-label" style="margin-top:12px;">月間支出：<span id="result-tokyo-expense"></span></p>
+            <p class="sim-result-card-label">初年度の毎月の貯蓄額：<span id="result-tokyo-savings"></span></p>
           </div>
           <div class="sim-result-card is-highlight">
             <p class="sim-result-card-label">シナリオB：地方移住後</p>
             <p class="sim-result-card-value">FIRE到達まで <span id="result-local-years"></span></p>
             <p class="sim-result-card-label" style="margin-top:12px;">月間支出：<span id="result-local-expense"></span></p>
+            <p class="sim-result-card-label">初年度の毎月の貯蓄額：<span id="result-local-savings"></span></p>
           </div>
         </div>
 
