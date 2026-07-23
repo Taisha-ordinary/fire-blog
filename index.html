@@ -636,6 +636,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   searchInput.addEventListener('input', applyFilter);
 
+  var simCtaBtn = document.querySelector('.home-sim-cta-btn');
+  if (simCtaBtn) {
+    simCtaBtn.addEventListener('click', function () {
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        event: 'sim_cta_click',
+        click_location: 'home_banner'
+      });
+    });
+  }
+
   // support ?tag=xxx in the URL (linked from article pages)
   var params = new URLSearchParams(window.location.search);
   var initialTag = params.get('tag');

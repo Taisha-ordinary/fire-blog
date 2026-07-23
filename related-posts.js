@@ -124,6 +124,12 @@
 
   renderProfileCta();
 
+  Array.prototype.forEach.call(document.querySelectorAll('.sim-article-cta'), function (a) {
+    a.addEventListener('click', function () {
+      track('sim_cta_click', { click_location: 'article_top' });
+    });
+  });
+
   if (relatedContainer) {
     fetch('index.html')
       .then(function (res) { return res.text(); })
