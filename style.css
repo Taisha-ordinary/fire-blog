@@ -907,6 +907,19 @@ a { color: inherit; }
 .cat-box-count{font-family:"JetBrains Mono",monospace;font-size:.72rem;color:var(--gold-bright);margin:4px 0 8px;}
 .cat-box-desc{font-size:.82rem;color:var(--muted);line-height:1.65;}
 
+/* ===== ホーム：シミュレーター誘導CTA（2026-07-23 追加） ===== */
+.home-sim-cta{margin:28px 0 0;}
+.home-sim-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:#fbf3e3;border:1px solid var(--gold);border-radius:16px;padding:24px 28px;}
+.home-sim-cta-label{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.06em;color:var(--gold-bright);margin:0 0 8px;text-transform:uppercase;}
+.home-sim-cta-title{font-family:"Shippori Mincho",serif;font-size:1.15rem;font-weight:700;color:var(--text);margin:0 0 6px;}
+.home-sim-cta-desc{font-size:.85rem;color:var(--muted);margin:0;max-width:52ch;line-height:1.7;}
+.home-sim-cta-btn{flex-shrink:0;display:inline-block;padding:13px 26px;border-radius:999px;background:var(--gold);color:#fff;font-family:"Zen Kaku Gothic New",sans-serif;font-size:.9rem;font-weight:700;text-decoration:none;white-space:nowrap;transition:background .15s ease;}
+.home-sim-cta-btn:hover,.home-sim-cta-btn:focus-visible{background:var(--gold-bright);}
+@media (max-width:600px){
+  .home-sim-cta-inner{padding:20px;}
+  .home-sim-cta-btn{width:100%;text-align:center;}
+}
+
 /* ===== プロフィールページ ===== */
 .profile-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:8px;}
 .profile-avatar{width:84px;height:84px;border-radius:50%;flex-shrink:0;border:2px solid var(--rule);}
