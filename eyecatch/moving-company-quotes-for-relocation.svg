@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="東京から金沢への引越し見積もり比較を表すトラックと3枚の見積書"><title>東京から金沢への引越し見積もり比較を表すトラックと3枚の見積書</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M11 66 H69 V40 H88 L101 53 V66 H108" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M88 40 V54 H101" fill="none" stroke="#8f6f22" stroke-width="1.7"/>
+<circle cx="30" cy="69" r="7" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2.2"/>
+<circle cx="88" cy="69" r="7" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2.2"/>
+<path d="M17 34 C30 18 50 18 63 31" fill="none" stroke="#e7d6a6" stroke-width="2" stroke-dasharray="4 3"/>
+<path d="M58 25 L64 31 L56 34" fill="none" stroke="#8f6f22" stroke-width="1.7"/>
+<rect x="76" y="12" width="15" height="22" rx="1.5" fill="#fbfaf7" stroke="#e7d6a6" stroke-width="1.5" transform="rotate(-8 83.5 23)"/>
+<rect x="94" y="10" width="15" height="22" rx="1.5" fill="#fbfaf7" stroke="#b8912f" stroke-width="1.5"/>
+<rect x="112" y="12" width="15" height="22" rx="1.5" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.5" transform="rotate(8 119.5 23)"/>
+<line x1="80" y1="19" x2="87" y2="18" stroke="#e7d6a6" stroke-width="1.4"/>
+<line x1="98" y1="17" x2="105" y2="17" stroke="#b8912f" stroke-width="1.4"/>
+<line x1="116" y1="19" x2="123" y2="20" stroke="#8f6f22" stroke-width="1.4"/>
+<path d="M17 84 H116" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
