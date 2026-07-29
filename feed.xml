@@ -6,7 +6,31 @@
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Mon, 27 Jul 2026 18:14:10 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 29 Jul 2026 19:36:16 +0900</lastBuildDate>
+  <item>
+    <title>FIREの取り崩しは4%と3%どっちで考える？資産7,000万円・生活費30万円で試算</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/fire-withdrawal-rate-comparison.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/fire-withdrawal-rate-comparison.html</guid>
+    <pubDate>Wed, 29 Jul 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>FIRE目標7,000万円に対し、生活費30万円（年360万円）を4%・3.5%・3%ルールで試算するとどうなるか。地方移住3年目の実額で比較する。</description>
+  </item>
+  <item>
+    <title>FIRE目標はなぜ7,000万円に上がった？資産6,000万円台到達で目標を引き上げた理由</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/why-i-raised-my-fire-target.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/why-i-raised-my-fire-target.html</guid>
+    <pubDate>Tue, 28 Jul 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>世帯資産6,000万円台、世帯年収1,700万円に近い水準まで上昇。FIRE目標を6,000万円から7,000万円に引き上げた理由を公開する。</description>
+  </item>
+  <item>
+    <title>フルリモートワーカーの通信費はいくら？格安SIMで月5,020円下げた金沢移住3年目の判断基準</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/mobile-plan-comparison-for-remote-workers.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/mobile-plan-comparison-for-remote-workers.html</guid>
+    <pubDate>Tue, 28 Jul 2026 21:00:00 +0900</pubDate>
+    <category>仕事・ブログ運営</category>
+    <description>フルリモートワーカーの通信費はいくら？大手キャリア8,000円から格安SIM2,980円へ、月5,020円下げた内訳と固定回線を残した判断基準を公開する。</description>
+  </item>
   <item>
     <title>賃貸の火災保険はどう選ぶ？金沢移住3年目、水災・雪害の補償を見直した確認基準</title>
     <link>https://taisha-ordinary.github.io/fire-blog/fire-insurance-for-rural-movers.html</link>
