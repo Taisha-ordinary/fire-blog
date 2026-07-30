@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="医療の十字マークを映す虫眼鏡のイラスト"><title>医療の十字マークを映す虫眼鏡のイラスト</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="54" cy="42" r="24" fill="#fbfaf7" stroke="#b8912f" stroke-width="3"/>
+<circle cx="54" cy="42" r="18" fill="#e7d6a6" opacity="0.5"/>
+<rect x="51" y="30" width="6" height="24" fill="#b8912f"/>
+<rect x="42" y="39" width="24" height="6" fill="#b8912f"/>
+<line x1="71" y1="59" x2="102" y2="90" stroke="#8f6f22" stroke-width="7" stroke-linecap="round"/>
+<circle cx="35" cy="30" r="2" fill="#e7d6a6"/>
+<circle cx="73" cy="25" r="1.6" fill="#e7d6a6"/>
+<line x1="14" y1="90" x2="118" y2="90" stroke="#e7e5df" stroke-width="1.5"/></svg>
