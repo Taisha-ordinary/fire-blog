@@ -24,9 +24,11 @@ in the private `sidework-orchestrator` repository.
 - Claude Code owns continuous execution: implementation, fixes, and operation.
 - Codex owns independent QA: technical audit and pull request review.
 
-Each handoff names exactly one implementation owner (normally Claude Code) in its
-`Next owner` field. Codex reviews that owner's diff on the pull request; Codex does not
-implement the same change in parallel.
+Each handoff names exactly one implementation owner (normally Claude Code) separately
+from `Next owner`, which tracks the actor responsible for the current workflow step.
+Codex reviews the implementation owner's diff; it does not implement the same change in
+parallel. During review, for example, the implementation owner remains `claude-code`
+while `Next owner` is `codex`.
 
 ## Change workflow
 
@@ -46,11 +48,12 @@ Every pull request exchanged between Claude Code and Codex must include:
 1. Handoff ID
 2. Objective
 3. Source decision or request
-4. Files changed
-5. Checks run and results
-6. Risks or assumptions
-7. Open decisions
-8. Next owner: `claude-code`, `codex`, `chatgpt`, or `human`
+4. Implementation owner
+5. Files changed
+6. Checks run and results
+7. Risks or assumptions
+8. Open decisions
+9. Next owner: `claude-code`, `codex`, `chatgpt`, or `human`
 
 Use `.github/pull_request_template.md`. Review discussion stays on the pull request;
 private strategy and KPI context stays in `sidework-orchestrator`.
