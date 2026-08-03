@@ -30,3 +30,12 @@
 - git commit・pushはこのリポジトリ内で完結させる（Taisha-ordinaryアカウントで公開済み）
 
 詳細は [README.md](README.md) を参照。
+
+## Codexとの連携
+
+- 作業前に [AGENTS.md](AGENTS.md) と [docs/ai-collaboration.md](docs/ai-collaboration.md) を読む。
+- `main` へ直接コミットせず、作業ブランチとドラフトPRを使う。
+- PRでは `.github/pull_request_template.md` に従い、handoff ID、目的、検証結果、未決事項、次の担当を明記する。
+- Codexのレビューは同じPR上で受け、修正も同じブランチへ追加する。
+- 売上、KPI、未公開戦略、個人情報、認証情報、AI間の非公開議論は、この公開リポジトリへ保存しない。
+- 非公開の運営状態は `sidework-orchestrator` を正本とし、このリポジトリへ複製しない。
