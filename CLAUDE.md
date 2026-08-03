@@ -34,6 +34,7 @@
 ## Codexとの連携
 
 - 作業前に [AGENTS.md](AGENTS.md) と [docs/ai-collaboration.md](docs/ai-collaboration.md) を読む。
+- 役割分担（Claude Code＝継続実行・実装・修正・運用／Codex＝独立QA・技術監査・PRレビュー／ChatGPT＝横断戦略・要件定義・最終判断支援／ユーザー＝最終承認・PRマージ）は [AGENTS.md](AGENTS.md) の Roles を正とする。
 - `main` へ直接コミットせず、作業ブランチとドラフトPRを使う。
 - PRでは `.github/pull_request_template.md` に従い、handoff ID、目的、検証結果、未決事項、次の担当を明記する。
 - Codexのレビューは同じPR上で受け、修正も同じブランチへ追加する。
