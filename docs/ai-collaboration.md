@@ -10,15 +10,15 @@ between tools. The shared state is explicit, reviewable, and recoverable.
 | Repository | Visibility | Canonical contents |
 | --- | --- | --- |
 | `fire-blog` | Public | Production site, public assets, tests, public-safe implementation docs |
-| `sidework-orchestrator` | Private, local only (no GitHub remote) | Business/operational state: job queue (`queue/`), run artifacts (`runs/`), automation config (`config/`), human approvals (`approvals/`), audit logs (`logs/`) |
-| `sidework-ai-handoffs` | Private (GitHub) | Cross-agent handoff coordination only: `handoff-ledger.json`, `handoffs/requests/`, `handoffs/results/` |
+| `sidework-orchestrator` | Private, local only (no GitHub remote) | Canonical business and operational state: task queue, workflow state, decisions, full agent results, and ledger |
+| `sidework-ai-handoffs` | Private (GitHub) | Minimal cross-agent projection only: handoff ID, status, owner, PR/commit reference, and next action |
 
 Do not create a second strategy store inside `fire-blog`. Business and operational state stays
 in `sidework-orchestrator`, which intentionally has no GitHub remote — never connect it to a
-remote or duplicate its contents elsewhere. Cross-agent handoff coordination (handoff ID,
-status, PR/commit references, short result summaries) lives in the separate private
-`sidework-ai-handoffs` repository. A handoff may point to `sidework-orchestrator` by name or
-handoff ID only, never by pasting its file contents.
+remote or duplicate its contents elsewhere. Minimal cross-agent handoff metadata may be
+projected to the separate private `sidework-ai-handoffs` repository, but that projection is
+not a second task-state authority. A handoff may point to `sidework-orchestrator` by name or
+handoff ID only, never by pasting its paths or file contents.
 
 `Implementation owner` identifies the single agent accountable for the change and remains
 stable for that change. `Next owner` identifies the actor responsible for the current
@@ -26,7 +26,8 @@ workflow step and changes as work moves from implementation to review to approva
 
 ## Operating loop
 
-1. ChatGPT records a prioritized request in `sidework-ai-handoffs` (`handoffs/requests/`).
+1. ChatGPT records a prioritized request in the local `sidework-orchestrator` task queue;
+   only minimal coordination metadata may be projected to `sidework-ai-handoffs`.
 2. Claude Code reads the request, checks `sidework-orchestrator` state as needed, and
    implements it on a branch in `fire-blog`.
 3. Claude Code opens a draft pull request in `fire-blog` using the shared template.
@@ -34,8 +35,9 @@ workflow step and changes as work moves from implementation to review to approva
    checks, risks, and alignment with the source request using `AGENTS.md`.
 5. Claude Code addresses actionable review comments and updates the same pull request.
 6. The user makes the final merge or publishing decision.
-7. Claude Code records the result in `sidework-ai-handoffs` (`handoffs/results/`), without
-   duplicating raw logs or `sidework-orchestrator` contents.
+7. Claude Code records the full result, decision, and next action in `sidework-orchestrator`.
+   A minimal result projection may then update `sidework-ai-handoffs`, without duplicating
+   raw logs, local paths, or other `sidework-orchestrator` contents.
 
 For the first run, enable Codex code review for this repository in Codex settings. Automatic
 reviews can replace the explicit `@codex review` comment after the workflow is stable.
@@ -56,9 +58,10 @@ pull request, result, and review. Valid states are:
 - `completed`
 - `superseded`
 
-The status in `handoff-ledger.json` in the private `sidework-ai-handoffs` repository is
-canonical. Pull request labels or comments are views of that state, not a competing source
-of truth.
+The status in the local `sidework-orchestrator` ledger is canonical. The private
+`sidework-ai-handoffs` ledger and pull request labels or comments are transport views of
+that state, not competing sources of truth. On disagreement, stop and repair the projection
+from the local canonical record; do not overwrite local state from the projection.
 
 ## Agent review rules
 
@@ -82,8 +85,9 @@ send external messages, or change monetization without the existing approval rul
 
 ## Failure recovery
 
-- If an agent stops, the next agent resumes from `sidework-ai-handoffs` and the open pull
-  request.
-- If the branch and ledger disagree, treat the ledger as task state and Git history as code state.
+- If an agent stops, the next agent resumes from the canonical local handoff ID and the open
+  pull request; `sidework-ai-handoffs` supplies only the minimal locator metadata.
+- If the branch and ledger disagree, treat the local orchestrator ledger as task state and
+  Git history as code state.
 - If two agents edit the same file, pause automation and resolve the conflict in one pull request.
 - Never recreate raw daily publication records outside the existing scheduled-task record.
