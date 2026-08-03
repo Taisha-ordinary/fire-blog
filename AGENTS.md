@@ -19,10 +19,14 @@ in the private `sidework-orchestrator` repository.
 
 ## Roles
 
-- The user is the final decision-maker and approves material product or publishing changes.
-- ChatGPT owns strategy, priorities, and stop/go decisions.
-- Claude Code owns recurring execution and the existing publication workflow.
-- Codex owns implementation, technical audits, tests, and independent review.
+- The user gives final approval and merges pull requests.
+- ChatGPT owns cross-cutting strategy, requirement definition, and final-decision support.
+- Claude Code owns continuous execution: implementation, fixes, and operation.
+- Codex owns independent QA: technical audit and pull request review.
+
+Each handoff names exactly one implementation owner (normally Claude Code) in its
+`Next owner` field. Codex reviews that owner's diff on the pull request; Codex does not
+implement the same change in parallel.
 
 ## Change workflow
 
