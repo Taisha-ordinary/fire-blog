@@ -3,6 +3,7 @@
 - Handoff ID:
 - Objective:
 - Source request/decision:
+- Implementation owner: <!-- normally claude-code; remains stable for this change -->
 - Next owner: <!-- claude-code | codex | chatgpt | human -->
 
 ## Changes
