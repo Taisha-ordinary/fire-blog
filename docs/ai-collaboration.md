@@ -43,8 +43,8 @@ For the first run, enable Codex code review for this repository in Codex setting
 reviews can replace the explicit `@codex review` comment after the workflow is stable.
 
 For local continuity, the ChatGPT desktop app can import Claude Code projects and supported
-setup. Importing does not replace the Git/GitHub handoff ledger; it makes the same local
-project folders and recent context available when working locally.
+setup. Importing does not replace the local canonical ledger or its minimal private
+projection; it only makes the same local project folders and recent context available.
 
 ## Handoff status
 
