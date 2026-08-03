@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="車と徒歩を天秤にかけて比較するイラスト"><title>車と徒歩を天秤にかけて比較するイラスト</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M50 80 L82 80 L87 90 L45 90 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2" stroke-linejoin="round"/>
+<line x1="66" y1="22" x2="66" y2="80" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<circle cx="66" cy="22" r="4" fill="#b8912f"/>
+<line x1="22" y1="34" x2="110" y2="18" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="22" y1="34" x2="22" y2="52" stroke="#8f6f22" stroke-width="1.6"/>
+<line x1="110" y1="18" x2="110" y2="40" stroke="#8f6f22" stroke-width="1.6"/>
+<path d="M8 52 Q22 62 36 52" fill="none" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<path d="M98 40 Q110 48 122 40" fill="none" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<path d="M10 50 L10 46 Q10 43 13 43 L17 43 L20 38 Q21 37 23 37 L31 37 Q33 37 34 38 L37 43 L41 43 Q44 43 44 46 L44 50 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="16" cy="50" r="3" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.4"/>
+<circle cx="38" cy="50" r="3" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="106" cy="35" rx="5" ry="7" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.4"/>
+<ellipse cx="116" cy="31" rx="4" ry="6" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.4"/>
+<line x1="10" y1="94" x2="122" y2="94" stroke="#e7e5df" stroke-width="1.5"/></svg>
