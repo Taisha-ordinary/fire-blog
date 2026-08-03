@@ -20,6 +20,10 @@ status, PR/commit references, short result summaries) lives in the separate priv
 `sidework-ai-handoffs` repository. A handoff may point to `sidework-orchestrator` by name or
 handoff ID only, never by pasting its file contents.
 
+`Implementation owner` identifies the single agent accountable for the change and remains
+stable for that change. `Next owner` identifies the actor responsible for the current
+workflow step and changes as work moves from implementation to review to approval.
+
 ## Operating loop
 
 1. ChatGPT records a prioritized request in `sidework-ai-handoffs` (`handoffs/requests/`).
