@@ -27,7 +27,7 @@
 ## 運用ルール
 - 毎週水曜・土曜に1記事ずつ、週2本を自動投稿（カテゴリを4本柱でバランスよく巡回）
 - 新しい記事は `index.html` の記事一覧の最上部に追加（新しい順で表示）
-- git commit・pushはこのリポジトリ内で完結させる（Taisha-ordinaryアカウントで公開済み）
+- 公開サイト本体（記事・デザイン等）の git commit・pushは、このリポジトリ（fire-blog）内で完結させる（Taisha-ordinaryアカウントで公開済み）。非公開`sidework-ai-handoffs`への例外は[Codexとの連携](#codexとの連携)を参照
 
 詳細は [README.md](README.md) を参照。
 
@@ -40,3 +40,4 @@
 - Codexのレビューは同じPR上で受け、修正も同じブランチへ追加する。
 - 売上、KPI、未公開戦略、個人情報、認証情報、AI間の非公開議論は、この公開リポジトリへ保存しない。
 - 非公開の運営状態は `sidework-orchestrator` を正本とし、このリポジトリへ複製しない。
+- 「このリポジトリ内で完結」ルールは公開サイト自体の変更が対象。非公開`sidework-ai-handoffs`へのcommit・pushは、fire-blogの実装・公開・マージとは独立した連携台帳として明示的な例外とする。ただし記録してよいのはhandoff ID・PR URL・commit SHA・担当AI・ステータス・次アクションのみで、会話全文・ローカルパス・runs内容・個人情報・認証情報・KPI・売上・未公開戦略は記録しない。
