@@ -20,8 +20,9 @@
 
 - Risks or assumptions:
 - Open decisions:
-- Private context handoff ID: <!-- e.g. H-20260803-001. Resolve details via sidework-ai-handoffs.
-  Do not paste local file paths, personal data, KPI, revenue, or unpublished strategy here. -->
+- Private context handoff ID: <!-- e.g. H-20260803-001. Resolve canonical details locally
+  in sidework-orchestrator; sidework-ai-handoffs contains locator metadata only. Do not
+  paste local file paths, personal data, KPI, revenue, or unpublished strategy here. -->
 
 ## Completion checklist
 
