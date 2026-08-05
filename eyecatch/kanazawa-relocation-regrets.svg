@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="虫眼鏡で過去のチェックリストを振り返る様子、チェック済みと未チェックの項目"><title>虫眼鏡で過去のチェックリストを振り返る様子、チェック済みと未チェックの項目</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="20" y="14" width="62" height="72" rx="4" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<line x1="30" y1="28" x2="72" y2="28" stroke="#e7e5df" stroke-width="2"/>
+<path d="M30 40 L34 44 L41 35" fill="none" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="47" y1="40" x2="72" y2="40" stroke="#e7d6a6" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M30 55 L34 59 L41 50" fill="none" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="47" y1="55" x2="72" y2="55" stroke="#e7d6a6" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M30 65 L37 72 M37 65 L30 72" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="47" y1="70" x2="72" y2="70" stroke="#e7e5df" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="90" cy="56" r="17" fill="none" stroke="#b8912f" stroke-width="3.4"/>
+<line x1="101.5" y1="67.5" x2="114" y2="80" stroke="#b8912f" stroke-width="4.4" stroke-linecap="round"/>
+<circle cx="90" cy="56" r="17" fill="#fbf3e3" fill-opacity="0.5"/>
+<line x1="14" y1="90" x2="118" y2="90" stroke="#e7e5df" stroke-width="1.5"/></svg>
