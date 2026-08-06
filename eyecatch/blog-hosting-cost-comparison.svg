@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="コードの記号を表示するブラウザ画面と0円の価格タグ"><title>コードの記号を表示するブラウザ画面と0円の価格タグ</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="14" y="16" width="76" height="54" rx="4" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.4"/>
+<rect x="14" y="16" width="76" height="14" rx="4" fill="#e7d6a6"/>
+<circle cx="21" cy="23" r="2" fill="#8f6f22"/>
+<circle cx="28" cy="23" r="2" fill="#8f6f22"/>
+<circle cx="35" cy="23" r="2" fill="#8f6f22"/>
+<text x="52" y="55" text-anchor="middle" font-family="monospace" font-size="20" font-weight="700" fill="#b8912f">&lt;/&gt;</text>
+<g>
+<rect x="90" y="52" width="30" height="20" rx="3" fill="#e7d6a6" stroke="#8f6f22" stroke-width="2"/>
+<circle cx="96" cy="58" r="2" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.4"/>
+<text x="107" y="66" text-anchor="middle" font-family="serif" font-size="10" font-weight="700" fill="#8f6f22">0円</text>
+</g>
+<line x1="8" y1="90" x2="124" y2="90" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
