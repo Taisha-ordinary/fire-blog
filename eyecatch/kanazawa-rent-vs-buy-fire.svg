@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="賃貸の鍵と持ち家を天秤にかけて比較するイラスト"><title>賃貸の鍵と持ち家を天秤にかけて比較するイラスト</title><rect width="132" height="100" fill="#fbfaf7"/>
+<line x1="66" y1="18" x2="66" y2="60" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M50 60 L82 60" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M30 30 L66 22 L102 30" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="66" cy="22" r="3" fill="#8f6f22"/>
+<line x1="30" y1="30" x2="30" y2="46" stroke="#b8912f" stroke-width="1.8"/>
+<path d="M18 46 Q30 58 42 46 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.8" stroke-linejoin="round"/>
+<line x1="102" y1="30" x2="102" y2="46" stroke="#b8912f" stroke-width="1.8"/>
+<path d="M90 46 Q102 58 114 46 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="30" cy="40" r="6" fill="none" stroke="#8f6f22" stroke-width="2"/>
+<rect x="28.5" y="45" width="3" height="9" rx="1" fill="#8f6f22"/>
+<path d="M29 51 h-3 M29 54 h-3" stroke="#8f6f22" stroke-width="1.6"/>
+<path d="M92 44 L102 36 L112 44 Z" fill="#8f6f22"/>
+<rect x="97" y="44" width="10" height="8" fill="none" stroke="#8f6f22" stroke-width="1.6"/>
+<rect x="76" y="72" width="56" height="22" fill="none" stroke="#e7e5df" stroke-width="0"/>
+<rect x="6" y="72" width="34" height="10" rx="2" fill="#e7d6a6"/>
+<rect x="46" y="72" width="34" height="10" rx="2" fill="none" stroke="#b8912f" stroke-width="1.8"/>
+<line x1="14" y1="90" x2="118" y2="90" stroke="#e7e5df" stroke-width="1.5"/></svg>
