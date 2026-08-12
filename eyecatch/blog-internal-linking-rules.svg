@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="鎖でつながれた3枚のページを表す図"><title>鎖でつながれた3枚のページを表す図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="10" y="40" width="24" height="32" rx="3" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<line x1="15" y1="48" x2="29" y2="48" stroke="#e7d6a6" stroke-width="2"/>
+<line x1="15" y1="54" x2="29" y2="54" stroke="#e7d6a6" stroke-width="2"/>
+<line x1="15" y1="60" x2="24" y2="60" stroke="#e7d6a6" stroke-width="2"/>
+<rect x="54" y="22" width="24" height="32" rx="3" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2.4"/>
+<line x1="59" y1="30" x2="73" y2="30" stroke="#e7d6a6" stroke-width="2"/>
+<line x1="59" y1="36" x2="73" y2="36" stroke="#e7d6a6" stroke-width="2"/>
+<line x1="59" y1="42" x2="68" y2="42" stroke="#e7d6a6" stroke-width="2"/>
+<rect x="98" y="40" width="24" height="32" rx="3" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<line x1="103" y1="48" x2="117" y2="48" stroke="#e7d6a6" stroke-width="2"/>
+<line x1="103" y1="54" x2="117" y2="54" stroke="#e7d6a6" stroke-width="2"/>
+<line x1="103" y1="60" x2="112" y2="60" stroke="#e7d6a6" stroke-width="2"/>
+<g fill="none" stroke="#8f6f22" stroke-width="2.6" stroke-linecap="round">
+<ellipse cx="41" cy="47" rx="5" ry="3.4" transform="rotate(-28 41 47)"/>
+<ellipse cx="48" cy="41" rx="5" ry="3.4" transform="rotate(-28 48 41)"/>
+<ellipse cx="84" cy="41" rx="5" ry="3.4" transform="rotate(28 84 41)"/>
+<ellipse cx="91" cy="47" rx="5" ry="3.4" transform="rotate(28 91 47)"/>
+</g>
+<line x1="8" y1="88" x2="124" y2="88" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
