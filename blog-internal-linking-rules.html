@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="canonical" href="https://taisha-ordinary.github.io/fire-blog/blog-internal-linking-rules.html">
+<title>個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール | FIRE Notes</title>
+<meta name="description" content="地方移住×複業でブログを書き続け、記事42本を4カテゴリ・一直線チェーンで管理している内部リンクの実際のルールを公開する。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="FIRE Notes">
+<meta property="og:title" content="個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール">
+<meta property="og:description" content="地方移住×複業でブログを書き続け、記事42本を4カテゴリ・一直線チェーンで管理している内部リンクの実際のルールを公開する。">
+<meta property="og:url" content="https://taisha-ordinary.github.io/fire-blog/blog-internal-linking-rules.html">
+<meta property="og:image" content="https://taisha-ordinary.github.io/fire-blog/banner.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Taisha_ordinary">
+<meta name="twitter:title" content="個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール">
+<meta name="twitter:description" content="地方移住×複業でブログを書き続け、記事42本を4カテゴリ・一直線チェーンで管理している内部リンクの実際のルールを公開する。">
+<meta name="twitter:image" content="https://taisha-ordinary.github.io/fire-blog/banner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール",
+  "description": "地方移住×複業でブログを書き続け、記事42本を4カテゴリ・一直線チェーンで管理している内部リンクの実際のルールを公開する。",
+  "image": "https://taisha-ordinary.github.io/fire-blog/banner.jpg",
+  "author": { "@type": "Person", "name": "Taisha_ordinary" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FIRE Notes",
+    "logo": { "@type": "ImageObject", "url": "https://taisha-ordinary.github.io/fire-blog/avatar.png" }
+  },
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://taisha-ordinary.github.io/fire-blog/blog-internal-linking-rules.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "個人ブログの内部リンクは、記事が増えたらどう管理すればいいですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "公開日順の「一直線チェーン」（前後ナビ）と、カテゴリ別の網羅ページを両輪にすると、記事数が増えても管理の手間が増えにくい。当ブログでは42記事をこの2つの仕組みだけで管理している。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ブログのタイトル・見出しは何を優先して決めていますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "「地名＋具体語＋数字」を組み合わせた超ロングテールキーワードを優先している。競合の少ない複合語の方が、ドメイン権威の低い個人ブログでも検索経由の流入を得やすいと考えているため。" }
+    },
+    {
+      "@type": "Question",
+      "name": "複業としてブログを書く場合、内部リンク設計はどのくらい重要ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "記事数が少ないうちは影響が小さいが、20〜30記事を超えたあたりから、読者が関連記事にたどり着けるかどうかが回遊率に影響しやすくなると感じているため、早い段階でルール化しておく価値があると考えている。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://taisha-ordinary.github.io/fire-blog/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "仕事・ブログ運営", "item": "https://taisha-ordinary.github.io/fire-blog/complete-guide.html#cat-work" },
+    { "@type": "ListItem", "position": 3, "name": "個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール" }
+  ]
+}
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVWHJLPW');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVWHJLPW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="global-nav" aria-label="サイトナビ">
+<div class="global-nav-inner">
+<a href="index.html">ホーム</a>
+<a href="complete-guide.html#cat-relocation">移住</a>
+<a href="complete-guide.html#cat-money">お金・FIRE</a>
+<a href="complete-guide.html#cat-work">仕事・ブログ</a>
+<a href="complete-guide.html#cat-kanazawa">金沢の暮らし</a>
+<a href="fire-simulator.html">ツール</a>
+<a href="profile.html">プロフィール</a>
+</div>
+</nav>
+<div class="banner">
+  <img src="banner.jpg" alt="">
+</div>
+<div class="wrap">
+
+  <article>
+    <header class="article-header">
+      <a class="back-link" href="index.html">&larr; 記事一覧に戻る</a>
+      <div class="post-meta">2026.08.12 — 仕事・ブログ運営</div>
+      <h1 class="article-title">個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール</h1>
+
+      <div class="article-tags"><a class="tag-pill" href="index.html?tag=ブログ運営">#ブログ運営</a><a class="tag-pill" href="index.html?tag=SEO">#SEO</a><a class="tag-pill" href="index.html?tag=複業">#複業</a></div>
+    </header>
+
+    <div class="article-body">
+      <nav class="article-toc" aria-label="目次">
+        <p class="article-toc-title">目次</p>
+        <ol>
+          <li><a href="#h2-1">記事が42本になった今、内部リンクの「迷子」をどう防いでいるか</a></li>
+          <li><a href="#h2-2">ルール1：公開日順の「一直線チェーン」で前後の記事をつなぐ</a></li>
+          <li><a href="#h2-3">ルール2：4カテゴリ・42記事を一望できる網羅ページを作る</a></li>
+          <li><a href="#h2-4">ルール3：本文中の文脈リンクは「次に知りたくなる記事」だけに絞る</a></li>
+          <li><a href="#h2-5">タイトル・見出しを「地名＋具体語＋数字」にする理由</a></li>
+          <li><a href="#h2-6">よくある質問</a></li>
+          <li><a href="#h2-7">まとめ：複業としてのブログ運営で内部リンクに投資する理由</a></li>
+        </ol>
+      </nav>
+
+      <p>
+        このブログを書き続けるうち、気づけば記事数は42本になった。<a href="blog-first-month-pv.html">開設1ヶ月の時点</a>では5本しかなかった記事が、8倍以上に増えたことになる。記事を増やすこと自体は「書けば増える」だけなので難しくないのだが、想定していなかったのは、記事が増えるほど内部リンクの管理が難しくなっていくという問題だった。今回は、複業としてブログを書き続けている立場から、記事数が増えても「迷子」を防ぐために実際にやっている3つのルールを、数字とあわせて記録しておきたい。
+      </p>
+
+      <a class="sim-article-cta" href="fire-simulator.html">
+        <p class="sim-article-cta-label">FIRE SIMULATOR</p>
+        <p class="sim-article-cta-title">この記事の数字を、自分の家計に当てはめて試算する</p>
+        <p class="sim-article-cta-desc">家賃・生活費・教育費を入力するだけ。地方移住した場合のFIRE到達年数を無料で比較できます。</p>
+      </a>
+
+      <h2 id="h2-1">記事が42本になった今、内部リンクの「迷子」をどう防いでいるか</h2>
+      <p>
+        個人ブログの内部リンクというと、SEO施策の一つとして語られることが多い。もちろんその側面もあるのだが、記事を書き続けてみて実感したのは、内部リンクは検索エンジンのためというより先に、読者を「迷子」にしないための地図だということだ。記事が5本程度のうちは、全部の記事タイトルを頭の中で把握できていたので、内部リンクを貼る記事を選ぶのも直感で済んでいた。ところが記事数が増えるにつれて、「この話題、前にどこかで書いた気がするけど、どの記事だったか思い出せない」ということが自分自身にも起き始めた。書いている本人が迷子になるくらいなら、初めて訪れた読者はなおさらだろうと考え、記事数が増えてきたあたりから、内部リンクの設計を意識的にルール化することにした。
+      </p>
+      <p>
+        地方移住×フルリモートワーカーという立場でブログを書いていると、テーマは「移住」「お金・FIRE」「仕事・ブログ運営」「金沢の暮らし」の4カテゴリにまたがりやすい。1つの体験談でも、家計の話・移住の話・働き方の話が絡み合うことが多く、記事同士のつながりを整理しないままにしておくと、サイト全体が「バラバラな日記の集合体」に見えてしまうリスクがあると感じている。
+      </p>
+
+      <h2 id="h2-2">ルール1：公開日順の「一直線チェーン」で前後の記事をつなぐ</h2>
+      <p>
+        1つ目のルールは、記事の末尾に置く「前の記事」「次の記事」ナビを、カテゴリをまたいでも公開日順の一直線チェーンでつなぐことだ。テーマ別に枝分かれさせるやり方も検討したが、枝分かれが増えるほど「どこかで途切れている記事」「どこからもたどり着けない記事」が発生しやすくなる。実際、カテゴリ内だけで前後リンクを作る方式を検討したところ、カテゴリの記事数が少ない時期は「前の記事」が存在せず、チェーンがすぐに途切れてしまう問題があることに気づいた。
+      </p>
+      <p>
+        そこで、カテゴリをまたいでもとにかく公開順につなぐ方式に切り替えた。今のところ、42記事が起点から終点まで、分断も循環も孤立もない単一のチェーンでつながっている。読者からすると、興味を持った記事から「次の記事」を辿っていけば、時系列でこのブログの記録を追体験できる仕組みになっている。テーマの近さより公開順を優先するのは一見遠回りに見えるかもしれないが、管理のシンプルさという点では、今のところこの方式が一番運用しやすいと感じている。
+      </p>
+
+      <h2 id="h2-3">ルール2：4カテゴリ・42記事を一望できる網羅ページを作る</h2>
+      <p>
+        2つ目のルールは、公開順チェーンとは別に、カテゴリ別に全記事を一覧化した網羅ページを用意していることだ。<a href="complete-guide.html">「完全ガイド」というまとめページ</a>を作り、「移住」「お金・FIRE」「仕事・ブログ運営」「金沢の暮らし」の4カテゴリごとに記事タイトルと抜粋を並べている。公開順チェーンは「時系列で追う」導線であるのに対し、このページは「今知りたいテーマから探す」導線として機能させている。
+      </p>
+
+      <figure class="chart">
+        <div class="bar-chart" style="width:100%">
+          <p class="chart-title">カテゴリ別の記事数（42記事の内訳）</p>
+          <div class="bar-row">
+            <div class="bar-label"><span>お金・FIRE</span><span>15記事</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>移住</span><span>9記事</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>仕事・ブログ運営</span><span>9記事</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>金沢の暮らし</span><span>9記事</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+          </div>
+        </div>
+      </figure>
+
+      <p>
+        こうして数字で並べてみると、「お金・FIRE」が15記事とやや厚めで、残り3カテゴリはほぼ横並びの9記事ずつになっていることが分かる。資産形成やFIREという軸がこのブログの中心テーマである以上、この偏りは自然なことだと捉えているが、逆に言えば「仕事・ブログ運営」のように記事数が相対的に少ないカテゴリは、まだ書けていない切り口が残っているというサインでもある。今回のこの記事自体、その「手薄なカテゴリを埋める」という判断から生まれたものだ。
+      </p>
+
+      <h2 id="h2-4">ルール3：本文中の文脈リンクは「次に知りたくなる記事」だけに絞る</h2>
+      <p>
+        3つ目のルールは、記事末尾の機械的なリンク集ではなく、本文の文章の中に、読者が「次に知りたくなりそうな話題」だけを厳選してリンクを埋め込むことだ。例えば<a href="side-hustle-startup-comparison.html">複業の始め方を比較した記事</a>を書いた時は、その中で触れた「ブログ収益」という選択肢について、開設初期の記録である<a href="blog-first-month-pv.html">PV0からのスタート記録</a>に文脈の中でリンクを貼った。この記事自体でも同じ考え方で、<a href="blog-hosting-cost-comparison.html">GitHub Pagesで月0円運用している内訳</a>のように、話題に直接関係する記事だけを選んでリンクしている。読者が「複業としてのブログってどうなの？」と思ったタイミングで、自然に該当記事へ進めるようにしている。
+      </p>
+      <p>
+        逆に、関連度が低いのに無理やりリンクを詰め込むことは避けている。例えばこの記事でも、本文中に埋め込んだ文脈リンクは数本程度に絞っている。リンクが多すぎると、どれが本当に読んでほしい記事なのか読者に伝わらなくなると感じているためだ。「量より、文脈に合っているかどうか」を基準にしている。
+      </p>
+
+      <div class="pull-note">
+        内部リンクは「たくさん貼ればSEOに効く」ものではなく、「読者が次に読みたい記事へ、迷わずたどり着けるか」の設計だと捉え直してから、リンクを貼る基準がはっきりした。
+      </div>
+
+      <h2 id="h2-5">タイトル・見出しを「地名＋具体語＋数字」にする理由</h2>
+      <p>
+        内部リンクとあわせて意識しているのが、記事タイトル・見出しの付け方だ。<a href="blog-first-month-pv.html">開設1ヶ月の時点</a>では、検索エンジンからの評価がまだ薄く、流入の大半をXからの告知に頼っていた。ドメインの権威が低い個人ブログが「FIRE」「地方移住」のような大きな一語のキーワードで上位表示を狙うのは現実的ではないと考え、「金沢 家賃 8万円 実際」「地方移住 引っ越し費用 内訳」のように、地名・具体的な語・数字を組み合わせた検索意図の明確な複合キーワードを、タイトルと見出しの両方に意識的に入れるようにしている。
+      </p>
+      <p>
+        この方針に切り替えたのは記事数が増えてからで、それ以前に書いた記事のタイトルも後から書き直したものがいくつかある。競合が少ない分だけ、1記事あたりの検索順位は付きやすくなると感じている一方、検索ボリューム自体は小さいため、劇的にPVが伸びるわけではない。それでも、内部リンクで記事同士がつながっていれば、1本の記事に検索でたどり着いた読者を、他の関連記事へと橋渡しできる。タイトル設計と内部リンク設計は、単独ではなく組み合わせて初めて効果が出る施策だというのが、42記事を書いてきた今の実感だ。
+      </p>
+
+      <h2 id="h2-6">よくある質問</h2>
+      <h3>Q. 個人ブログの内部リンクは、記事が増えたらどう管理すればいいですか？</h3>
+      <p>A. 公開日順の「一直線チェーン」（前後ナビ）と、カテゴリ別の網羅ページを両輪にすると、記事数が増えても管理の手間が増えにくい。当ブログでは42記事をこの2つの仕組みだけで管理している。</p>
+      <h3>Q. ブログのタイトル・見出しは何を優先して決めていますか？</h3>
+      <p>A. 「地名＋具体語＋数字」を組み合わせた超ロングテールキーワードを優先している。競合の少ない複合語の方が、ドメイン権威の低い個人ブログでも検索経由の流入を得やすいと考えているため。</p>
+      <h3>Q. 複業としてブログを書く場合、内部リンク設計はどのくらい重要ですか？</h3>
+      <p>A. 記事数が少ないうちは影響が小さいが、20〜30記事を超えたあたりから、読者が関連記事にたどり着けるかどうかが回遊率に影響しやすくなると感じているため、早い段階でルール化しておく価値があると考えている。</p>
+
+      <h2 id="h2-7">まとめ：複業としてのブログ運営で内部リンクに投資する理由</h2>
+      <p>
+        複業の一つとしてブログを書いている以上、記事を書く時間そのものが限られている。それでも内部リンクの設計に時間を割いているのは、1本ずつの記事の力だけでサイト全体の価値が決まるわけではないと考えているからだ。42記事が公開順チェーンとカテゴリ別の網羅ページという2つの導線でつながっていることで、1本の記事が検索やXから読まれた時に、他の記事にも波及する仕組みができる。記事数が増えていく過程で内部リンクを後回しにすると、後から整理し直す手間の方が大きくなると感じている。今後もこのブログでは、記事を書き足すたびに、この2つの導線を崩さずに運用を続けていきたい。ブログ運営やSEOに関する他の記事は<a href="complete-guide.html#cat-work">完全ガイドの仕事・ブログ運営カテゴリ</a>にもまとめているので、あわせて参考にしてほしい。
+      </p>
+    </div>
+  </article>
+
+  <div class="post-extras">
+    <div id="related-posts" class="related-posts"></div>
+    <div id="profile-cta" class="profile-cta-card"></div>
+  </div>
+
+  <nav class="article-nav">
+    <a class="nav-prev" href="kanazawa-rent-vs-buy-fire.html">&larr; 金沢移住で持ち家は買うべき？家賃8万円の賃貸を続けるFIRE的判断基準3つ</a>
+  </nav>
+
+  <footer class="site-footer">
+    © 2026. 金沢で叶える地方移住FIREライフ ／ <a href="privacy-policy.html">プライバシーポリシー</a>
+  </footer>
+
+</div>
+<script src="related-posts.js"></script>
+</body>
+</html>

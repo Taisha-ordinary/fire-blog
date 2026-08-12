@@ -6,7 +6,15 @@
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Tue, 11 Aug 2026 18:24:47 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 12 Aug 2026 21:22:09 +0900</lastBuildDate>
+  <item>
+    <title>個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/blog-internal-linking-rules.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/blog-internal-linking-rules.html</guid>
+    <pubDate>Wed, 12 Aug 2026 21:00:00 +0900</pubDate>
+    <category>仕事・ブログ運営</category>
+    <description>地方移住×複業でブログを書き続けて2ヶ月、記事42本を4カテゴリ・一直線チェーンで管理する内部リンクの実際のルールを公開する。</description>
+  </item>
   <item>
     <title>金沢移住で持ち家は買うべき？家賃8万円の賃貸を続けるFIRE的判断基準3つ</title>
     <link>https://taisha-ordinary.github.io/fire-blog/kanazawa-rent-vs-buy-fire.html</link>
