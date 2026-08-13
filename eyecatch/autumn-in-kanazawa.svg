@@ -1,0 +1,28 @@
+<svg viewBox="0 0 132 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="金沢の秋：季節の変わり目を示す落ち葉と風のモチーフ">
+<title>金沢の秋を迎える</title>
+<defs>
+<style>
+.bg { fill: #fbfaf7; }
+.leaf { stroke: #b8912f; stroke-width: 1.2; fill: none; }
+.wind { stroke: #8f6f22; stroke-width: 0.8; fill: none; opacity: 0.7; }
+.accent { fill: #e7d6a6; }
+</style>
+</defs>
+<rect class="bg" width="132" height="100"/>
+<g>
+<ellipse cx="25" cy="40" rx="8" ry="5" class="leaf" transform="rotate(-15 25 40)"/>
+<ellipse cx="42" cy="25" rx="7" ry="4" class="leaf" transform="rotate(25 42 25)"/>
+<ellipse cx="65" cy="35" rx="6.5" ry="4.5" class="leaf" transform="rotate(-35 65 35)"/>
+<ellipse cx="85" cy="50" rx="7" ry="5" class="leaf" transform="rotate(10 85 50)"/>
+<ellipse cx="105" cy="30" rx="6" ry="4" class="leaf" transform="rotate(45 105 30)"/>
+</g>
+<g>
+<path class="wind" d="M 15 60 Q 20 58 25 60 T 35 60"/>
+<path class="wind" d="M 45 65 Q 52 63 60 65 T 75 65"/>
+<path class="wind" d="M 80 70 Q 90 67 100 70 T 120 70"/>
+</g>
+<circle cx="50" cy="15" r="4" class="accent" opacity="0.6"/>
+<circle cx="110" cy="65" r="3" class="accent" opacity="0.5"/>
+<line x1="30" y1="85" x2="102" y2="85" stroke="#e7e5df" stroke-width="1"/>
+<text x="66" y="96" font-family="JetBrains Mono" font-size="9" text-anchor="middle" fill="#8f6f22" font-weight="500">季節の変わり目</text>
+</svg>
