@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="ドルと円の間を行き来する為替の両替アイコン"><title>ドルと円の間を行き来する為替の両替アイコン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="38" cy="40" r="17" fill="none" stroke="#b8912f" stroke-width="2.4"/>
+<text x="38" y="46" text-anchor="middle" font-family="serif" font-size="16" font-weight="700" fill="#8f6f22">$</text>
+<circle cx="94" cy="40" r="17" fill="none" stroke="#8f6f22" stroke-width="2.4"/>
+<text x="94" y="46" text-anchor="middle" font-family="serif" font-size="16" font-weight="700" fill="#b8912f">&#165;</text>
+<path d="M57 30 Q66 20 75 30" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M75 30 l-7 -2 M75 30 l-2 7" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M75 50 Q66 60 57 50" fill="none" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M57 50 l7 2 M57 50 l2 -7" fill="none" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="14" y1="80" x2="118" y2="80" stroke="#e7e5df" stroke-width="1.5"/>
+<polyline points="20,78 34,72 48,76 62,66 76,70 90,60 104,64 118,54" fill="none" stroke="#e7d6a6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
