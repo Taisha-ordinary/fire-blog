@@ -73,12 +73,12 @@
     ctaContainer.innerHTML =
       '<img class="profile-cta-avatar" src="avatar.png" alt="プロフィールアイコン">' +
       '<div class="profile-cta-body">' +
-        '<p class="profile-cta-name">この記事を書いた人</p>' +
-        '<p class="profile-cta-text">東京から金沢へ移住して3年目。地方移住とFIREの実体験を、ブログとXで日々発信しています。</p>' +
+        '<p class="profile-cta-name">この記事の続きは、Xで</p>' +
+        '<p class="profile-cta-text">今回のテーマに関する日々の気づきや細かい記録は、Xで先に発信しています。</p>' +
       '</div>' +
       '<div class="profile-cta-actions">' +
         '<a class="profile-cta-btn is-secondary" href="profile.html" data-cta="profile">プロフィールを見る</a>' +
-        '<a class="profile-cta-btn is-primary x-sidebar-handle" href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener" data-cta="x_profile">Xでフォローする</a>' +
+        '<a class="profile-cta-btn is-primary x-sidebar-handle" href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener" data-cta="x_profile">Xで続きを見る</a>' +
       '</div>';
 
     Array.prototype.forEach.call(ctaContainer.querySelectorAll('[data-cta]'), function (a) {
