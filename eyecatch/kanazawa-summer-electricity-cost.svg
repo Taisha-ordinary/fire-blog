@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="夏の太陽とエアコンから伸びる涼しい風、天秤に乗る硬貨を表す"><title>夏の太陽とエアコンから伸びる涼しい風、天秤に乗る硬貨を表す</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="104" cy="22" r="11" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2"/>
+<g stroke="#b8912f" stroke-width="2.2" stroke-linecap="round">
+<line x1="104" y1="4" x2="104" y2="9"/>
+<line x1="104" y1="35" x2="104" y2="40"/>
+<line x1="86" y1="22" x2="91" y2="22"/>
+<line x1="117" y1="22" x2="122" y2="22"/>
+<line x1="90.5" y1="8.5" x2="94" y2="12"/>
+<line x1="114" y1="32" x2="117.5" y2="35.5"/>
+<line x1="117.5" y1="8.5" x2="114" y2="12"/>
+<line x1="94" y1="32" x2="90.5" y2="35.5"/>
+</g>
+<rect x="20" y="34" width="50" height="16" rx="4" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="26" y="39" width="38" height="3" rx="1.5" fill="#8f6f22"/>
+<rect x="26" y="45" width="38" height="2.4" rx="1.2" fill="#b8912f"/>
+<circle cx="63" cy="37" r="1.6" fill="#8f6f22"/>
+<path d="M28 50 Q26 58 30 64" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M40 50 Q38 60 42 68" fill="none" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M52 50 Q50 58 54 64" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linecap="round"/>
+<g stroke="#8f6f22" stroke-width="1.8" stroke-linecap="round">
+<path d="M18 78 Q24 74 30 78 Q36 82 42 78"/>
+<path d="M50 78 Q56 74 62 78 Q68 82 74 78"/>
+</g>
+<circle cx="98" cy="72" r="12" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<text x="98" y="77" text-anchor="middle" font-family="serif" font-size="14" font-weight="700" fill="#8f6f22">¥</text>
+<line x1="10" y1="90" x2="122" y2="90" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
