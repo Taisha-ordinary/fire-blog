@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="現金クッションを表すバケツと、株式の伸びを表す棒グラフを並べた図"><title>現金クッションを表すバケツと、株式の伸びを表す棒グラフを並べた図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M18 42 Q31 34 44 42 L40 78 Q31 84 22 78 Z" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M18 42 Q31 49 44 42" fill="none" stroke="#b8912f" stroke-width="2" stroke-linecap="round"/>
+<path d="M15 36 Q31 26 47 36" fill="none" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<ellipse cx="31" cy="52" rx="9.5" ry="3.6" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<ellipse cx="31" cy="60" rx="9.5" ry="3.6" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<ellipse cx="31" cy="68" rx="9.5" ry="3.6" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<text x="31" y="53" text-anchor="middle" font-family="serif" font-size="6" font-weight="700" fill="#8f6f22">¥</text>
+<line x1="58" y1="30" x2="58" y2="86" stroke="#e7e5df" stroke-width="1.6" stroke-dasharray="3 3"/>
+<g stroke="#b8912f" stroke-width="1.6" stroke-linecap="round">
+<line x1="70" y1="86" x2="118" y2="86"/>
+<line x1="70" y1="20" x2="70" y2="86"/>
+</g>
+<rect x="76" y="70" width="10" height="16" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<rect x="90" y="56" width="10" height="30" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<rect x="104" y="38" width="10" height="48" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<path d="M76 62 L90 48 L104 30" fill="none" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M99 30 L104 30 L104 35" fill="none" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="10" y1="92" x2="122" y2="92" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
