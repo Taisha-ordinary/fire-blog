@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="1本の道が一時金と年金の2方向に分岐する図"><title>1本の道が一時金と年金の2方向に分岐する図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="16" cy="50" r="5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<path d="M21 50 Q40 50 46 30" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M21 50 Q40 50 46 70" fill="none" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M46 30 l6 -2 M46 30 l1 6" fill="none" stroke="#b8912f" stroke-width="2" stroke-linecap="round"/>
+<path d="M46 70 l6 2 M46 70 l1 -6" fill="none" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<rect x="58" y="15" width="34" height="24" rx="3" fill="none" stroke="#b8912f" stroke-width="2.2"/>
+<path d="M58 15 L75 27 L92 15" fill="none" stroke="#b8912f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="75" cy="27" r="6.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.4"/>
+<text x="75" y="30" text-anchor="middle" font-family="serif" font-size="7.5" font-weight="700" fill="#8f6f22">¥</text>
+<text x="75" y="10" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#57606a">一時金</text>
+<circle cx="60" cy="70" r="6.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.4"/>
+<circle cx="80" cy="70" r="6.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.4"/>
+<circle cx="100" cy="70" r="6.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.4"/>
+<text x="60" y="73" text-anchor="middle" font-family="serif" font-size="6.5" font-weight="700" fill="#8f6f22">¥</text>
+<text x="80" y="73" text-anchor="middle" font-family="serif" font-size="6.5" font-weight="700" fill="#8f6f22">¥</text>
+<text x="100" y="73" text-anchor="middle" font-family="serif" font-size="6.5" font-weight="700" fill="#8f6f22">¥</text>
+<path d="M67 70 h6" stroke="#e7e5df" stroke-width="1.8" stroke-dasharray="1.6 2.4" stroke-linecap="round"/>
+<path d="M87 70 h6" stroke="#e7e5df" stroke-width="1.8" stroke-dasharray="1.6 2.4" stroke-linecap="round"/>
+<text x="80" y="88" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#57606a">年金</text>
+<path d="M12 92 h108" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+</svg>
