@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="大きさの異なる2つの水槽につみたて投資枠と成長投資枠が満ちていく図"><title>大きさの異なる2つの水槽につみたて投資枠と成長投資枠が満ちていく図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="18" y="40" width="26" height="40" rx="3" fill="none" stroke="#8f6f22" stroke-width="2.2"/>
+<rect x="18" y="60" width="26" height="20" fill="#e7d6a6"/>
+<line x1="18" y1="60" x2="44" y2="60" stroke="#8f6f22" stroke-width="1.4"/>
+<rect x="58" y="18" width="38" height="62" rx="3" fill="none" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="58" y="42" width="38" height="38" fill="#e7d6a6"/>
+<line x1="58" y1="42" x2="96" y2="42" stroke="#b8912f" stroke-width="1.4"/>
+<circle cx="31" cy="26" r="6" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.6"/>
+<text x="31" y="29" text-anchor="middle" font-family="serif" font-size="7" font-weight="700" fill="#8f6f22">&#165;</text>
+<circle cx="77" cy="10" r="6" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<text x="77" y="13" text-anchor="middle" font-family="serif" font-size="7" font-weight="700" fill="#8f6f22">&#165;</text>
+<path d="M31 32 v6" stroke="#8f6f22" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.6 2.2"/>
+<path d="M77 16 v24" stroke="#b8912f" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.6 2.2"/>
+<line x1="10" y1="92" x2="122" y2="92" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+</svg>
