@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="賃貸契約書と更新の循環矢印、更新料のコインを表すイラスト"><title>賃貸契約書と更新の循環矢印、更新料のコインを表すイラスト</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M20 16 H58 L70 28 V86 H20 Z" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M58 16 L58 28 L70 28 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6" stroke-linejoin="round"/>
+<line x1="28" y1="40" x2="62" y2="40" stroke="#e7e5df" stroke-width="2.4"/>
+<line x1="28" y1="50" x2="62" y2="50" stroke="#e7e5df" stroke-width="2.4"/>
+<line x1="28" y1="60" x2="54" y2="60" stroke="#e7e5df" stroke-width="2.4"/>
+<line x1="28" y1="70" x2="62" y2="70" stroke="#e7e5df" stroke-width="2.4"/>
+<path d="M96 24 A16 16 0 0 1 111 46" fill="none" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<path d="M104 42 L112 44 L107 51 Z" fill="#8f6f22"/>
+<path d="M96 56 A16 16 0 0 1 81 34" fill="none" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<path d="M88 38 L80 36 L85 29 Z" fill="#8f6f22"/>
+<circle cx="100" cy="76" r="13" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2"/>
+<text x="100" y="81" font-family="serif" font-size="13" font-weight="700" fill="#8f6f22" text-anchor="middle">¥</text>
+<line x1="14" y1="90" x2="122" y2="90" stroke="#e7e5df" stroke-width="1.5"/></svg>
