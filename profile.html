@@ -42,7 +42,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <nav class="global-nav" aria-label="サイトナビ">
-<div class="global-nav-inner">
+<button type="button" class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNavInner">
+<span class="nav-toggle-bars"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></span>
+メニュー
+</button>
+<div class="global-nav-inner" id="globalNavInner">
 <a href="index.html">ホーム</a>
 <a href="complete-guide.html#cat-relocation">移住</a>
 <a href="complete-guide.html#cat-money">お金・FIRE</a>
@@ -52,6 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="profile.html">プロフィール</a>
 </div>
 </nav>
+<script src="nav-toggle.js" defer></script>
 <div class="banner">
   <img src="banner.jpg" alt="">
 </div>
