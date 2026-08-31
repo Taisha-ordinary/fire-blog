@@ -58,7 +58,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <nav class="global-nav" aria-label="サイトナビ">
-<div class="global-nav-inner">
+<button type="button" class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNavInner">
+<span class="nav-toggle-bars"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></span>
+メニュー
+</button>
+<div class="global-nav-inner" id="globalNavInner">
 <a href="index.html">ホーム</a>
 <a href="complete-guide.html#cat-relocation">移住</a>
 <a href="complete-guide.html#cat-money">お金・FIRE</a>
@@ -68,6 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="profile.html">プロフィール</a>
 </div>
 </nav>
+<script src="nav-toggle.js" defer></script>
 <div class="banner">
   <img src="banner.jpg" alt="">
 </div>
@@ -791,6 +796,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="post-tags"><span class="tag-pill" data-tag="キャリア">#キャリア</span><span class="tag-pill" data-tag="転職">#転職</span></div>
       </div>
     </a>
+
+    <nav class="pagination" id="pagination" aria-label="記事一覧ページ送り"></nav>
   </main>
 
   <aside class="x-sidebar">
@@ -849,9 +856,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var searchInput = document.getElementById('post-search');
   var tagFilter = document.getElementById('tag-filter');
   var noResults = document.getElementById('no-results');
+  var pagination = document.getElementById('pagination');
   var activeTag = null;
   var lastSearchTerm = null;
   var searchTrackTimer = null;
+
+  // --- ページネーション（絞り込みが発動していない時のみ表示） ---
+  var PAGE_SIZE = 12;
+  var currentPage = 1;
+  var wasFiltering = false;
 
   // 個人情報らしき検索語（メールアドレス・電話番号）はGA4に送信しない
   var piiPatterns = [
@@ -890,9 +903,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   }
 
+  function renderPagination(totalPages) {
+    pagination.innerHTML = '';
+    if (totalPages <= 1) {
+      pagination.style.display = 'none';
+      return;
+    }
+    pagination.style.display = 'flex';
+
+    var prevBtn = document.createElement('button');
+    prevBtn.type = 'button';
+    prevBtn.className = 'page-btn page-btn-nav';
+    prevBtn.textContent = '前へ';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.setAttribute('aria-label', '前のページ');
+    prevBtn.addEventListener('click', function () { goToPage(currentPage - 1); });
+    pagination.appendChild(prevBtn);
+
+    for (var i = 1; i <= totalPages; i++) {
+      (function (pageNum) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'page-btn' + (pageNum === currentPage ? ' active' : '');
+        btn.textContent = String(pageNum);
+        if (pageNum === currentPage) btn.setAttribute('aria-current', 'page');
+        btn.setAttribute('aria-label', pageNum + 'ページ目');
+        btn.addEventListener('click', function () { goToPage(pageNum); });
+        pagination.appendChild(btn);
+      })(i);
+    }
+
+    var nextBtn = document.createElement('button');
+    nextBtn.type = 'button';
+    nextBtn.className = 'page-btn page-btn-nav';
+    nextBtn.textContent = '次へ';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.setAttribute('aria-label', '次のページ');
+    nextBtn.addEventListener('click', function () { goToPage(currentPage + 1); });
+    pagination.appendChild(nextBtn);
+  }
+
+  function goToPage(pageNum) {
+    currentPage = pageNum;
+    applyFilter();
+    document.getElementById('posts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   function applyFilter() {
     var q = searchInput.value.trim().toLowerCase();
-    var visibleCount = 0;
+    var filtering = !!q || !!activeTag;
+
+    // フィルターが発動/解除された瞬間はページネーションを1ページ目に戻す
+    if (!filtering && wasFiltering) {
+      currentPage = 1;
+    }
+    wasFiltering = filtering;
+
+    var matched = [];
     posts.forEach(function (p) {
       var title = p.querySelector('.post-item-title').textContent.toLowerCase();
       var excerpt = p.querySelector('.post-excerpt').textContent.toLowerCase();
@@ -900,10 +967,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var matchesSearch = !q || title.indexOf(q) !== -1 || excerpt.indexOf(q) !== -1 || tags.indexOf(q) !== -1;
       var postTags = (p.dataset.tags || '').split(',');
       var matchesTag = !activeTag || postTags.indexOf(activeTag) !== -1;
-      var show = matchesSearch && matchesTag;
-      p.style.display = show ? '' : 'none';
-      if (show) visibleCount++;
+      if (matchesSearch && matchesTag) matched.push(p);
     });
+
+    if (filtering) {
+      // 絞り込み中：ページネーションを隠して該当記事を全件表示
+      posts.forEach(function (p) {
+        p.style.display = matched.indexOf(p) !== -1 ? '' : 'none';
+      });
+      pagination.style.display = 'none';
+    } else {
+      // 絞り込みなし：ページ番号方式で表示件数を制御
+      var totalPages = Math.max(1, Math.ceil(matched.length / PAGE_SIZE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+      var start = (currentPage - 1) * PAGE_SIZE;
+      var end = start + PAGE_SIZE;
+      matched.forEach(function (p, i) {
+        p.style.display = (i >= start && i < end) ? '' : 'none';
+      });
+      renderPagination(totalPages);
+    }
+
+    var visibleCount = matched.length;
     noResults.style.display = visibleCount === 0 ? 'block' : 'none';
 
     if (!q) {
@@ -953,7 +1039,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         activeTag = activeTag === tag ? null : tag;
         updateTagButtons();
         applyFilter();
-        window.scrollTo({ top: document.getElementById('posts').offsetTop - 20, behavior: 'smooth' });
+        document.getElementById('posts').scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
   });
@@ -977,8 +1063,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   if (initialTag && tagSet.indexOf(initialTag) !== -1) {
     activeTag = initialTag;
     updateTagButtons();
-    applyFilter();
   }
+
+  // 初期表示：絞り込みがなければ1ページ目のページネーションを描画
+  applyFilter();
 })();
 </script>
 </body>
