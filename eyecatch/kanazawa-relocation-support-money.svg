@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="家に向かってコインが渡され、プラス記号で加算を示す移住支援金のイラスト"><title>移住支援金と子育て加算のイラスト</title>
+<rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M74 44 L98 24 L122 44" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="80" y="44" width="36" height="40" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="92" y="60" width="12" height="24" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.6"/>
+<ellipse cx="34" cy="74" rx="15" ry="5.5" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<ellipse cx="34" cy="64" rx="15" ry="5.5" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<ellipse cx="34" cy="54" rx="15" ry="5.5" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<text x="34" y="58" font-family="serif" font-size="11" font-weight="700" fill="#8f6f22" text-anchor="middle">¥</text>
+<path d="M52 52 H70" fill="none" stroke="#8f6f22" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M66 47 L74 52 L66 57 Z" fill="#8f6f22"/>
+<text x="103" y="36" font-family="serif" font-size="15" font-weight="700" fill="#b8912f" text-anchor="middle">+</text>
+<line x1="14" y1="90" x2="122" y2="90" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
