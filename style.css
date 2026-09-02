@@ -1001,6 +1001,11 @@ a { color: inherit; }
   .global-nav a{width:100%;justify-content:center;box-sizing:border-box;}
 }
 
+/* ===== ホーム：導入文 ===== */
+.home-about{max-width:1040px;margin:8px auto 0;padding:0 24px;}
+.home-about-inner p{color:var(--text);font-size:.92rem;line-height:1.9;max-width:68ch;margin:0 0 16px;}
+.home-about-inner p:last-child{margin-bottom:0;}
+
 /* ===== ホーム：まず読む3ページ／カテゴリ ===== */
 .home-intro{max-width:1040px;margin:26px auto 0;padding:0 24px;}
 .home-sec-title{font-family:"Shippori Mincho",serif;font-size:1.12rem;font-weight:700;color:var(--text);margin:28px 0 14px;padding-left:12px;border-left:4px solid var(--gold);}
