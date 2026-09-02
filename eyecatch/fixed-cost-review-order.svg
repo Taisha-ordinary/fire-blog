@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="複数の固定費を漏斗で絞り込み最初の一つを選び取るイメージ"><title>複数の固定費を漏斗で絞り込み最初の一つを選び取るイメージ</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="34" cy="14" r="8" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<circle cx="58" cy="10" r="6" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<circle cx="82" cy="15" r="7" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<circle cx="102" cy="11" r="5" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<path d="M18 24 L114 24 L76 58 L56 58 Z" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linejoin="round"/>
+<line x1="56" y1="58" x2="56" y2="68" stroke="#b8912f" stroke-width="2.4"/>
+<line x1="76" y1="58" x2="76" y2="68" stroke="#b8912f" stroke-width="2.4"/>
+<line x1="56" y1="68" x2="66" y2="76" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="76" y1="68" x2="66" y2="76" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="66" cy="90" r="11" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2"/>
+<path d="M60 90 L65 95 L74 84" fill="none" stroke="#8f6f22" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="10" y1="98" x2="122" y2="98" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
