@@ -84,36 +84,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="article-body">
       <p class="guide-lede">
-        「今の収入・支出のペースで、自分は何歳でFIREできるのか」「育休や転職を挟んだら、資産はどう変わるのか」——そんな問いに、ご自身の数字で答えを出すためのExcelシートです。無料のWeb診断（東京在住継続 vs 地方移住のざっくり比較）よりも一歩踏み込んで、年金・退職金・NISA/iDeCo・住宅ローンまで織り込んだ試算ができます。まずは自分の数字でざっくり試算したいだけの方には、note限定のLight版（¥500）もご用意しています。
+        「今の収入・支出のペースで、自分は何歳でFIREできるのか」「育休や転職を挟んだら、資産はどう変わるのか」——そんな問いに、ご自身の数字で答えを出すためのExcelシートです。無料のWeb診断（東京在住継続 vs 地方移住のざっくり比較）よりも一歩踏み込んで、年金・退職金・NISA/iDeCo・住宅ローンまで織り込んだ試算ができます。まずは自分の数字でざっくり試算したいだけの方には、先行販売中のLight版（note・¥500）もご用意しています。
       </p>
 
       <div class="product-status-banner">
-        <p class="product-status-label">Light版、note限定で先行販売中</p>
+        <p class="product-status-label">Light版、noteで先行販売中</p>
         <p class="product-status-text">Light版（¥500）はnoteにて先行販売を開始しました。Standard版・Pro版は現在、商品の最終チェックを行っています。販売開始が決まり次第、このページとXでお知らせします。</p>
-        <!-- 販売開始時：Standard/Proの2ボタンのhrefをBOOTH商品URLに差し替え、文言を「Standard版を購入する ¥2,480」等に変更する。
-             あわせて class="product-status-link product-buy-link" と data-product-sku="standard|pro" data-product-destination="booth"
-             target="_blank" rel="noopener" を付与すること（BOOTH遷移の分離計測 click_product_buy がこれで発火する） -->
+        <!-- 【2026-09-02 販路変更】Standard版・Pro版の販路はBOOTHからnoteへ一本化された（Vault 60_Decisions/2026-09-02 デジプロ販路をBOOTHからnoteへ一本化）。
+             実行（note公開・販売開始）は2026-09-16のnote Light版判定後。それまでStandard/Proのhrefは "#" のプレースホルダーのまま維持すること。
+             販売開始時の作業：
+               1. Standard/Proの2ボタンのhrefを、それぞれのnote有料記事URLに差し替える
+               2. 文言を「Standard版（note・¥2,480）を購入する」等に変更する
+               3. class に product-buy-link を追加し、data-product-sku="standard|pro" と data-product-destination="note"、
+                  target="_blank" rel="noopener" を付与する（これで分離計測イベント click_product_buy が発火する）
+             ※ data-product-sku / data-product-destination は販売開始時の想定値を先に入れてあるが、
+                product-buy-link クラスが無いため現状ではイベントは発火しない（プレースホルダーの誤計測を防ぐため意図的） -->
         <div class="product-cta-row">
           <a class="product-status-link product-buy-link" data-product-sku="light" data-product-destination="note" href="https://note.com/taisha_ordinary/n/nfde1cb2d2935" target="_blank" rel="noopener">Light版（note・¥500）を購入する</a>
-          <a class="product-status-link" href="#">Standard版：販売準備中</a>
-          <a class="product-status-link" href="#">Pro版：販売準備中</a>
+          <a class="product-status-link" data-product-sku="standard" data-product-destination="note" href="#">Standard版：販売準備中</a>
+          <a class="product-status-link" data-product-sku="pro" data-product-destination="note" href="#">Pro版：販売準備中</a>
         </div>
-        <p class="product-status-subtext"><strong>※ 購入ボタンを押すと外部サイトに移動します。</strong>Light版は<strong>note</strong>、Standard版・Pro版は<strong>BOOTH</strong>（pixiv株式会社が運営する販売プラットフォーム）の商品ページが新しいタブで開き、決済とダウンロードはその外部サイト上で完結します。販売開始のお知らせは<a href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener">X（@Taisha_ordinary）</a>でも受け取れます。</p>
+        <p class="product-status-subtext"><strong>※ 購入ボタンを押すと外部サイトに移動します。</strong>Light版・Standard版・Pro版とも<strong>note</strong>（note株式会社が運営する記事投稿・販売プラットフォーム）の商品ページが新しいタブで開き、決済とダウンロードはnote上で完結します。販売開始のお知らせは<a href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener">X（@Taisha_ordinary）</a>でも受け取れます。</p>
 
         <div class="product-flow">
           <p class="product-flow-title">購入からダウンロードまでの3ステップ</p>
           <ol class="product-flow-steps">
             <li class="product-flow-step">
               <span class="product-flow-num">1</span>
-              <span class="product-flow-body"><span class="product-flow-head">外部サイトへ移動</span>上の購入ボタンから、note（Light版）またはBOOTH（Standard版・Pro版）の商品ページが新しいタブで開きます。</span>
+              <span class="product-flow-body"><span class="product-flow-head">外部サイトへ移動</span>上の購入ボタンから、noteの商品ページ（有料記事）が新しいタブで開きます。Light版・Standard版・Pro版はいずれもnoteでの販売です。</span>
             </li>
             <li class="product-flow-step">
               <span class="product-flow-num">2</span>
-              <span class="product-flow-body"><span class="product-flow-head">外部サイト上で決済</span>note／BOOTHのシステム内で決済します（カード・コンビニ払い等は各サイトの対応方法に準じます）。クレジットカード番号などの決済情報が当ブログの運営者に渡ることはありません。</span>
+              <span class="product-flow-body"><span class="product-flow-head">外部サイト上で決済</span>noteのシステム内で決済します（カード・コンビニ払い等の可否はnoteの対応方法に準じます）。クレジットカード番号などの決済情報が当ブログの運営者に渡ることはありません。</span>
             </li>
             <li class="product-flow-step">
               <span class="product-flow-num">3</span>
-              <span class="product-flow-body"><span class="product-flow-head">ファイルをダウンロード</span>決済後、Light版はnoteの有料記事本文内から、Standard版・Pro版はBOOTHの「購入履歴」ページからExcelファイル（.xlsx）をダウンロードできます。</span>
+              <span class="product-flow-body"><span class="product-flow-head">ファイルをダウンロード</span>決済後、有料記事の本文が開きます。Light版・Standard版・Pro版とも、その本文内のリンクからExcelファイル（.xlsx）をダウンロードできます。購入した記事はnoteのアカウントからいつでも読み返せます。</span>
             </li>
           </ol>
         </div>
@@ -124,9 +130,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         いきなり有料版から始める必要はありません。サイト内の<a href="fire-simulator.html">無料FIREシミュレーター</a>で、東京在住を続けた場合と地方移住した場合のFIRE到達年数のざっくりした比較を、まず無料で体験できます。「もっと自分の家計に近い数字で試算したい」と感じたら、Light版・Standard版・Pro版をご検討ください。
       </p>
 
-      <h2 id="h2-light">Light版について（note限定）</h2>
+      <h2 id="h2-light">Light版について（先行販売中）</h2>
       <p>
-        「35歳からのサイドFIRE判断キット Light」（¥500）は、年齢・収入・支出・資産を入れるだけでFIRE到達年齢と資産推移グラフが自動で出る、年次計算エンジンのExcelシートです。教育費・インフレ・昇給・賞与まで反映しますが、年金・退職金・シナリオ比較・NISA/iDeCoは含みません。BOOTHではなく、noteの有料記事内でのみ提供しています。「まず1枚で全体感をつかみたい」方向けの入口商品です。
+        「35歳からのサイドFIRE判断キット Light」（¥500）は、年齢・収入・支出・資産を入れるだけでFIRE到達年齢と資産推移グラフが自動で出る、年次計算エンジンのExcelシートです。教育費・インフレ・昇給・賞与まで反映しますが、年金・退職金・シナリオ比較・NISA/iDeCoは含みません。noteの有料記事内で提供しています。「まず1枚で全体感をつかみたい」方向けの入口商品です。
       </p>
 
       <h2 id="h2-2">Light・Standard・Pro、何が違うのか</h2>
@@ -139,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <thead>
             <tr>
               <th></th>
-              <th>Light版（note）</th>
+              <th>Light版</th>
               <th>Standard版</th>
               <th>Pro版</th>
             </tr>
@@ -168,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="product-faq-item">
           <p class="product-faq-q">Q. 決済は安全ですか？個人情報が運営者に渡りませんか？</p>
-          <p class="product-faq-a">A. 販売プラットフォームによって異なります。Standard版・Pro版の決済はBOOTH（pixiv株式会社が運営する販売プラットフォーム）のシステム内で、Light版の決済はnote（note株式会社が運営する記事投稿・販売プラットフォーム）のシステム内で処理されます。いずれもクレジットカード番号等の決済情報が運営者本人に渡ることはありません。</p>
+          <p class="product-faq-a">A. Light版・Standard版・Pro版とも、決済はnote（note株式会社が運営する記事投稿・販売プラットフォーム）のシステム内で処理されます。クレジットカード番号等の決済情報が運営者本人に渡ることはありません。</p>
         </div>
         <div class="product-faq-item">
           <p class="product-faq-q">Q. 返金はできますか？</p>
