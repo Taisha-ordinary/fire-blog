@@ -1036,6 +1036,52 @@ a { color: inherit; }
   .home-sim-cta-btn{width:100%;text-align:center;}
 }
 
+/* ===== 商品紹介ページ（2026-07-24 追加、2026-08-31 CTA構造修正） ===== */
+.product-status-banner{background:#fbf3e3;border:1px solid var(--gold);border-radius:14px;padding:20px 22px;margin:24px 0 32px;}
+.product-status-label{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 8px;}
+.product-status-text{font-size:.9rem;line-height:1.8;color:var(--text);margin:0 0 14px;}
+.product-cta-row{display:flex;flex-wrap:wrap;gap:12px;}
+.product-status-link{flex:1 1 200px;display:inline-block;text-align:center;font-family:"Zen Kaku Gothic New",sans-serif;font-size:.85rem;font-weight:700;color:#fff;background:var(--gold);border-radius:999px;padding:9px 18px;text-decoration:none;transition:background .15s ease;}
+.product-status-link:hover,.product-status-link:focus-visible{background:var(--gold-bright);}
+.product-status-subtext{font-size:.8rem;color:var(--muted);margin:14px 0 0;}
+.product-compare-wrap{overflow-x:auto;margin:20px 0 32px;border:1px solid var(--panel-line);border-radius:10px;}
+table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px;}
+.product-compare-table th{text-align:left;padding:12px 14px;background:var(--paper);font-weight:700;color:var(--text);border-bottom:1px solid var(--panel-line);}
+.product-compare-table td{padding:12px 14px;border-bottom:1px solid var(--panel-line);color:var(--text);}
+.product-compare-table tr:last-child td{border-bottom:none;}
+.product-compare-table td:first-child{color:var(--muted);white-space:nowrap;}
+.product-faq{display:flex;flex-direction:column;gap:16px;margin:20px 0 32px;}
+.product-faq-item{background:#fff;border:1px solid var(--panel-line);border-radius:10px;padding:16px 18px;}
+.product-faq-q{font-weight:700;color:var(--text);margin:0 0 6px;font-size:.92rem;}
+.product-faq-a{color:var(--muted);margin:0;font-size:.87rem;line-height:1.75;}
+.product-disclaimer{font-size:.76rem;color:var(--muted);line-height:1.8;border-top:1px solid var(--panel-line);padding-top:16px;margin-top:32px;}
+.tokushoho-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:.86rem;}
+.tokushoho-table th{width:170px;vertical-align:top;text-align:left;padding:14px 16px 14px 0;color:var(--muted);font-weight:700;border-bottom:1px solid var(--panel-line);}
+.tokushoho-table td{vertical-align:top;padding:14px 0;color:var(--text);line-height:1.8;border-bottom:1px solid var(--panel-line);}
+@media (max-width:600px){
+  .tokushoho-table,.tokushoho-table tbody,.tokushoho-table tr,.tokushoho-table th,.tokushoho-table td{display:block;width:auto;}
+  .tokushoho-table th{padding:14px 0 4px;border-bottom:none;}
+  .tokushoho-table td{padding:0 0 14px;}
+}
+
+/* ===== 無料シミュレーター結果直下：有料版への導線CTA（2026-09-02 追加） ===== */
+.sim-upsell-cta{margin:32px 0 0;padding:24px 26px;border-radius:14px;background:#fbf3e3;border:1px solid var(--gold);}
+.sim-upsell-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 8px;}
+.sim-upsell-title{font-family:'Shippori Mincho',serif;font-size:1.15rem;font-weight:700;color:var(--text);margin:0 0 10px;}
+.sim-upsell-desc{font-size:.87rem;color:var(--text);line-height:1.85;margin:0 0 16px;}
+.sim-upsell-list{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:9px;}
+.sim-upsell-list li{font-size:.83rem;color:var(--muted);line-height:1.7;display:flex;align-items:baseline;gap:10px;}
+.sim-upsell-tier{flex-shrink:0;min-width:74px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;font-weight:500;color:#fff;background:var(--gold);border-radius:999px;padding:3px 10px;text-align:center;}
+.sim-upsell-btn{display:inline-block;padding:13px 30px;border-radius:999px;background:var(--gold);color:#fff;font-family:'Zen Kaku Gothic New',sans-serif;font-size:.9rem;font-weight:700;text-decoration:none;transition:background .15s ease;}
+.sim-upsell-btn:hover,.sim-upsell-btn:focus-visible{background:var(--gold-bright);}
+.sim-upsell-note{font-size:.74rem;color:var(--muted);line-height:1.7;margin:14px 0 0;}
+@media (max-width:600px){
+  .sim-upsell-cta{padding:20px;}
+  .sim-upsell-list li{flex-direction:column;gap:4px;}
+  .sim-upsell-tier{min-width:0;align-self:flex-start;}
+  .sim-upsell-btn{display:block;text-align:center;}
+}
+
 /* ===== 記事冒頭：シミュレーター誘導CTA（2026-07-23 追加） ===== */
 .sim-article-cta{display:block;margin:28px 0;padding:18px 22px;border-radius:14px;background:#fbf3e3;border:1px solid var(--gold);text-decoration:none;color:var(--text);transition:border-color .15s ease, box-shadow .15s ease, transform .15s ease;}
 .sim-article-cta:hover,.sim-article-cta:focus-visible{border-color:var(--gold-bright);box-shadow:0 6px 18px rgba(184,145,47,.18);transform:translateY(-1px);}

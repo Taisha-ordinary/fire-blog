@@ -69,4 +69,18 @@
       page_path: location.pathname
     });
   });
+
+  // 商品ページ（products.html）への遷移計測（.product-cta-link を持つリンク全て、全ページ共通）。
+  // 「導線の各段階を分離して計測する（BOOTH遷移ゼロは売上ゼロより重大なシグナル）」という
+  // 2026-07-24の出品方針に対応する、ファネル最初の1段目の計測。
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('.product-cta-link') : null;
+    if (!el) return;
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      event: 'click_product_cta',
+      click_location: el.id || 'product_cta_link',
+      page_path: location.pathname
+    });
+  });
 })();
