@@ -90,13 +90,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="product-status-banner">
         <p class="product-status-label">Light版、note限定で先行販売中</p>
         <p class="product-status-text">Light版（¥500）はnoteにて先行販売を開始しました。Standard版・Pro版は現在、商品の最終チェックを行っています。販売開始が決まり次第、このページとXでお知らせします。</p>
-        <!-- 販売開始時：Standard/Proの2ボタンのhrefをBOOTH商品URLに差し替え、文言を「Standard版を購入する ¥2,480」等に変更する -->
+        <!-- 販売開始時：Standard/Proの2ボタンのhrefをBOOTH商品URLに差し替え、文言を「Standard版を購入する ¥2,480」等に変更する。
+             あわせて class="product-status-link product-buy-link" と data-product-sku="standard|pro" data-product-destination="booth"
+             target="_blank" rel="noopener" を付与すること（BOOTH遷移の分離計測 click_product_buy がこれで発火する） -->
         <div class="product-cta-row">
-          <a class="product-status-link" href="https://note.com/taisha_ordinary/n/nfde1cb2d2935" target="_blank" rel="noopener">Light版（note・¥500）を購入する</a>
+          <a class="product-status-link product-buy-link" data-product-sku="light" data-product-destination="note" href="https://note.com/taisha_ordinary/n/nfde1cb2d2935" target="_blank" rel="noopener">Light版（note・¥500）を購入する</a>
           <a class="product-status-link" href="#">Standard版：販売準備中</a>
           <a class="product-status-link" href="#">Pro版：販売準備中</a>
         </div>
-        <p class="product-status-subtext">Light版はnote、Standard版・Pro版はBOOTHでの販売となります。販売開始のお知らせは<a href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener">X（@Taisha_ordinary）</a>でも受け取れます。</p>
+        <p class="product-status-subtext"><strong>※ 購入ボタンを押すと外部サイトに移動します。</strong>Light版は<strong>note</strong>、Standard版・Pro版は<strong>BOOTH</strong>（pixiv株式会社が運営する販売プラットフォーム）の商品ページが新しいタブで開き、決済とダウンロードはその外部サイト上で完結します。販売開始のお知らせは<a href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener">X（@Taisha_ordinary）</a>でも受け取れます。</p>
+
+        <div class="product-flow">
+          <p class="product-flow-title">購入からダウンロードまでの3ステップ</p>
+          <ol class="product-flow-steps">
+            <li class="product-flow-step">
+              <span class="product-flow-num">1</span>
+              <span class="product-flow-body"><span class="product-flow-head">外部サイトへ移動</span>上の購入ボタンから、note（Light版）またはBOOTH（Standard版・Pro版）の商品ページが新しいタブで開きます。</span>
+            </li>
+            <li class="product-flow-step">
+              <span class="product-flow-num">2</span>
+              <span class="product-flow-body"><span class="product-flow-head">外部サイト上で決済</span>note／BOOTHのシステム内で決済します（カード・コンビニ払い等は各サイトの対応方法に準じます）。クレジットカード番号などの決済情報が当ブログの運営者に渡ることはありません。</span>
+            </li>
+            <li class="product-flow-step">
+              <span class="product-flow-num">3</span>
+              <span class="product-flow-body"><span class="product-flow-head">ファイルをダウンロード</span>決済後、Light版はnoteの有料記事本文内から、Standard版・Pro版はBOOTHの「購入履歴」ページからExcelファイル（.xlsx）をダウンロードできます。</span>
+            </li>
+          </ol>
+        </div>
       </div>
 
       <h2 id="h2-1">まずは無料版から</h2>

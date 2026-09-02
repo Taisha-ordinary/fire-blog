@@ -83,4 +83,21 @@
       page_path: location.pathname
     });
   });
+
+  // 外部販売サイト（note / BOOTH）への遷移計測（products.html の購入ボタン）。
+  // 上の click_product_cta が「サイト内→products.html」の1段目であるのに対し、
+  // これは「products.html→外部販売サイト」の2段目。2026-09-02のBOOTH継続決定で
+  // 「products.html表示→BOOTH遷移→購入」を分離計測することが必須条件とされたため、
+  // 1段目と同じイベント名には寄せず別イベントとして送る。
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('.product-buy-link') : null;
+    if (!el) return;
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      event: 'click_product_buy',
+      product_sku: el.getAttribute('data-product-sku') || 'unknown',
+      product_destination: el.getAttribute('data-product-destination') || 'unknown',
+      page_path: location.pathname
+    });
+  });
 })();

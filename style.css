@@ -1043,7 +1043,20 @@ a { color: inherit; }
 .product-cta-row{display:flex;flex-wrap:wrap;gap:12px;}
 .product-status-link{flex:1 1 200px;display:inline-block;text-align:center;font-family:"Zen Kaku Gothic New",sans-serif;font-size:.85rem;font-weight:700;color:#fff;background:var(--gold);border-radius:999px;padding:9px 18px;text-decoration:none;transition:background .15s ease;}
 .product-status-link:hover,.product-status-link:focus-visible{background:var(--gold-bright);}
-.product-status-subtext{font-size:.8rem;color:var(--muted);margin:14px 0 0;}
+.product-status-subtext{font-size:.8rem;color:var(--muted);line-height:1.85;margin:14px 0 0;}
+.product-status-subtext strong{color:var(--text);font-weight:700;}
+/* 購入〜ダウンロードの3ステップ（外部サイト遷移の明示。2026-09-02のBOOTH継続決定の必須条件） */
+.product-flow{margin:18px 0 0;padding:16px 18px;background:#fff;border:1px solid var(--panel-line);border-radius:10px;}
+.product-flow-title{font-family:"Shippori Mincho",serif;font-size:.92rem;font-weight:700;color:var(--text);margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--panel-line);}
+.product-flow-steps{list-style:none;display:flex;flex-wrap:wrap;gap:14px;margin:0;padding:0;counter-reset:none;}
+.product-flow-step{flex:1 1 160px;display:flex;align-items:flex-start;gap:10px;margin:0;}
+.product-flow-num{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--gold);color:#fff;font-family:"JetBrains Mono",monospace;font-size:.78rem;font-weight:500;line-height:24px;text-align:center;}
+.product-flow-body{font-size:.82rem;line-height:1.75;color:var(--muted);}
+.product-flow-head{display:block;font-size:.86rem;font-weight:700;color:var(--text);margin-bottom:3px;}
+@media (max-width:640px){
+  .product-flow-steps{flex-direction:column;gap:12px;}
+  .product-flow-step{flex:1 1 auto;}
+}
 .product-compare-wrap{overflow-x:auto;margin:20px 0 32px;border:1px solid var(--panel-line);border-radius:10px;}
 table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px;}
 .product-compare-table th{text-align:left;padding:12px 14px;background:var(--paper);font-weight:700;color:var(--text);border-bottom:1px solid var(--panel-line);}
