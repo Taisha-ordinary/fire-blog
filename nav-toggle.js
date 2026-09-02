@@ -71,7 +71,7 @@
   });
 
   // 商品ページ（products.html）への遷移計測（.product-cta-link を持つリンク全て、全ページ共通）。
-  // 「導線の各段階を分離して計測する（BOOTH遷移ゼロは売上ゼロより重大なシグナル）」という
+  // 「導線の各段階を分離して計測する（外部販売サイトへの遷移ゼロは売上ゼロより重大なシグナル）」という
   // 2026-07-24の出品方針に対応する、ファネル最初の1段目の計測。
   document.addEventListener('click', function (e) {
     var el = e.target.closest ? e.target.closest('.product-cta-link') : null;
@@ -84,11 +84,12 @@
     });
   });
 
-  // 外部販売サイト（note / BOOTH）への遷移計測（products.html の購入ボタン）。
+  // 外部販売サイト（note）への遷移計測（products.html の購入ボタン）。
   // 上の click_product_cta が「サイト内→products.html」の1段目であるのに対し、
-  // これは「products.html→外部販売サイト」の2段目。2026-09-02のBOOTH継続決定で
-  // 「products.html表示→BOOTH遷移→購入」を分離計測することが必須条件とされたため、
-  // 1段目と同じイベント名には寄せず別イベントとして送る。
+  // これは「products.html→外部販売サイト」の2段目。「products.html表示→外部サイト遷移→購入」を
+  // 分離計測することが販売開始の必須条件とされたため、1段目と同じイベント名には寄せず別イベントとして送る。
+  // 販路は2026-09-02の再決定でBOOTHからnoteへ一本化された（Standard/Proの実行は9/16判定後）。
+  // product_destination は将来の販路追加に備えて属性から読む形を維持している。
   document.addEventListener('click', function (e) {
     var el = e.target.closest ? e.target.closest('.product-buy-link') : null;
     if (!el) return;
