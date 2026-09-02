@@ -1003,7 +1003,8 @@ a { color: inherit; }
 
 /* ===== ホーム：導入文 ===== */
 .home-about{max-width:1040px;margin:8px auto 0;padding:0 24px;}
-.home-about-inner p{color:var(--text);font-size:.92rem;line-height:1.9;max-width:68ch;margin:0 0 16px;}
+.home-about-inner{max-width:68ch;margin:0 auto;}
+.home-about-inner p{color:var(--text);font-size:.92rem;line-height:1.9;margin:0 0 16px;}
 .home-about-inner p:last-child{margin-bottom:0;}
 
 /* ===== ホーム：まず読む3ページ／カテゴリ ===== */
