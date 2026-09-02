@@ -55,4 +55,18 @@
       if (window.innerWidth > 640) closeNav();
     }, 150);
   });
+
+  // Xプロフィールへの遷移計測（.x-sidebar-handle を持つリンク全て、全ページ共通）。
+  // 2026-09-02判明：GA4のclick_x_profileイベントはこれまでサイト側に一度も実装されておらず
+  // 常時0件だった（profile.htmlの1ボタンのみprofile_cta_clickという別名で計測されていた）。
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('.x-sidebar-handle') : null;
+    if (!el) return;
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      event: 'click_x_profile',
+      click_location: el.id || 'x_sidebar_handle',
+      page_path: location.pathname
+    });
+  });
 })();
