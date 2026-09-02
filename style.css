@@ -1102,6 +1102,25 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
 .sim-article-cta-title{font-family:'Shippori Mincho',serif;font-size:17px;font-weight:700;margin:0 0 4px;color:var(--text);}
 .sim-article-cta-desc{font-size:13px;color:var(--muted);margin:0;line-height:1.7;}
 
+/* ===== 商品紹介CTA（Amazonアソシエイト、画像アイコン＋価格付き。2026-09-03 追加）
+   既存の .sim-article-cta / .affiliate-article-cta は決定論的ゲートが検査する
+   必須クラスのため維持したまま、.product-cta を追加してレイアウトのみ拡張する。 ===== */
+.product-cta{display:flex;align-items:flex-start;gap:16px;}
+.product-cta-media{flex-shrink:0;width:72px;height:72px;border-radius:12px;background:#fff;border:1px solid var(--panel-line);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.product-cta-media svg{width:52px;height:52px;display:block;}
+.product-cta-body{flex:1;min-width:0;}
+.product-cta-foot{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:12px 0 0;padding-top:10px;border-top:1px dashed var(--panel-line);}
+.product-cta-price{font-family:'JetBrains Mono',monospace;font-size:16px;font-weight:700;color:var(--gold-bright);white-space:nowrap;}
+.product-cta-price-note{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-size:10px;font-weight:400;color:var(--muted);margin-top:2px;letter-spacing:.02em;}
+.product-cta-link{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.03em;color:var(--gold-bright);white-space:nowrap;}
+.product-cta:hover .product-cta-link,.product-cta:focus-visible .product-cta-link{text-decoration:underline;}
+@media (max-width:480px){
+  .product-cta{gap:12px;}
+  .product-cta-media{width:56px;height:56px;border-radius:10px;}
+  .product-cta-media svg{width:40px;height:40px;}
+  .product-cta-foot{flex-direction:column;align-items:flex-start;gap:2px;}
+}
+
 /* ===== プロフィールページ ===== */
 .profile-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:8px;}
 .profile-avatar{width:84px;height:84px;border-radius:50%;flex-shrink:0;border:2px solid var(--rule);}
