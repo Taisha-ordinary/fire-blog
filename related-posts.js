@@ -124,9 +124,20 @@
 
   renderProfileCta();
 
-  Array.prototype.forEach.call(document.querySelectorAll('.sim-article-cta'), function (a) {
+  Array.prototype.forEach.call(document.querySelectorAll('.sim-article-cta:not(.affiliate-article-cta)'), function (a) {
     a.addEventListener('click', function () {
       track('sim_cta_click', { click_location: 'article_top' });
+    });
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.affiliate-article-cta'), function (a) {
+    a.addEventListener('click', function () {
+      track('affiliate_click', {
+        asp_name: a.dataset.aspName || '',
+        program_category: a.dataset.programCategory || '',
+        article_id: currentFile(),
+        cta_id: a.dataset.ctaId || ''
+      });
     });
   });
 
