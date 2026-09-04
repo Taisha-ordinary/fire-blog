@@ -1114,6 +1114,27 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
 .sim-article-cta-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 6px;}
 .sim-article-cta-title{font-family:'Shippori Mincho',serif;font-size:17px;font-weight:700;margin:0 0 4px;color:var(--text);}
 .sim-article-cta-desc{font-size:13px;color:var(--muted);margin:0;line-height:1.7;}
+/* ===== ツールCTAの明示的ボタン要素（2026-09-04 追加）
+   カード全体がリンクなのに「押せる」ことを示す要素が無く、
+   sim_cta_click が伸びない一因になっていた。カード内の span を
+   ボタンとして見せる（入れ子リンクは作らない）。 ===== */
+.sim-article-cta-btn{display:inline-block;margin:14px 0 0;padding:9px 20px;border:1px solid var(--gold);border-radius:999px;background:var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.03em;line-height:1;color:var(--gold-bright);transition:background .15s ease,color .15s ease,border-color .15s ease;}
+.sim-article-cta:hover .sim-article-cta-btn,.sim-article-cta:focus-visible .sim-article-cta-btn{background:var(--gold);border-color:var(--gold);color:#fff;}
+
+/* ===== 記事末尾CTA（2枚目・2026-09-04 追加）
+   導線が記事冒頭にしか無く、読み進めた読者が行き場を失っていた。
+   .post-extras（あわせて読みたい／プロフィールCTA）と同じ横幅に揃える。
+   冒頭CTAは読書を妨げない輪郭ボタン、末尾CTAは読了後の行動を促す
+   塗りボタン、という強弱をつけて重複感を避ける。 ===== */
+.article-end-cta{max-width:760px;margin:0 auto 28px;padding:0 24px;}
+.article-end-cta .sim-article-cta{margin:0;padding:22px 24px;}
+.sim-article-cta-bottom .sim-article-cta-title{font-size:18px;}
+.sim-article-cta-bottom .sim-article-cta-btn{background:var(--gold);border-color:var(--gold);color:#fff;padding:12px 26px;font-size:12px;}
+.sim-article-cta-bottom:hover .sim-article-cta-btn,.sim-article-cta-bottom:focus-visible .sim-article-cta-btn{background:var(--gold-bright);border-color:var(--gold-bright);}
+@media (max-width:600px){
+  .article-end-cta{padding:0 18px;}
+  .sim-article-cta-btn{display:block;width:fit-content;}
+}
 
 /* ===== 商品紹介CTA（Amazonアソシエイト、画像アイコン＋価格付き。2026-09-03 追加）
    既存の .sim-article-cta / .affiliate-article-cta は決定論的ゲートが検査する
