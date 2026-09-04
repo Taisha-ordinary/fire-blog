@@ -8,7 +8,10 @@
 (function () {
   var relatedContainer = document.getElementById('related-posts');
   var ctaContainer = document.getElementById('profile-cta');
-  if (!relatedContainer && !ctaContainer) return;
+  // 2026-09-04：以前はここで «両方の描画先が無ければ即return» していたが、
+  // このスクリプトはCTAクリックの計測（sim_cta_click / affiliate_click）も担っている。
+  // 描画先を持たない旧フォーマットの記事（autumn-in-kanazawa.html）でCTA計測ごと
+  // 落ちていたため、早期returnを廃止する。描画側は各関数が個別に自衛している。
 
   function currentFile() {
     var path = window.location.pathname.split('/').pop();
@@ -124,9 +127,12 @@
 
   renderProfileCta();
 
+  // 2026-09-04：記事末尾に2枚目のツールCTAを新設したため、click_location を
+  // data-cta-location から読む。属性が無い場合は従来どおり article_top（記事冒頭CTA）。
+  // これが無いと2枚が同じ click_location で送られ、どちらが効いたか判定できない。
   Array.prototype.forEach.call(document.querySelectorAll('.sim-article-cta:not(.affiliate-article-cta)'), function (a) {
     a.addEventListener('click', function () {
-      track('sim_cta_click', { click_location: 'article_top' });
+      track('sim_cta_click', { click_location: a.dataset.ctaLocation || 'article_top' });
     });
   });
 
