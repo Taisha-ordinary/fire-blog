@@ -1082,16 +1082,29 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
 .sim-upsell-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 8px;}
 .sim-upsell-title{font-family:'Shippori Mincho',serif;font-size:1.15rem;font-weight:700;color:var(--text);margin:0 0 10px;}
 .sim-upsell-desc{font-size:.87rem;color:var(--text);line-height:1.85;margin:0 0 16px;}
-.sim-upsell-list{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:9px;}
-.sim-upsell-list li{font-size:.83rem;color:var(--muted);line-height:1.7;display:flex;align-items:baseline;gap:10px;}
 .sim-upsell-tier{flex-shrink:0;min-width:74px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;font-weight:500;color:#fff;background:var(--gold);border-radius:999px;padding:3px 10px;text-align:center;}
+/* 2026-09-04：Light/Standard/Proの3択（うち2つは購入不可）をやめ、
+   実際に買えるLight版1本の提示に変更。選択肢を1つにして離脱を減らす。 */
+.sim-upsell-offer{display:flex;align-items:center;gap:12px;background:var(--ink);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin:0 0 18px;}
+.sim-upsell-offer-body{flex:1;min-width:0;}
+.sim-upsell-offer-name{display:block;font-size:.87rem;font-weight:700;color:var(--text);line-height:1.55;}
+.sim-upsell-offer-meta{display:block;font-size:.76rem;color:var(--muted);line-height:1.6;margin-top:3px;}
+.sim-upsell-price{flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:1.05rem;font-weight:700;color:var(--gold-bright);white-space:nowrap;}
 .sim-upsell-btn{display:inline-block;padding:13px 30px;border-radius:999px;background:var(--gold);color:#fff;font-family:'Zen Kaku Gothic New',sans-serif;font-size:.9rem;font-weight:700;text-decoration:none;transition:background .15s ease;}
 .sim-upsell-btn:hover,.sim-upsell-btn:focus-visible{background:var(--gold-bright);}
-.sim-upsell-note{font-size:.74rem;color:var(--muted);line-height:1.7;margin:14px 0 0;}
+/* .product-cta-link は計測フック（nav-toggle.js の click_product_cta）として付与されているが、
+   後勝ちで 11px モノスペースのゴールド文字になり、ゴールド地のボタン上で潰れていた。
+   クラスは計測のため維持し、ボタンとしての見た目だけ specificity で取り戻す。 */
+.sim-upsell-btn.product-cta-link{font-family:'Zen Kaku Gothic New',sans-serif;font-size:.9rem;color:#fff;letter-spacing:normal;}
+/* Standard/Pro は「販売準備中」として減光表示。存在は伝えるが、選ばせない */
+.sim-upsell-more{font-size:.78rem;color:var(--muted);line-height:1.75;margin:16px 0 0;padding-top:14px;border-top:1px dashed var(--rule);opacity:.85;}
+.sim-upsell-note{font-size:.74rem;color:var(--muted);line-height:1.7;margin:10px 0 0;}
 @media (max-width:600px){
   .sim-upsell-cta{padding:20px;}
-  .sim-upsell-list li{flex-direction:column;gap:4px;}
-  .sim-upsell-tier{min-width:0;align-self:flex-start;}
+  /* モバイルは「Lightバッジ＋価格」を1行目、商品名・内容を2行目に折り返す */
+  .sim-upsell-offer{flex-wrap:wrap;gap:8px 10px;align-items:baseline;}
+  .sim-upsell-price{order:2;margin-left:auto;}
+  .sim-upsell-offer-body{order:3;flex-basis:100%;}
   .sim-upsell-btn{display:block;text-align:center;}
 }
 
@@ -1120,6 +1133,37 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
   .product-cta-media svg{width:40px;height:40px;}
   .product-cta-foot{flex-direction:column;align-items:flex-start;gap:2px;}
 }
+
+/* ===== 広告CTAの視覚分離（2026-09-04 追加）
+   金箔ゴールド＝自社の無料ツール／有料キットの identity として予約し、
+   広告（Amazonアソシエイト・ASP）は中立色のカードへ振り分ける。
+   .affiliate-article-cta は決定論的ゲートが検査する必須クラスのため
+   HTMLは触らず、CSSの上書きだけで分離する。 ===== */
+.sim-article-cta.affiliate-article-cta{background:var(--paper);border:1px solid var(--panel-line);box-shadow:none;}
+.sim-article-cta.affiliate-article-cta:hover,
+.sim-article-cta.affiliate-article-cta:focus-visible{border-color:var(--muted);box-shadow:0 6px 18px rgba(20,23,26,.10);transform:translateY(-1px);}
+/* PR表記は「金色のラベル」から中立色のバッジへ。広告であることを先に伝える */
+.affiliate-article-cta .sim-article-cta-label{display:inline-block;color:var(--muted);background:var(--ink);border:1px solid var(--panel-line);border-radius:4px;padding:3px 8px;margin:0 0 10px;letter-spacing:.06em;}
+.affiliate-article-cta .sim-article-cta-title{font-size:16px;}
+/* 商品画像枠も中立に（自社CTAのゴールド枠と区別する） */
+.affiliate-article-cta .product-cta-media{background:var(--ink);border-color:var(--panel-line);}
+/* 価格は情報として読ませる。金色は使わない */
+.affiliate-article-cta .product-cta-price{color:var(--text);}
+/* 遷移先が外部の広告であることが分かるアウトライン型のアクションチップ。
+   色は落としつつ、クリックできる要素であることは明示する */
+.affiliate-article-cta .product-cta-link{display:inline-block;padding:7px 14px;border:1px solid var(--muted);border-radius:999px;color:var(--text);font-size:11px;line-height:1;}
+.affiliate-article-cta:hover .product-cta-link,
+.affiliate-article-cta:focus-visible .product-cta-link{background:var(--text);border-color:var(--text);color:var(--ink);text-decoration:none;}
+.affiliate-article-cta .product-cta-foot{border-top-color:var(--panel-line);align-items:center;}
+/* モバイルでは既存ルール（.product-cta-foot を縦積み・左寄せ）の意図を維持する */
+@media (max-width:480px){
+  .affiliate-article-cta .product-cta-foot{align-items:flex-start;gap:10px;}
+}
+/* 商品画像を持たないASP型CTA（引越し一括見積もり・転職エージェント等）は
+   これまでクリックできる手がかりが一切なかったため、同じチップを付与する */
+.sim-article-cta.affiliate-article-cta:not(.product-cta) .sim-article-cta-desc::after{content:"広告ページを開く ›";display:block;width:fit-content;margin:14px 0 0;padding:7px 14px;border:1px solid var(--muted);border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1;color:var(--text);}
+.sim-article-cta.affiliate-article-cta:not(.product-cta):hover .sim-article-cta-desc::after,
+.sim-article-cta.affiliate-article-cta:not(.product-cta):focus-visible .sim-article-cta-desc::after{background:var(--text);border-color:var(--text);color:var(--ink);}
 
 /* ===== プロフィールページ ===== */
 .profile-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:8px;}
