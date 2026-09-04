@@ -131,10 +131,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <h2 class="home-sec-title">カテゴリから探す</h2>
 <div class="cat-grid">
-<a class="cat-box" href="complete-guide.html#cat-relocation"><span class="cat-box-name">移住</span><span class="cat-box-count">12記事</span><span class="cat-box-desc">移住理由・家賃相場・引っ越し費用・役所手続き・子育て環境</span></a>
-<a class="cat-box" href="complete-guide.html#cat-money"><span class="cat-box-name">お金・FIRE</span><span class="cat-box-count">20記事</span><span class="cat-box-desc">資産形成・インデックス投資・FIRE計画・固定費</span></a>
-<a class="cat-box" href="complete-guide.html#cat-work"><span class="cat-box-name">仕事・ブログ</span><span class="cat-box-count">10記事</span><span class="cat-box-desc">リモートワーク・複業・キャリア設計・ブログ運営</span></a>
-<a class="cat-box" href="complete-guide.html#cat-kanazawa"><span class="cat-box-name">金沢の暮らし</span><span class="cat-box-count">13記事</span><span class="cat-box-desc">生活コスト・雪国生活・地域とのつながり</span></a>
+<a class="cat-box" href="complete-guide.html#cat-relocation" data-category="移住"><span class="cat-box-name">移住</span><span class="cat-box-count">13記事</span><span class="cat-box-desc">移住理由・家賃相場・引っ越し費用・役所手続き・子育て環境</span></a>
+<a class="cat-box" href="complete-guide.html#cat-money" data-category="お金・FIRE"><span class="cat-box-name">お金・FIRE</span><span class="cat-box-count">21記事</span><span class="cat-box-desc">資産形成・インデックス投資・FIRE計画・固定費</span></a>
+<a class="cat-box" href="complete-guide.html#cat-work" data-category="仕事・ブログ運営"><span class="cat-box-name">仕事・ブログ</span><span class="cat-box-count">10記事</span><span class="cat-box-desc">リモートワーク・複業・キャリア設計・ブログ運営</span></a>
+<a class="cat-box" href="complete-guide.html#cat-kanazawa" data-category="金沢の暮らし"><span class="cat-box-name">金沢の暮らし</span><span class="cat-box-count">14記事</span><span class="cat-box-desc">生活コスト・雪国生活・地域とのつながり</span></a>
 </div>
 </div>
 </section>
@@ -905,6 +905,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var activeTag = null;
   var lastSearchTerm = null;
   var searchTrackTimer = null;
+
+  // --- カテゴリ件数の自動同期（2026-09-04 追加） ---
+  // 記事一覧（.post-item）を唯一の正とし、カテゴリボックスの件数を実数で描き直す。
+  // HTML側の数字は「JSが無効な場合のフォールバック」として残す。
+  // 記事追加時に手で数字を直す運用だと必ずズレる（実際に12/20/10/13とズレていた）ため、
+  // 数えること自体を自動化してこの不整合の再発を止める。
+  (function syncCategoryCounts() {
+    var boxes = document.querySelectorAll('.cat-box[data-category]');
+    if (!boxes.length || !posts.length) return;
+    var counts = {};
+    posts.forEach(function (p) {
+      var metaEl = p.querySelector('.post-meta');
+      if (!metaEl) return;
+      var parts = (metaEl.textContent || '').split('—');
+      if (parts.length < 2) return;
+      var cat = parts[1].trim();
+      counts[cat] = (counts[cat] || 0) + 1;
+    });
+    Array.prototype.forEach.call(boxes, function (box) {
+      var countEl = box.querySelector('.cat-box-count');
+      var n = counts[box.dataset.category];
+      if (countEl && typeof n === 'number') countEl.textContent = n + '記事';
+    });
+  })();
 
   // --- ページネーション（絞り込みが発動していない時のみ表示） ---
   var PAGE_SIZE = 12;
