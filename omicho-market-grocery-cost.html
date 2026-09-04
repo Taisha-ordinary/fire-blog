@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="image" href="banner.jpg" fetchpriority="high">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -68,6 +69,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://taisha-ordinary.github.io/fire-blog/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "金沢の暮らし", "item": "https://taisha-ordinary.github.io/fire-blog/complete-guide.html#cat-kanazawa" },
+    { "@type": "ListItem", "position": 3, "name": "近江町市場とスーパー、金沢移住者はどう使い分ける？食費月7万円の内訳と判断基準" }
+  ]
+}
+</script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -90,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="index.html">ホーム</a>
 <a href="complete-guide.html#cat-relocation">移住</a>
 <a href="complete-guide.html#cat-money">お金・FIRE</a>
-<a href="complete-guide.html#cat-work">仕事・ブログ</a>
+<a href="complete-guide.html#cat-work">仕事・ブログ運営</a>
 <a href="complete-guide.html#cat-kanazawa">金沢の暮らし</a>
 <a href="fire-simulator.html">ツール</a>
 <a href="profile.html">プロフィール</a>
@@ -99,13 +112,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 <script src="nav-toggle.js" defer></script>
 <div class="banner">
-  <img src="banner.jpg" alt="">
+  <img src="banner.jpg" alt="" width="1983" height="793" fetchpriority="high" decoding="async">
 </div>
 <div class="wrap">
 
   <article>
     <header class="article-header">
-      <a class="back-link" href="index.html">&larr; 記事一覧に戻る</a>
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="complete-guide.html#cat-kanazawa">金沢の暮らし</a></li>
+          <li><span aria-current="page">近江町市場とスーパー、金沢移住者はどう使い分ける？食費月7万円の内訳と判断基準</span></li>
+        </ol>
+      </nav>
       <div class="post-meta">2026.07.15 — 金沢の暮らし</div>
       <h1 class="article-title">近江町市場とスーパー、金沢移住者はどう使い分ける？食費月7万円の内訳と判断基準</h1>
 

@@ -1,0 +1,145 @@
+{
+  "_comment": [
+    "手動セレクトの「おすすめ記事」定義（2026-09-04 新設）。",
+    "related-posts.js が読み込み、該当があれば自動算出の「あわせて読みたい」の代わりに描画する。",
+    "ブロック数を増やさない設計なので、記事末尾のCTA過積載にはならない。",
+    "articles に個別指定があればそれを、無ければ categoryDefaults を使う。どちらも無ければ従来の自動算出にフォールバックする。",
+    "promo は収益導線。1ブロックにつき最大1件。記事に既にASP広告CTA（.affiliate-article-cta）がある場合はJS側で自動抑止される。",
+    "promo は文脈適合性で個別判断する方針（2026-09-03オーナー確認）に従い、お金・FIRE と 移住 にのみ置く。",
+    "categoryDefaults の items は4本入れてある。自記事がリストに含まれる場合はJS側で除外され、残り3本が描画される。"
+  ],
+  "categoryDefaults": {
+    "移住": {
+      "title": "移住を考えはじめた人へ",
+      "items": [
+        {
+          "href": "why-i-moved-to-kanazawa.html",
+          "title": "東京から金沢へ：地方移住を決めた3つの理由と失敗しない下見のコツ"
+        },
+        {
+          "href": "moving-cost-breakdown.html",
+          "title": "地方移住の引っ越し費用は結局いくら？東京から金沢の実額50万円を内訳公開"
+        },
+        {
+          "href": "kanazawa-relocation-regrets.html",
+          "title": "金沢移住3年、正直に後悔した点は？家賃・保険・雪国対策で見誤った5つの判断"
+        },
+        {
+          "href": "kanazawa-rent-market.html",
+          "title": "金沢の家賃相場はいくら？移住3年目の実額8万円と物件選びの基準"
+        }
+      ],
+      "promo": {
+        "href": "products.html",
+        "label": "移住後のお金を試算する",
+        "title": "FIRE試算Excelキット（Light版・¥500）",
+        "note": "いまの場所に住み続けた場合と、地方移住した場合のFIRE到達年数を比較できます。"
+      }
+    },
+    "お金・FIRE": {
+      "title": "お金とFIREの土台になる記事",
+      "items": [
+        {
+          "href": "asset-growth-three-years-in-kanazawa.html",
+          "title": "移住3年で資産はどう増えた？世帯資産5,800万円までのリアルな推移"
+        },
+        {
+          "href": "nisa-ideco-priority.html",
+          "title": "新NISAとiDeCo、地方移住したフルリモート会社員はどちらを優先すべき？"
+        },
+        {
+          "href": "fire-withdrawal-order.html",
+          "title": "FIREの取り崩し、NISA・iDeCo・特定口座どの順番で使う？"
+        },
+        {
+          "href": "why-i-raised-my-fire-target.html",
+          "title": "FIRE目標はなぜ7,000万円に上がった？資産6,000万円台到達で目標を引き上げた理由"
+        }
+      ],
+      "promo": {
+        "href": "products.html",
+        "label": "自分の数字で試算する",
+        "title": "FIRE試算Excelキット（Light版・¥500）",
+        "note": "記事で使っている試算の考え方を、そのまま自分の家計に当てはめられる形にしたものです。"
+      }
+    },
+    "仕事・ブログ運営": {
+      "title": "働き方とブログ運営の記録",
+      "items": [
+        {
+          "href": "remote-work-job-hunting.html",
+          "title": "リモートワークの仕事はどう探す？転職4回・通勤ゼロで月30時間増えた実践法"
+        },
+        {
+          "href": "side-hustle-remote-worker-kanazawa.html",
+          "title": "地方移住×フルリモートワーカーの複業事情：金沢で始めた副収入の実額と時間配分"
+        },
+        {
+          "href": "blog-internal-linking-rules.html",
+          "title": "個人ブログの内部リンクはどう設計する？記事42本を迷子にせず繋ぐ3つのルール"
+        },
+        {
+          "href": "remote-work-home-office-investment.html",
+          "title": "在宅ワーク環境にいくら投資した？金沢移住3年目、自己負担19.6万円の内訳"
+        }
+      ]
+    },
+    "金沢の暮らし": {
+      "title": "金沢での暮らしを知る",
+      "items": [
+        {
+          "href": "kanazawa-living-cost.html",
+          "title": "金沢移住の生活費は月いくら？3年目の実額30万円を内訳で公開"
+        },
+        {
+          "href": "three-winters-in-kanazawa.html",
+          "title": "金沢の雪はどれくらい積もる？3年で見た最大180cm・累計500cm超のリアル"
+        },
+        {
+          "href": "kanazawa-winter-heating-cost.html",
+          "title": "金沢の冬は暖房費（電気・灯油）がいくら？月12,000円増の内訳"
+        },
+        {
+          "href": "omicho-market-grocery-cost.html",
+          "title": "近江町市場とスーパー、金沢移住者はどう使い分ける？食費月7万円の内訳と判断基準"
+        }
+      ]
+    }
+  },
+  "articles": {
+    "fire-simulator.html": {
+      "title": "試算のあとに読みたい記事",
+      "items": [
+        {
+          "href": "asset-growth-three-years-in-kanazawa.html",
+          "title": "移住3年で資産はどう増えた？世帯資産5,800万円までのリアルな推移"
+        },
+        {
+          "href": "fire-withdrawal-order.html",
+          "title": "FIREの取り崩し、NISA・iDeCo・特定口座どの順番で使う？"
+        },
+        {
+          "href": "kanazawa-living-cost.html",
+          "title": "金沢移住の生活費は月いくら？3年目の実額30万円を内訳で公開"
+        }
+      ]
+    },
+    "kanazawa-relocation-support-money.html": {
+      "title": "移住支援金とあわせて確認したい記事",
+      "items": [
+        {
+          "href": "moving-cost-breakdown.html",
+          "title": "地方移住の引っ越し費用は結局いくら？東京から金沢の実額50万円を内訳公開"
+        },
+        {
+          "href": "moving-paperwork-checklist.html",
+          "title": "地方移住の役所手続き、転出・転入・住所変更を実働2時間30分で終えた順番"
+        },
+        {
+          "href": "kanazawa-relocation-regrets.html",
+          "title": "金沢移住3年、正直に後悔した点は？家賃・保険・雪国対策で見誤った5つの判断"
+        }
+      ]
+    }
+  }
+}
