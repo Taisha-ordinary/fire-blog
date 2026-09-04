@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="源泉徴収あり・なしの2択にチェックを入れる書類"><title>源泉徴収あり・なしの2択にチェックを入れる書類</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="30" y="10" width="72" height="82" rx="4" fill="none" stroke="#b8912f" stroke-width="2.2"/>
+<path d="M30 10 h72" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="52" y="4" width="28" height="9" rx="2" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.6"/>
+<line x1="40" y1="24" x2="92" y2="24" stroke="#e7e5df" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="40" y="38" width="12" height="12" rx="2" fill="#b8912f" stroke="#8f6f22" stroke-width="1.6"/>
+<path d="M43 44 l3 3 6 -7" fill="none" stroke="#fbfaf7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="58" y1="44" x2="92" y2="44" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="40" y="62" width="12" height="12" rx="2" fill="none" stroke="#8f6f22" stroke-width="1.8"/>
+<line x1="58" y1="68" x2="86" y2="68" stroke="#e7e5df" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M104 30 q10 20 -4 36" fill="none" stroke="#b8912f" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="1 5"/>
+<path d="M100 63 l0 3.5 -4 -1.2 M100 63 l0 3.5 4 -1.2" fill="none" stroke="#b8912f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 90 h96" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+</svg>
