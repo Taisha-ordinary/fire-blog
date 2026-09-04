@@ -1246,3 +1246,61 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
 .rank-item a{display:flex;gap:8px;align-items:baseline;text-decoration:none;color:var(--text);font-size:.8rem;line-height:1.55;}
 .rank-item a:hover,.rank-item a:focus-visible{color:var(--gold-bright);}
 .rank-num{font-family:"JetBrains Mono",monospace;font-size:.72rem;color:var(--gold-bright);flex-shrink:0;}
+
+/* ===== パンくずリスト（2026-09-04 追加・記事の .back-link を置換） ===== */
+.breadcrumb{margin:0 0 28px;}
+.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:0;padding:0;font-family:"JetBrains Mono",monospace;font-size:12px;line-height:1.7;color:var(--muted);}
+.breadcrumb li{display:flex;align-items:baseline;gap:8px;min-width:0;}
+.breadcrumb li+li::before{content:"\203A";color:var(--gold);flex-shrink:0;}
+.breadcrumb a{color:var(--muted);text-decoration:none;transition:color .15s ease;}
+.breadcrumb a:hover,.breadcrumb a:focus-visible{color:var(--gold-bright);text-decoration:underline;}
+.breadcrumb [aria-current="page"]{color:var(--text);}
+@media (max-width:600px){
+  .breadcrumb{margin-bottom:20px;}
+  .breadcrumb ol{font-size:11px;}
+  /* 狭い画面では現在ページのタイトルを1行に抑え、横スクロールを防ぐ */
+  .breadcrumb [aria-current="page"]{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;}
+  .breadcrumb li:last-child{flex:1 1 100%;min-width:0;}
+}
+
+/* ===== 会話調ボックス（2026-09-04 追加・.voice-note） =====
+   記事本文中で「筆者の生の声」を示すマーカー。独白と、私と妻の会話の2形態に対応する。
+   会話は実際のやり取りの記録ではないため、.voice-note-disclaimer の併記を必須とする。 */
+.voice-note{background:#fbf3e3;border:1px solid var(--gold);border-left-width:3px;border-radius:12px;padding:18px 20px;margin:28px 0;}
+.voice-note-label{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 12px;}
+.voice-note-line{display:flex;gap:12px;align-items:flex-start;}
+.voice-note-line+.voice-note-line{margin-top:14px;}
+.voice-note-avatar{width:40px;height:40px;border-radius:50%;flex-shrink:0;object-fit:cover;border:2px solid #fff;background:#fff;}
+/* 妻など、画像を持たない話者は文字アバターで表す（匿名性のため実写は使わない） */
+.voice-note-avatar-initial{display:flex;align-items:center;justify-content:center;font-family:"Shippori Mincho",serif;font-size:.9rem;font-weight:700;color:var(--gold-bright);background:#fff;border:2px solid var(--gold);}
+.voice-note-bubble{flex:1;min-width:0;}
+.voice-note-speaker{font-family:"Shippori Mincho",serif;font-size:.8rem;font-weight:700;color:var(--gold-bright);margin:0 0 4px;}
+.voice-note-text{font-size:.92rem;line-height:1.85;color:var(--text);margin:0;}
+.voice-note-disclaimer{font-size:.72rem;line-height:1.7;color:var(--muted);margin:14px 0 0;padding-top:10px;border-top:1px solid var(--rule);}
+@media (max-width:480px){
+  .voice-note{padding:16px;}
+  .voice-note-avatar{width:36px;height:36px;}
+  .voice-note-text{font-size:.88rem;}
+}
+
+/* ===== 記事末尾プロフィール再掲：世帯資産の定型表示（2026-09-04 追加） ===== */
+.profile-cta-stats{display:flex;flex-wrap:wrap;gap:8px 22px;margin:12px 0 0;padding:0;}
+.profile-cta-stat{display:flex;align-items:baseline;gap:8px;margin:0;}
+.profile-cta-stat dt{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.04em;color:var(--muted);margin:0;}
+.profile-cta-stat dd{font-family:"Shippori Mincho",serif;font-size:1rem;font-weight:700;color:var(--gold-bright);margin:0;}
+.profile-cta-progress{position:relative;height:6px;border-radius:999px;background:rgba(184,145,47,.18);margin:12px 0 0;overflow:hidden;}
+.profile-cta-progress-bar{display:block;height:100%;border-radius:999px;background:var(--gold);}
+.profile-cta-note{font-size:.72rem;line-height:1.7;color:var(--muted);margin:8px 0 0;}
+@media (max-width:480px){
+  .profile-cta-stats{gap:6px 18px;}
+  .profile-cta-stat dd{font-size:.94rem;}
+}
+
+/* ===== おすすめ記事ブロックの収益導線（2026-09-04 追加・1ブロック最大1件） ===== */
+.recommend-promo{display:block;margin:14px 0 0;padding:16px 18px;background:#fbf3e3;border:1px solid var(--gold);border-radius:10px;text-decoration:none;transition:border-color .15s ease,box-shadow .15s ease;}
+.recommend-promo:hover,.recommend-promo:focus-visible{border-color:var(--gold-bright);box-shadow:0 6px 18px rgba(184,145,47,.12);}
+.recommend-promo-label{display:block;font-family:"JetBrains Mono",monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:6px;}
+.recommend-promo-title{display:block;font-family:"Shippori Mincho",serif;font-size:.94rem;font-weight:700;line-height:1.55;color:var(--text);}
+.recommend-promo-note{display:block;font-size:.78rem;line-height:1.75;color:var(--muted);margin-top:6px;}
+.recommend-promo-btn{display:inline-block;margin-top:12px;font-family:"JetBrains Mono",monospace;font-size:.72rem;color:#fff;background:var(--gold);border-radius:999px;padding:7px 16px;}
+.recommend-promo:hover .recommend-promo-btn,.recommend-promo:focus-visible .recommend-promo-btn{background:var(--gold-bright);}
