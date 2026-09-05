@@ -6,7 +6,39 @@
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 03 Sep 2026 18:32:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 05 Sep 2026 18:34:47 +0900</lastBuildDate>
+  <item>
+    <title>地方移住、夫婦で何から話し合う？合意形成の3つの順番と後回しにした後悔</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/relocation-couple-decision-order.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/relocation-couple-decision-order.html</guid>
+    <pubDate>Sat, 05 Sep 2026 21:00:00 +0900</pubDate>
+    <category>移住</category>
+    <description>地方移住は夫婦で何から話し合うべきか。移住3年目の我が家が実際に固めた順番と、後回しにして直前に慌てた一つの後悔を公開する。</description>
+  </item>
+  <item>
+    <title>まとまった資金は一括投資かドルコスト平均法か？資産6,100万円台の夫婦が判断に使った基準</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/lump-sum-vs-dollar-cost-averaging.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/lump-sum-vs-dollar-cost-averaging.html</guid>
+    <pubDate>Sun, 06 Sep 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>バンガードの検証では一括投資が積立を上回った割合は約3分の2。それでも「絶対得」は誤解だ。資産6,100万円台まで積み上げてきた夫婦が、まとまった資金の投じ方で意見が割れたときに使った判断基準を公開する。</description>
+  </item>
+  <item>
+    <title>転職エージェントは何社登録すべき？転職4回で使い分けたビズリーチ・JACリクルートの順番</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/career-agent-registration-order.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/career-agent-registration-order.html</guid>
+    <pubDate>Sat, 05 Sep 2026 21:00:00 +0900</pubDate>
+    <category>仕事・ブログ運営</category>
+    <description>転職エージェントは2社以上登録している人が7割超。転職4回で使ってきたビズリーチとJACリクルートを、どんな順番で登録し使い分けてきたか判断基準を公開する。</description>
+  </item>
+  <item>
+    <title>特定口座の源泉徴収、あり・なしはどっち？世帯年収1,700万円の会社員が選んだ判断基準</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/tokutei-kouza-gensen-choshu.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/tokutei-kouza-gensen-choshu.html</guid>
+    <pubDate>Fri, 04 Sep 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>特定口座の源泉徴収あり・なしは何が違うのか。株式譲渡益は一律20.315%の申告分離課税で、給与の累進税率とは別枠という誤解しやすい点を整理し、フルリモート会社員が実際に選んだ判断基準を公開する。</description>
+  </item>
   <item>
     <title>金沢移住3年目、手続きは拍子抜けするほど簡単。友人作りだけ今も難しい理由</title>
     <link>https://taisha-ordinary.github.io/fire-blog/kanazawa-relocation-friendship-challenge.html</link>
@@ -96,7 +128,7 @@
     <description>金沢移住3年目、冬の暖房費増加分は月12,000円・年36,000円。フルリモートワークで上がりやすい理由と東京時代との比較を数字で公開する。</description>
   </item>
   <item>
-    <title>S&amp;amp;P500・NASDAQ100の資産は円安でいくら変わる？資産6,000万円台の為替影響を試算する</title>
+    <title>S&amp;amp;P500・NASDAQ100の資産は円安でいくら変わる？資産6,100万円台の為替影響を試算する</title>
     <link>https://taisha-ordinary.github.io/fire-blog/index-investing-yen-depreciation-impact.html</link>
     <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/index-investing-yen-depreciation-impact.html</guid>
     <pubDate>Tue, 18 Aug 2026 21:00:00 +0900</pubDate>
@@ -112,12 +144,12 @@
     <description>地方移住×FIREブログを書き続けて気づいた、ネタ切れを防ぐ5つの切り口とカテゴリ別記事数から逆算する方法を公開する。</description>
   </item>
   <item>
-    <title>FIREの取り崩し、NISA・iDeCo・特定口座どの順番で使う？資産6,000万円台からの出口戦略</title>
+    <title>FIREの取り崩し、NISA・iDeCo・特定口座どの順番で使う？資産6,100万円台からの出口戦略</title>
     <link>https://taisha-ordinary.github.io/fire-blog/fire-withdrawal-order.html</link>
     <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/fire-withdrawal-order.html</guid>
     <pubDate>Mon, 17 Aug 2026 21:00:00 +0900</pubDate>
     <category>お金・FIRE</category>
-    <description>FIRE目標7,000万円・資産6,000万円台。特定口座→NISA→iDeCoの順で取り崩す理由と、生活費30万円を軸にした出口戦略の判断基準を整理する。</description>
+    <description>FIRE目標7,000万円・資産6,100万円台。特定口座→NISA→iDeCoの順で取り崩す理由と、生活費30万円を軸にした出口戦略の判断基準を整理する。</description>
   </item>
   <item>
     <title>金沢の秋を迎える―季節の変わり目に気づくこと</title>
@@ -253,7 +285,7 @@
     <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/all-country-vs-sp500-nasdaq100.html</guid>
     <pubDate>Wed, 22 Jul 2026 21:00:00 +0900</pubDate>
     <category>お金・FIRE</category>
-    <description>オルカンとS&amp;amp;P500+NASDAQ100、資産5,800万円台の地方移住3年目はどちらを選んだか。米国比率80%と新興国株20%、配分の判断基準を公開する。</description>
+    <description>オルカンとS&amp;amp;P500+NASDAQ100、資産6,100万円台の地方移住3年目はどちらを選んだか。米国比率80%と新興国株20%、配分の判断基準を公開する。</description>
   </item>
   <item>
     <title>新NISAとiDeCo、地方移住したフルリモート会社員はどちらを優先すべき？世帯年収1,650万円の判断基準</title>
@@ -333,7 +365,7 @@
     <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/asset-growth-three-years-in-kanazawa.html</guid>
     <pubDate>Sun, 05 Jul 2026 21:00:00 +0900</pubDate>
     <category>お金・FIRE</category>
-    <description>地方移住3年、世帯資産は4,200万円から5,800万円台まで増えた。インデックス投資の積立実績とFIRE目標6,000万円までの推移を数字で公開する。</description>
+    <description>地方移住3年で世帯資産は4,200万円から5,800万円台へ。積立を続けた現在は6,100万円台。インデックス投資の実績と、FIRE目標を7,000万円へ引き上げた経緯を数字で公開する。</description>
   </item>
   <item>
     <title>地方移住×フルリモートワーカーの複業事情：月4.2万円の内訳と時間配分</title>
@@ -357,7 +389,7 @@
     <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/index-investing-during-market-drops.html</guid>
     <pubDate>Fri, 03 Jul 2026 21:00:00 +0900</pubDate>
     <category>お金・FIRE</category>
-    <description>半導体株急落・日経急落のたびに考える、積立を止めない理由。資産5,800万円台・S&amp;amp;P500 50%の実際の判断基準を記録する。</description>
+    <description>半導体株急落・日経急落のたびに考える、積立を止めない理由。資産6,100万円台・S&amp;amp;P500 50%の実際の判断基準を記録する。</description>
   </item>
   <item>
     <title>地方移住者はお金の相談を誰にする？FP相談を使わなかった理由</title>
