@@ -1304,3 +1304,42 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
 .recommend-promo-note{display:block;font-size:.78rem;line-height:1.75;color:var(--muted);margin-top:6px;}
 .recommend-promo-btn{display:inline-block;margin-top:12px;font-family:"JetBrains Mono",monospace;font-size:.72rem;color:#fff;background:var(--gold);border-radius:999px;padding:7px 16px;}
 .recommend-promo:hover .recommend-promo-btn,.recommend-promo:focus-visible .recommend-promo-btn{background:var(--gold-bright);}
+
+/* ===== 会話吹き出し（2026-09-05 追加・.chat-*） =====
+   私と妻の対話を再現するLINE風UI。.voice-note とは別コンポーネント（.voice-note は無変更）。
+   吹き出しの「しっぽ」は必ずアイコン側を向く：私＝左アイコン→右吹き出し（しっぽ左向き）、
+   妻＝右アイコン→左吹き出し（しっぽ右向き）。しっぽは border-color 二重重ねで縁取りの継ぎ目を消す。
+   話者ごとに地色を変える：私＝白、妻＝淡いゴールド（#fbf3e3）。事実の逐語記録ではないため
+   .chat-disclaimer の併記を必須とする。 */
+.chat-block{margin:32px 0;}
+.chat-turn{display:flex;align-items:flex-start;gap:12px;margin-bottom:32px;}
+.chat-turn:last-of-type{margin-bottom:0;}
+.chat-turn--wife{flex-direction:row-reverse;}
+.chat-avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:4px;flex-shrink:0;width:68px;}
+.chat-avatar{display:block;width:68px;height:68px;border-radius:50%;object-fit:cover;background:#fff;border:2px solid var(--gold);}
+.chat-name{font-family:"Shippori Mincho",serif;font-size:.66rem;font-weight:700;color:var(--gold-bright);text-align:center;line-height:1.4;}
+.chat-bubble{position:relative;flex:1 1 auto;min-width:0;max-width:72%;padding:14px 18px;border:1px solid var(--gold);border-radius:16px;background:#fff;}
+.chat-bubble p{margin:0;font-size:.92rem;line-height:1.85;color:var(--text);overflow-wrap:break-word;}
+.chat-bubble p+p{margin-top:10px;}
+.chat-turn--wife .chat-bubble{background:#fbf3e3;}
+/* しっぽ：私＝左向き（アイコンは左） */
+.chat-turn--me .chat-bubble::before,.chat-turn--me .chat-bubble::after{content:"";position:absolute;top:18px;width:0;height:0;border-style:solid;}
+.chat-turn--me .chat-bubble::before{left:-9px;border-width:9px 9px 9px 0;border-color:transparent var(--gold) transparent transparent;}
+.chat-turn--me .chat-bubble::after{left:-7px;border-width:8px 8px 8px 0;border-color:transparent #fff transparent transparent;}
+/* しっぽ：妻＝右向き（アイコンは右） */
+.chat-turn--wife .chat-bubble::before,.chat-turn--wife .chat-bubble::after{content:"";position:absolute;top:18px;width:0;height:0;border-style:solid;}
+.chat-turn--wife .chat-bubble::before{right:-9px;border-width:9px 0 9px 9px;border-color:transparent transparent transparent var(--gold);}
+.chat-turn--wife .chat-bubble::after{right:-7px;border-width:8px 0 8px 8px;border-color:transparent transparent transparent #fbf3e3;}
+.chat-disclaimer{font-size:.72rem;line-height:1.7;color:var(--muted);margin:18px 0 0;padding-top:10px;border-top:1px solid var(--rule);}
+@media (max-width:480px){
+  .chat-turn{gap:8px;margin-bottom:24px;}
+  .chat-avatar-wrap{width:46px;}
+  .chat-avatar{width:46px;height:46px;border-width:1.5px;}
+  .chat-name{font-size:.6rem;}
+  .chat-bubble{max-width:78%;padding:11px 14px;border-radius:14px;}
+  .chat-bubble p{font-size:.86rem;}
+  .chat-turn--me .chat-bubble::before{left:-7px;border-width:7px 7px 7px 0;}
+  .chat-turn--me .chat-bubble::after{left:-5.5px;border-width:6px 6px 6px 0;}
+  .chat-turn--wife .chat-bubble::before{right:-7px;border-width:7px 0 7px 7px;}
+  .chat-turn--wife .chat-bubble::after{right:-5.5px;border-width:6px 0 6px 6px;}
+}

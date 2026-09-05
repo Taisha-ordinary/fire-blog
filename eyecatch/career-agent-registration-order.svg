@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="転職エージェント登録の順番を表す2枚のプロフィールカードと番号"><title>転職エージェント登録の順番を表す2枚のプロフィールカードと番号</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="16" y="18" width="52" height="34" rx="4" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2"/>
+<circle cx="28" cy="31" r="5" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2"/>
+<line x1="37" y1="29" x2="60" y2="29" stroke="#8f6f22" stroke-width="2"/>
+<line x1="37" y1="35" x2="54" y2="35" stroke="#8f6f22" stroke-width="2"/>
+<line x1="23" y1="44" x2="61" y2="44" stroke="#b8912f" stroke-width="1.6"/>
+<circle cx="16" cy="16" r="8" fill="#8f6f22"/>
+<text x="16" y="19.5" font-family="Zen Kaku Gothic New, sans-serif" font-size="9" fill="#fbfaf7" text-anchor="middle">1</text>
+<rect x="64" y="50" width="52" height="34" rx="4" fill="none" stroke="#b8912f" stroke-width="2.2"/>
+<circle cx="76" cy="63" r="5" fill="none" stroke="#8f6f22" stroke-width="2"/>
+<line x1="85" y1="61" x2="108" y2="61" stroke="#8f6f22" stroke-width="2"/>
+<line x1="85" y1="67" x2="102" y2="67" stroke="#8f6f22" stroke-width="2"/>
+<line x1="71" y1="76" x2="109" y2="76" stroke="#e7d6a6" stroke-width="1.6"/>
+<circle cx="116" cy="52" r="8" fill="#b8912f"/>
+<text x="116" y="55.5" font-family="Zen Kaku Gothic New, sans-serif" font-size="9" fill="#fbfaf7" text-anchor="middle">2</text>
+<path d="M46 54 C 50 62, 56 66, 62 68" fill="none" stroke="#8f6f22" stroke-width="2" stroke-dasharray="1 4.5" stroke-linecap="round"/>
+<path d="M62 68 l-6 -2 M62 68 l-2 -6" stroke="#8f6f22" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
