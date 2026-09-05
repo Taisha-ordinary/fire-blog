@@ -1182,9 +1182,56 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
 }
 /* 商品画像を持たないASP型CTA（引越し一括見積もり・転職エージェント等）は
    これまでクリックできる手がかりが一切なかったため、同じチップを付与する */
-.sim-article-cta.affiliate-article-cta:not(.product-cta) .sim-article-cta-desc::after{content:"広告ページを開く ›";display:block;width:fit-content;margin:14px 0 0;padding:7px 14px;border:1px solid var(--muted);border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1;color:var(--text);}
+.sim-article-cta.affiliate-article-cta:not(.product-cta) .sim-article-cta-desc::after{content:attr(data-cta-service) "を見てみる ›";display:block;width:fit-content;margin:14px 0 0;padding:7px 14px;border:1px solid var(--muted);border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1;color:var(--text);}
+.sim-article-cta.affiliate-article-cta:not(.product-cta) .sim-article-cta-desc:not([data-cta-service])::after{content:"サービスを見てみる ›";}
 .sim-article-cta.affiliate-article-cta:not(.product-cta):hover .sim-article-cta-desc::after,
 .sim-article-cta.affiliate-article-cta:not(.product-cta):focus-visible .sim-article-cta-desc::after{background:var(--text);border-color:var(--text);color:var(--ink);}
+
+/* ===== ASPテキストCTAのカテゴリアイコン（2026-09-05 追加）
+   オーナーより「ASPリンクが文字だけで見にくい。広告主の画像は入れられないか」との
+   フィードバック。A8.net／もしもとも案件ごとに公式バナー画像タグを提供している
+   のが一般的だが、取得には管理画面ログインが必要でオーナー確認待ち（詳細は
+   fire-blog-asp-approved-offers.md 末尾のTODO参照）。広告主サイトからのロゴ直取り
+   は著作権リスクがあるため行わない。
+   かわりに、Amazon商品CTA（.product-cta-media）と同じ「自社SVGアイコン」路線を、
+   画像を持たないASPカード（.affiliate-article-cta:not(.product-cta)）にも拡張する。
+   HTML側は一切変更しない（data-program-category属性セレクタ＋::beforeで実現）ため、
+   既存13記事・決定論的ゲート（validate_affiliate_links.pyはclass/rel/target/data-*/
+   PR表示のみを検査し子要素構造は見ない）への影響はゼロ。バナー画像が確認できた
+   場合は、この::beforeを実画像（.product-cta-media <img>）に差し替えて移行する。 ===== */
+.sim-article-cta.affiliate-article-cta:not(.product-cta){
+  display:flow-root; /* floatさせる::beforeの高さをカードに含める（clearfix） */
+}
+.sim-article-cta.affiliate-article-cta:not(.product-cta)::before{
+  content:"";
+  float:left;
+  width:56px;
+  height:56px;
+  margin:2px 16px 10px 0;
+  border-radius:12px;
+  background-color:#fff;
+  border:1px solid var(--panel-line);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:32px 32px;
+  /* 汎用アイコン（外部サービスへの遷移を表す）。個別アイコンが無いカテゴリの
+     フォールバックとして使われる（将来カテゴリ追加時も自動適用） */
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='14' y='20' width='26' height='26' rx='3' fill='none' stroke='%2357606a' stroke-width='2.2'/%3E%3Cpath d='M34 14 L50 14 L50 30' fill='none' stroke='%2357606a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='50' y1='14' x2='30' y2='34' stroke='%2357606a' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+.sim-article-cta.affiliate-article-cta:not(.product-cta)[data-program-category="moving_company"]::before{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='14' y='24' width='36' height='26' rx='2' fill='%23fbfaf7' stroke='%2357606a' stroke-width='2.2'/%3E%3Cpath d='M14 24 L32 14 L50 24' fill='none' stroke='%2357606a' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cline x1='32' y1='24' x2='32' y2='50' stroke='%2357606a' stroke-width='1.6'/%3E%3Cline x1='14' y1='36' x2='50' y2='36' stroke='%23e7e5df' stroke-width='1.4'/%3E%3C/svg%3E");
+}
+.sim-article-cta.affiliate-article-cta:not(.product-cta)[data-program-category="career_agent"]::before{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='14' y='24' width='36' height='24' rx='4' fill='%23fbfaf7' stroke='%2357606a' stroke-width='2.2'/%3E%3Cpath d='M24 24 L24 18 Q24 14 28 14 L36 14 Q40 14 40 18 L40 24' fill='none' stroke='%2357606a' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cline x1='14' y1='34' x2='50' y2='34' stroke='%23e7e5df' stroke-width='1.4'/%3E%3Crect x='29' y='30' width='6' height='6' rx='1' fill='none' stroke='%238f6f22' stroke-width='1.6'/%3E%3C/svg%3E");
+}
+@media (max-width:480px){
+  .sim-article-cta.affiliate-article-cta:not(.product-cta)::before{
+    width:44px;
+    height:44px;
+    margin:2px 12px 8px 0;
+    background-size:26px 26px;
+  }
+}
 
 /* ===== プロフィールページ ===== */
 .profile-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:8px;}
@@ -1309,8 +1356,9 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
    私と妻の対話を再現するLINE風UI。.voice-note とは別コンポーネント（.voice-note は無変更）。
    吹き出しの「しっぽ」は必ずアイコン側を向く：私＝左アイコン→右吹き出し（しっぽ左向き）、
    妻＝右アイコン→左吹き出し（しっぽ右向き）。しっぽは border-color 二重重ねで縁取りの継ぎ目を消す。
-   話者ごとに地色を変える：私＝白、妻＝淡いゴールド（#fbf3e3）。事実の逐語記録ではないため
-   .chat-disclaimer の併記を必須とする。 */
+   話者ごとに地色を変える：私＝白、妻＝淡いゴールド（#fbf3e3）。
+   .chat-disclaimer（再構成である旨の断り書き）は2026-09-05にオーナー判断で全記事から削除済み。
+   クラス自体はスタイルとして残すが、新規記事でも使用しない。 */
 .chat-block{margin:32px 0;}
 .chat-turn{display:flex;align-items:flex-start;gap:12px;margin-bottom:32px;}
 .chat-turn:last-of-type{margin-bottom:0;}
