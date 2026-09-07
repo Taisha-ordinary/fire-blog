@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="60歳から75歳への年齢軸上に、右へ行くほど高くなる年金額の棒が並ぶ図"><title>60歳から75歳への年齢軸上に、右へ行くほど高くなる年金額の棒が並ぶ図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="20" cy="24" r="10" fill="none" stroke="#b8912f" stroke-width="2.2"/>
+<line x1="20" y1="24" x2="20" y2="17" stroke="#8f6f22" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="20" y1="24" x2="25" y2="27" stroke="#8f6f22" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="20" cy="24" r="1.2" fill="#8f6f22"/>
+<line x1="10" y1="86" x2="122" y2="86" stroke="#e7e5df" stroke-width="1.8" stroke-linecap="round"/>
+<g stroke="#8f6f22" stroke-width="1.6" stroke-linecap="round">
+<line x1="34" y1="86" x2="34" y2="80"/>
+<line x1="60" y1="86" x2="60" y2="80"/>
+<line x1="86" y1="86" x2="86" y2="80"/>
+<line x1="112" y1="86" x2="112" y2="80"/>
+</g>
+<rect x="28" y="70" width="12" height="16" rx="1.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<rect x="54" y="58" width="12" height="28" rx="1.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<rect x="80" y="44" width="12" height="42" rx="1.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<rect x="106" y="30" width="12" height="56" rx="1.5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<text x="34" y="80" text-anchor="middle" font-family="serif" font-size="6.5" font-weight="700" fill="#8f6f22">¥</text>
+<text x="60" y="68" text-anchor="middle" font-family="serif" font-size="6.5" font-weight="700" fill="#8f6f22">¥</text>
+<text x="86" y="54" text-anchor="middle" font-family="serif" font-size="6.5" font-weight="700" fill="#8f6f22">¥</text>
+<text x="112" y="40" text-anchor="middle" font-family="serif" font-size="6.5" font-weight="700" fill="#8f6f22">¥</text>
+<text x="34" y="95" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#57606a">60歳</text>
+<text x="60" y="95" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#57606a">65歳</text>
+<text x="86" y="95" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#57606a">70歳</text>
+<text x="112" y="95" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#57606a">75歳</text>
+<path d="M40 16 L88 16" stroke="#b8912f" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.6 2.6"/>
+<path d="M88 16 l-4 -2.6 M88 16 l-4 2.6" fill="none" stroke="#b8912f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
