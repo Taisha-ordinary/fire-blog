@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="4つの通過点が並ぶ曲がりくねった道、途中の1点に注意マーク、終点に星印"><title>4つの通過点が並ぶ曲がりくねった道、途中の1点に注意マーク、終点に星印</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M14,78 C34,78 34,54 54,54 C74,54 74,30 94,30 C104,30 108,26 116,22" fill="none" stroke="#e7d6a6" stroke-width="6" stroke-linecap="round"/>
+<circle cx="14" cy="78" r="6" fill="#fbfaf7" stroke="#b8912f" stroke-width="3"/>
+<circle cx="54" cy="54" r="6" fill="#fbfaf7" stroke="#b8912f" stroke-width="3"/>
+<circle cx="54" cy="54" r="2" fill="#8f6f22"/>
+<path d="M87,20 l3,-8 l3,8 z" fill="#8f6f22"/>
+<rect x="88.4" y="12" width="1.2" height="8" fill="#8f6f22"/>
+<circle cx="90" cy="30" r="6" fill="#fbfaf7" stroke="#8f6f22" stroke-width="3"/>
+<path d="M116,22 l4,-5 l2,3 l4,-6" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="116" cy="22" r="7" fill="none" stroke="#b8912f" stroke-width="3"/>
+<line x1="10" y1="90" x2="122" y2="90" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
