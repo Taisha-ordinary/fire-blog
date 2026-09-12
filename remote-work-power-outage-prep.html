@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="image" href="banner.jpg" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="canonical" href="https://taisha-ordinary.github.io/fire-blog/remote-work-power-outage-prep.html">
+<title>停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算 | FIRE Notes</title>
+<meta name="description" content="ノートPC・モニター・ルーターの消費電力を合算すると約115W。停電4時間を想定した必要容量600Whの試算根拠と、容量帯別の判断基準を公開する。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="FIRE Notes">
+<meta property="og:title" content="停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算">
+<meta property="og:description" content="ノートPC・モニター・ルーターの消費電力を合算すると約115W。停電4時間を想定した必要容量600Whの試算根拠と、容量帯別の判断基準を公開する。">
+<meta property="og:url" content="https://taisha-ordinary.github.io/fire-blog/remote-work-power-outage-prep.html">
+<meta property="og:image" content="https://taisha-ordinary.github.io/fire-blog/banner.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Taisha_ordinary">
+<meta name="twitter:title" content="停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算">
+<meta name="twitter:description" content="ノートPC・モニター・ルーターの消費電力を合算すると約115W。停電4時間を想定した必要容量600Whの試算根拠と、容量帯別の判断基準を公開する。">
+<meta name="twitter:image" content="https://taisha-ordinary.github.io/fire-blog/banner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算",
+  "description": "ノートPC・モニター・ルーターの消費電力を合算すると約115W。停電4時間を想定した必要容量600Whの試算根拠と、容量帯別の判断基準を公開する。",
+  "image": "https://taisha-ordinary.github.io/fire-blog/banner.jpg",
+  "author": { "@type": "Person", "name": "Taisha_ordinary" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FIRE Notes",
+    "logo": { "@type": "ImageObject", "url": "https://taisha-ordinary.github.io/fire-blog/avatar.png" }
+  },
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-09-12",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://taisha-ordinary.github.io/fire-blog/remote-work-power-outage-prep.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "在宅勤務でポータブル電源はどのくらいの容量が必要ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "使用機器の合計消費電力(W)に、稼働させたい時間(h)を掛けて計算する。ノートPC・モニター・Wi-Fiルーターの合計をおよそ115Wとして4時間の稼働を想定すると460Wh、変換ロス等の余裕を持たせると600Wh前後が目安になる。" }
+    },
+    {
+      "@type": "Question",
+      "name": "モバイルバッテリーではなくポータブル電源が必要な理由は何ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "モバイルバッテリーはスマートフォンやノートPCのUSB充電が中心で、モニターやWi-Fiルーターなどコンセント給電の機器までは動かせない。仕事道具一式を稼働させ続けるには、ACコンセント出力を持つポータブル電源が必要になる。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ポータブル電源と車のガソリン備蓄、どちらを優先すべきですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "役割が異なるため両方を用意するのが望ましい。ポータブル電源は自宅での数時間の作業継続に向き、車は移動や長時間の充電拠点として使える。車を保有している場合は、ガソリンを半分以下まで減らさない運用と組み合わせて二段構えにしておくとよい。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://taisha-ordinary.github.io/fire-blog/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "仕事・ブログ運営", "item": "https://taisha-ordinary.github.io/fire-blog/complete-guide.html#cat-work" },
+    { "@type": "ListItem", "position": 3, "name": "停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算" }
+  ]
+}
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVWHJLPW');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVWHJLPW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="global-nav" aria-label="サイトナビ">
+<button type="button" class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNavInner">
+<span class="nav-toggle-bars"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></span>
+メニュー
+</button>
+<div class="global-nav-inner" id="globalNavInner">
+<a href="index.html">ホーム</a>
+<a href="complete-guide.html#cat-relocation">移住</a>
+<a href="complete-guide.html#cat-money">お金・FIRE</a>
+<a href="complete-guide.html#cat-work">仕事・ブログ運営</a>
+<a href="complete-guide.html#cat-kanazawa">金沢の暮らし</a>
+<a href="fire-simulator.html">ツール</a>
+<a href="profile.html">プロフィール</a>
+<a href="https://x.com/Taisha_ordinary" target="_blank" rel="noopener" class="x-sidebar-handle">𝕏 Xでフォロー</a>
+</div>
+</nav>
+<script src="nav-toggle.js" defer></script>
+<div class="banner">
+  <img src="banner.jpg" alt="" width="1983" height="793" fetchpriority="high" decoding="async">
+</div>
+<div class="wrap">
+
+  <article>
+    <header class="article-header">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="complete-guide.html#cat-work">仕事・ブログ運営</a></li>
+          <li><span aria-current="page">停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算</span></li>
+        </ol>
+      </nav>
+      <div class="post-meta">2026.09.12 — 仕事・ブログ運営</div>
+      <h1 class="article-title">停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算</h1>
+
+      <div class="article-tags"><a class="tag-pill" href="index.html?tag=リモートワーク">#リモートワーク</a><a class="tag-pill" href="index.html?tag=雪国">#雪国</a><a class="tag-pill" href="index.html?tag=家計管理">#家計管理</a></div>
+    </header>
+
+    <div class="article-body">
+      <nav class="article-toc" aria-label="目次">
+        <p class="article-toc-title">目次</p>
+        <ol>
+          <li><a href="#h2-1">フルリモートワーカーにとって停電が「不便」で済まない理由</a></li>
+          <li><a href="#h2-2">守るべきは家電ではなく仕事道具、消費電力の内訳を洗い出す</a></li>
+          <li><a href="#h2-3">必要な容量（Wh）はどう計算する？結論は600Wh前後</a></li>
+          <li><a href="#h2-4">小容量・中容量・大容量、価格帯で何が変わるか</a></li>
+          <li><a href="#h2-5">車のガソリン運用と組み合わせる、二段構えの停電対策</a></li>
+          <li><a href="#h2-6">よくある質問</a></li>
+        </ol>
+      </nav>
+
+      <p>
+        フルリモートワークで働くようになってから、停電に対する感覚が変わった。以前は「不便だな」で済む話だったが、今は仕事そのものが止まりかねない話になる。<a href="kanazawa-typhoon-disaster-prep-cost.html">金沢の台風・大雨に備える記事</a>でも書いた通り、台風接近時の停電・断水は数時間から半日程度発生する可能性がある。
+      </p>
+      <p>
+        実際、あのときはかなり肝を冷やした。仕事道具を止めないために必要な電源容量を、自分の機材の消費電力から計算してみた。
+      </p>
+
+      <a class="sim-article-cta" href="fire-simulator.html">
+        <p class="sim-article-cta-label">FIRE SIMULATOR</p>
+        <p class="sim-article-cta-title">この記事の数字を、自分の家計に当てはめて試算する</p>
+        <p class="sim-article-cta-desc">家賃・生活費・教育費を入力するだけ。地方移住した場合のFIRE到達年数を無料で比較できます。</p>
+        <span class="sim-article-cta-btn">無料で試算する ›</span>
+      </a>
+
+      <h2 id="h2-1">フルリモートワーカーにとって停電が「不便」で済まない理由</h2>
+      <p>
+        <a href="remote-work-job-hunting.html">別記事</a>で書いた通り、フルリモートの求人選びでは「評価はオフィス出社率ではなく成果で見てもらえるか」を自分から確認するようにしている。成果ベースの評価を選んだ以上、逆に「稼働できない時間」がそのまま自分の評価に跳ね返ってくる構造になった。オフィス勤務なら停電は会社の設備の問題で済むが、フルリモートでは自宅の停電がそのまま自分の業務停止になる。電源が落ちれば、会議も止まる。
+      </p>
+      <p>
+        金沢は北陸の日本海側気候で、台風の「直撃」自体は少ないとされている。ただし<a href="kanazawa-typhoon-disaster-prep-cost.html">台風・大雨に備える記事</a>で書いた通り、大雨による増水や停電のリスクは別軸として捉えている。台風接近時にオンライン会議の途中で電源が落ちる、といった事態は十分に起こり得ると考えている。
+      </p>
+      <p>
+        停電時の代替手段として、<a href="remote-work-home-office-investment.html">在宅環境に投資した記事</a>でも触れた金沢駅周辺のコワーキングスペースへ移動するという選択肢もある。ただし、近隣一帯の停電でコワーキングスペース自体が使えなくなる可能性や、車で移動する時間のロスを考えると、まずは自宅で数時間は持ちこたえられる備えを別に用意しておく方が現実的だと判断している。
+      </p>
+
+      <div class="chat-block">
+        <div class="chat-turn chat-turn--me">
+          <div class="chat-avatar-wrap">
+            <img class="chat-avatar" src="avatar.png" width="68" height="68" alt="たいしゃのアイコン" loading="lazy">
+            <span class="chat-name">たいしゃ</span>
+          </div>
+          <div class="chat-bubble">
+            <p>そろそろポータブル電源、うちも本気で検討しようか。</p>
+          </div>
+        </div>
+        <div class="chat-turn chat-turn--wife">
+          <div class="chat-avatar-wrap">
+            <img class="chat-avatar" src="wife-avatar.png" width="68" height="68" alt="お妻のアイコン" loading="lazy">
+            <span class="chat-name">お妻</span>
+          </div>
+          <div class="chat-bubble">
+            <p>モニターとルーターまで動かせるなら、少し安心できそう。</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="h2-2">守るべきは家電ではなく仕事道具、消費電力の内訳を洗い出す</h2>
+      <p>
+        <a href="kanazawa-typhoon-disaster-prep-cost.html">防災グッズ7点をまとめた記事</a>では、モバイルバッテリーを含む一般的な防災グッズの費用を紹介した。ただしモバイルバッテリーはスマートフォンやノートPCのUSB充電が中心で、コンセント給電が必要なモニターやWi-Fiルーターまでは動かせない。仕事を止めないためには、ACコンセント出力を持つポータブル電源で、仕事道具一式の消費電力をまかなう必要がある。
+      </p>
+      <p>
+        <a href="remote-work-home-office-investment.html">在宅環境投資の記事</a>で公開した通り、モニターはLG製27インチ4Kモデルを使っている。実測ではなく一般的な仕様目安として、27インチ4Kモニターの消費電力は40W前後、ノートPCの充電に使う一般的なACアダプターの定格出力は65W前後、Wi-Fiルーターの消費電力は10W前後とされている。この3つを合計すると、仕事道具一式の消費電力はおよそ115Wになる。
+      </p>
+
+      <figure class="chart">
+        <div class="bar-chart" style="width:100%">
+          <p class="chart-title">仕事道具の消費電力の目安（単位：W）</p>
+          <div class="bar-row">
+            <div class="bar-label"><span>ノートPC（ACアダプター）</span><span>65W</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>モニター（27インチ4K）</span><span>40W</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:62%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Wi-Fiルーター</span><span>10W</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:15%"></div></div>
+          </div>
+        </div>
+      </figure>
+      <p>
+        キーボードや昇降デスクのモーターなど、他の在宅環境機材もあるが、キーボードの消費電力はごくわずかで、デスクのモーターも稼働は昇降時の数秒間だけなので、常時消費する主要3機器の合計115Wを容量計算の基準にしている。
+      </p>
+      <p>
+        なお、これらの数値はメーカー公表値や一般的な仕様書に基づく目安であり、自宅にワットモニターを設置して実測した数字ではない。実際の消費電力は画面の輝度設定やCPUの負荷、室温によって上下する。容量を検討する段階では、115Wという数字を下限の目安として扱い、多少の余裕を持たせた容量帯を選んでおく方が安全だ。
+      </p>
+
+      <h2 id="h2-3">必要な容量（Wh）はどう計算する？結論は600Wh前後</h2>
+      <p>
+        ポータブル電源の容量はWh（ワット時）という単位で示される。必要な容量は、消費電力（W）に稼働させたい時間（h）を掛け算すれば計算できる。115W × 4時間 ＝ 460Whが、まず必要になる容量の理論値だ。
+      </p>
+      <p>
+        ただし、これはあくまで理論値だ。ポータブル電源にはAC変換時のロスがあり、バッテリー残量を使い切る手前で余裕を持たせておきたいことも考えると、2割ほどのバッファを載せておくのが無難だと考えている。460Whに2割を加えると552Whになるため、600Wh前後を一つの目安として検討している。
+      </p>
+
+      <div class="pull-note">
+        停電対策で計算すべきは「何時間耐えられるか」ではなく「仕事道具が何Wを使うか」だ。
+      </div>
+
+      <p>
+        なお、この4時間という想定は、<a href="kanazawa-typhoon-disaster-prep-cost.html">台風・大雨に備える記事</a>で書いた「停電は数時間〜半日程度」という目安の下限に寄せた数字であり、半日近い停電になれば当然この容量では足りなくなる。長時間の停電にどこまで備えるかは、あとで触れる車との役割分担も含めて考える必要がある。
+      </p>
+
+      <h2 id="h2-4">小容量・中容量・大容量、価格帯で何が変わるか</h2>
+      <p>
+        ポータブル電源は、Anker・Jackery・EcoFlowといった主要メーカーが、容量帯ごとにラインナップを揃えている。一般的な相場を容量帯別に整理すると、小容量（300Wh前後）は2万円台、中容量（600〜700Wh前後）は6万円台、大容量（1,000Wh以上）は12万円以上が目安になる。
+      </p>
+
+      <figure class="chart">
+        <div class="bar-chart" style="width:100%">
+          <p class="chart-title">容量帯別の価格帯の目安（単位：万円、一般的な相場）</p>
+          <div class="bar-row">
+            <div class="bar-label"><span>小容量（300Wh前後）</span><span>2万円台</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:17%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>中容量（600〜700Wh前後）</span><span>6万円台</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:50%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>大容量（1,000Wh以上）</span><span>12万円台〜</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          </div>
+        </div>
+      </figure>
+      <p>
+        先の試算では600Wh前後が目安になったため、現実的な選択肢は中容量帯になる。小容量帯ではノートPCとモニターを同時に数時間動かすには不足しやすく、大容量帯は価格差が大きい割に、自宅での数時間の作業継続という用途に対しては過剰投資になりやすいというのが今のところの判断だ。
+      </p>
+
+      <h2 id="h2-5">車のガソリン運用と組み合わせる、二段構えの停電対策</h2>
+      <p>
+        <a href="kanazawa-typhoon-disaster-prep-cost.html">台風・大雨に備える記事</a>で書いた通り、我が家は車を1台保有している。車は停電時の充電拠点、そして避難や移動の手段としても使えるため、ポータブル電源とは役割が異なる。<a href="kanazawa-car-maintenance-cost.html">車の維持費をまとめた記事</a>でも書いた通り、車を保有すること自体に年間の固定費はかかるが、防災面での役割まで含めて考えると、この費用は仕事の継続性への投資という側面もあると捉えている。
+      </p>
+      <p>
+        ポータブル電源は「自宅で数時間、仕事を止めずに凌ぐ」ための備え、車は「長時間・移動を伴う場合」の備え。停電の長さは事前に読めない以上、どちらか一方に頼るのではなく、役割を分けて両方を用意しておく方が現実的だと考えている。
+      </p>
+      <p>
+        停電がどのタイミングまで長引いたら自宅を離れるかも、あらかじめ考えておきたいポイントだ。目安になりそうなのは、ポータブル電源の残量が半分を切った時点だろう。それより前に動けば、車での移動や充電の余力を残したまま次の手を打てる。バッテリーが尽きてから動き出すと、判断そのものが後手に回りやすい。</p>
+      <p>
+        <a href="fixed-cost-review-order.html">固定費の見直しをまとめた記事</a>では、生命保険・通信費・車という順番で優先度を整理したが、防災用品への投資はその枠組みとは別に、仕事の継続性というリスク管理の観点から検討している。固定費の削減とは目的が違うため、同じ土俵で比較していない。
+      </p>
+
+      <p>
+        実際にはまだポータブル電源を購入していない。今回の試算をもとに、中容量帯の製品を今後の防災投資の候補として検討している段階だ。あの時のヒヤッとした感覚は、今でも覚えている。
+      </p>
+      <p>
+        仕事・ブログ運営に関する他の記事は<a href="complete-guide.html#cat-work">完全ガイドの仕事・ブログ運営カテゴリ</a>にまとめている。
+      </p>
+
+      <h2 id="h2-6">よくある質問</h2>
+      <h3>Q. 在宅勤務でポータブル電源はどのくらいの容量が必要ですか？</h3>
+      <p>A. 使用機器の合計消費電力(W)に、稼働させたい時間(h)を掛けて計算する。ノートPC・モニター・Wi-Fiルーターの合計をおよそ115Wとして4時間の稼働を想定すると460Wh、変換ロス等の余裕を持たせると600Wh前後が目安になる。</p>
+      <h3>Q. モバイルバッテリーではなくポータブル電源が必要な理由は何ですか？</h3>
+      <p>A. モバイルバッテリーはスマートフォンやノートPCのUSB充電が中心で、モニターやWi-Fiルーターなどコンセント給電の機器までは動かせない。仕事道具一式を稼働させ続けるには、ACコンセント出力を持つポータブル電源が必要になる。</p>
+      <h3>Q. ポータブル電源と車のガソリン備蓄、どちらを優先すべきですか？</h3>
+      <p>A. 役割が異なるため両方を用意するのが望ましい。ポータブル電源は自宅での数時間の作業継続に向き、車は移動や長時間の充電拠点として使える。車を保有している場合は、ガソリンを半分以下まで減らさない運用と組み合わせて二段構えにしておくとよい。</p>
+    </div>
+  </article>
+
+  <aside class="article-end-cta">
+    <a class="sim-article-cta sim-article-cta-bottom" href="fire-simulator.html" data-cta-location="article_bottom">
+      <p class="sim-article-cta-label">FIRE SIMULATOR</p>
+      <p class="sim-article-cta-title">ここまでの数字を、自分の家計に置き換えてみる</p>
+      <p class="sim-article-cta-desc">家賃・生活費・教育費を入力すると、いまの場所に住み続けた場合と地方移住した場合で、FIRE到達年数がどれだけ変わるかを無料で比較できます。</p>
+      <span class="sim-article-cta-btn">無料で試算する ›</span>
+    </a>
+  </aside>
+
+
+  <div class="post-extras">
+    <div id="related-posts" class="related-posts"></div>
+    <div id="profile-cta" class="profile-cta-card"></div>
+  </div>
+
+  <nav class="article-nav">
+    <a class="nav-prev" href="lifestyle-inflation-after-job-change.html">&larr; 転職で年収が上がっても生活水準を上げなかった理由、転職4回で決めた判断基準</a>
+  </nav>
+
+  <footer class="site-footer">
+      © 2026. 金沢で叶える地方移住FIREライフ ／ <a href="privacy-policy.html">プライバシーポリシー</a> ／ <a href="products.html" class="product-cta-link" id="footer_products_link">FIRE試算Excelキット</a> ／ <a href="tokushoho.html">特定商取引法に基づく表記</a>
+    </footer>
+
+</div>
+<script src="related-posts.js"></script>
+</body>
+</html>
