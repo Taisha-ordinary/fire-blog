@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="収入が途切れる期間を橋渡しするコインの橋"><title>収入が途切れる期間を橋渡しするコインの橋</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="8" y="52" width="32" height="10" rx="1.5" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="92" y="52" width="32" height="10" rx="1.5" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2"/>
+<line x1="14" y1="62" x2="12" y2="76" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<line x1="22" y1="62" x2="21" y2="78" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<line x1="30" y1="62" x2="30" y2="76" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<line x1="102" y1="62" x2="101" y2="78" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<line x1="110" y1="62" x2="110" y2="76" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<line x1="118" y1="62" x2="119" y2="78" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<path d="M40 54 Q66 44 92 54" fill="none" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 5"/>
+<circle cx="66" cy="46" r="13" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.4"/>
+<text x="66" y="51" text-anchor="middle" font-family="serif" font-size="14" font-weight="700" fill="#8f6f22">¥</text>
+<path d="M52 60 q14 8 28 0" fill="none" stroke="#e7d6a6" stroke-width="2" stroke-linecap="round"/>
+</svg>
