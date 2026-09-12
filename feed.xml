@@ -6,7 +6,15 @@
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 12 Sep 2026 18:07:53 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 21:45:16 +0900</lastBuildDate>
+  <item>
+    <title>休職で収入が止まったら、家計は何から確認する？傷病手当金と固定費の順序</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/sick-leave-income-drop-household-priority.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/sick-leave-income-drop-household-priority.html</guid>
+    <pubDate>Sat, 12 Sep 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>休職で収入が傷病手当金（目安2/3）だけになる前に、家計は何から確認すべきか。資金の壁と固定費見直しが効いた実体験を公開する。</description>
+  </item>
   <item>
     <title>停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算</title>
     <link>https://taisha-ordinary.github.io/fire-blog/remote-work-power-outage-prep.html</link>
