@@ -6,7 +6,15 @@
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 10 Sep 2026 20:25:45 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 18:07:53 +0900</lastBuildDate>
+  <item>
+    <title>停電でも仕事を止めない、ポータブル電源は何Wh必要か？フルリモートワーカーの容量計算</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/remote-work-power-outage-prep.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/remote-work-power-outage-prep.html</guid>
+    <pubDate>Sat, 12 Sep 2026 21:00:00 +0900</pubDate>
+    <category>仕事・ブログ運営</category>
+    <description>ノートPC・モニター・ルーターの消費電力を合算すると約115W。停電4時間を想定した必要容量600Whの試算根拠と、容量帯別の判断基準を公開する。</description>
+  </item>
   <item>
     <title>転職で年収が上がっても生活水準を上げなかった理由、転職4回で決めた判断基準</title>
     <link>https://taisha-ordinary.github.io/fire-blog/lifestyle-inflation-after-job-change.html</link>
