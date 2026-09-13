@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="1つの分岐点から3方向に伸びる道と、その先にあるコード記号・クエスチョンマーク・家のアイコン"><title>1つの分岐点から3方向に伸びる道と、その先にあるコード記号・クエスチョンマーク・家のアイコン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<line x1="10" y1="94" x2="122" y2="94" stroke="#e7e5df" stroke-width="1.6"/>
+<circle cx="66" cy="88" r="5" fill="#8f6f22"/>
+<path d="M66,84 C 50,70 34,55 25,33" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M66,84 C 66,64 66,44 66,25" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M66,84 C 82,70 98,55 107,33" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="23" cy="24" r="12" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<text x="23" y="28.5" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#8f6f22" text-anchor="middle">&lt;/&gt;</text>
+<circle cx="66" cy="18" r="12" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2.2"/>
+<text x="66" y="23" font-family="Zen Kaku Gothic New, sans-serif" font-size="14" font-weight="700" fill="#8f6f22" text-anchor="middle">?</text>
+<circle cx="109" cy="24" r="12" fill="none" stroke="#b8912f" stroke-width="2.2"/>
+<path d="M103,27 v-6 l6,-5 l6,5 v6 z" fill="#8f6f22"/>
+<path d="M105,17 q4,-4.5 8,0" fill="none" stroke="#b8912f" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M103,14.5 q6,-6.5 12,0" fill="none" stroke="#e7d6a6" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
