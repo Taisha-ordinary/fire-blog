@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="高さの異なる3つのコインの山から、それぞれ財布へ向かう矢印が伸びる図"><title>高さの異なる3つのコインの山から、それぞれ財布へ向かう矢印が伸びる図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="52" y="12" width="28" height="20" rx="3" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<path d="M52 18 h28" stroke="#8f6f22" stroke-width="1.4"/>
+<circle cx="66" cy="18" r="2.2" fill="#b8912f"/>
+<ellipse cx="18" cy="86" rx="14" ry="5" fill="#b8912f" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="18" cy="78" rx="14" ry="5" fill="#b8912f" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="18" cy="70" rx="14" ry="5" fill="#b8912f" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="18" cy="62" rx="14" ry="5" fill="#b8912f" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="18" cy="54" rx="14" ry="5" fill="#b8912f" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="66" cy="86" rx="14" ry="5" fill="#8f6f22" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="66" cy="78" rx="14" ry="5" fill="#8f6f22" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="66" cy="70" rx="14" ry="5" fill="#8f6f22" stroke="#8f6f22" stroke-width="1.4"/>
+<ellipse cx="114" cy="86" rx="14" ry="5" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.4"/>
+<ellipse cx="114" cy="78" rx="14" ry="5" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.4"/>
+<path d="M20 50 C 24 38, 40 26, 54 20" fill="none" stroke="#b8912f" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M54 20 l-6 1 M54 20 l-3 -5" stroke="#b8912f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+<path d="M66 74 C 66 56, 66 40, 66 32" fill="none" stroke="#8f6f22" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M66 32 l-4 4 M66 32 l4 4" stroke="#8f6f22" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+<path d="M112 74 C 106 54, 94 32, 80 22" fill="none" stroke="#b8912f" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M80 22 l1 6 M80 22 l6 -1" stroke="#b8912f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+<path d="M14 94 h104" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+</svg>
