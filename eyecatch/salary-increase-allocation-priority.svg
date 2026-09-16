@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="右肩上がりの矢印が途中のゲートを通過してから、先端のコインの山に到達する図"><title>右肩上がりの矢印が途中のゲートを通過してから、先端のコインの山に到達する図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="16" cy="84" r="4" fill="#b8912f"/>
+<path d="M16 84 C 30 78, 40 66, 48 58" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="44" y="34" width="4" height="32" rx="2" fill="#8f6f22"/>
+<rect x="60" y="34" width="4" height="32" rx="2" fill="#8f6f22"/>
+<path d="M42 40 h24" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M48 53 l4 5 l8 -10" fill="none" stroke="#b8912f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62 52 C 76 46, 88 38, 98 32" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M98 32 l-6 0.5 M98 32 l-2.5 -5.5" stroke="#b8912f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<ellipse cx="104" cy="56" rx="15" ry="5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.6"/>
+<ellipse cx="104" cy="48" rx="15" ry="5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.6"/>
+<ellipse cx="104" cy="40" rx="15" ry="5" fill="#b8912f" stroke="#8f6f22" stroke-width="1.6"/>
+<path d="M8 92 h116" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+</svg>
