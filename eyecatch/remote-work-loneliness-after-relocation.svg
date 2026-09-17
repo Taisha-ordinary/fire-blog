@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="ノートPCの画面に浮かぶ、輪郭だけの静かな吹き出しと、浮いた時間を示す時計"><title>ノートPCと、声の消えた吹き出し、浮いた時間を示す時計</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M34 66 h48 l6 10 h-60 z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<rect x="38" y="28" width="40" height="38" rx="2" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="42" y="32" width="32" height="24" rx="1" fill="#fbfaf7" stroke="#e7e5df" stroke-width="1.4"/>
+<path d="M46 46 h10 a4 4 0 0 1 4 4 v3 a4 4 0 0 1 -4 4 h-4 l-4 4 v-4 h-2 a4 4 0 0 1 -4 -4 v-3 a4 4 0 0 1 4 -4 z" fill="none" stroke="#8f6f22" stroke-width="1.6" stroke-dasharray="2.5,3" stroke-linecap="round" stroke-linejoin="round"/>
+<g>
+<circle cx="100" cy="34" r="15" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2.4"/>
+<line x1="100" y1="34" x2="100" y2="25" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<line x1="100" y1="34" x2="107" y2="38" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+</g>
+<path d="M100 51 v8" stroke="#e7e5df" stroke-width="1.5" stroke-dasharray="2,3"/>
+<line x1="12" y1="86" x2="120" y2="86" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
