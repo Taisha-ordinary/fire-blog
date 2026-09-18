@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="バツ印が付いた乱高下するローソク足チャートと、右側でなだらかに右肩上がりになるインデックスの折れ線グラフ"><title>バツ印が付いた乱高下するローソク足チャートと、右側でなだらかに右肩上がりになるインデックスの折れ線グラフ</title><rect width="132" height="100" fill="#fbfaf7"/>
+<g stroke="#8f6f22" stroke-width="1.6" stroke-linecap="round">
+<line x1="18" y1="32" x2="18" y2="48"/><rect x="15" y="35" width="6" height="9" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.2"/>
+<line x1="30" y1="24" x2="30" y2="58"/><rect x="27" y="30" width="6" height="22" fill="#fbf3e3" stroke="#8f6f22" stroke-width="1.2"/>
+<line x1="42" y1="40" x2="42" y2="70"/><rect x="39" y="44" width="6" height="18" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.2"/>
+</g>
+<line x1="10" y1="20" x2="50" y2="76" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<line x1="50" y1="20" x2="10" y2="76" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<line x1="60" y1="10" x2="60" y2="88" stroke="#e7e5df" stroke-width="1.4"/>
+<polyline points="68,78 82,68 96,58 110,44 122,26" fill="none" stroke="#b8912f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="68" cy="78" r="2.4" fill="#b8912f"/>
+<circle cx="96" cy="58" r="2.4" fill="#b8912f"/>
+<circle cx="122" cy="26" r="2.8" fill="#8f6f22"/>
+<text x="30" y="92" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#57606a">個別株</text>
+<text x="96" y="92" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#57606a">インデックス</text>
+</svg>
