@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="移住先を選ぶ4つの判断軸を示す円と各軸のアイコン"><title>移住先を選ぶ4つの判断軸を示す円と各軸のアイコン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<circle cx="66" cy="52" r="30" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<line x1="66" y1="22" x2="66" y2="82" stroke="#e7e5df" stroke-width="1.6"/>
+<line x1="36" y1="52" x2="96" y2="52" stroke="#e7e5df" stroke-width="1.6"/>
+<circle cx="66" cy="52" r="3.2" fill="#8f6f22"/>
+<path d="M50 36 h9 v9 h-5 v-5 h-4 z" fill="none" stroke="#8f6f22" stroke-width="1.8" stroke-linejoin="round"/>
+<g stroke="#8f6f22" stroke-width="1.8" stroke-linecap="round">
+<line x1="84" y1="32" x2="84" y2="42"/>
+<line x1="79" y1="37" x2="89" y2="37"/>
+<line x1="80.5" y1="33.5" x2="87.5" y2="40.5"/>
+<line x1="87.5" y1="33.5" x2="80.5" y2="40.5"/>
+</g>
+<path d="M50 63 v9 M45.5 67.5 h9" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<g fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"><circle cx="81" cy="65" r="4.6"/><circle cx="89" cy="68" r="4.6"/></g>
+<path d="M66 14 l5 10 h-10 z" fill="#b8912f"/>
+<line x1="14" y1="88" x2="118" y2="88" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
