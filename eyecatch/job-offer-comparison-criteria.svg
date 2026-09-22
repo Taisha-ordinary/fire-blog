@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="天秤の左右に内定通知のカードが2枚下がり、右側のカードだけがチェックマーク付きで低く傾いている図"><title>天秤の左右に内定通知のカードが2枚下がり、右側のカードだけがチェックマーク付きで低く傾いている図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M66,86 L54,94 L78,94 Z" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.6"/>
+<line x1="66" y1="24" x2="66" y2="88" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="66" cy="22" r="3.4" fill="#b8912f"/>
+<line x1="27" y1="32" x2="105" y2="26" stroke="#8f6f22" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="27" y1="32" x2="27" y2="48" stroke="#8f6f22" stroke-width="1.4"/>
+<line x1="105" y1="26" x2="105" y2="52" stroke="#8f6f22" stroke-width="1.4"/>
+<rect x="14" y="48" width="26" height="18" rx="2.5" fill="none" stroke="#8f6f22" stroke-width="2"/>
+<line x1="18" y1="54" x2="36" y2="54" stroke="#e7e5df" stroke-width="1.8"/>
+<line x1="18" y1="59" x2="30" y2="59" stroke="#e7e5df" stroke-width="1.8"/>
+<rect x="92" y="52" width="26" height="18" rx="2.5" fill="#e7d6a6" stroke="#b8912f" stroke-width="2"/>
+<line x1="96" y1="58" x2="114" y2="58" stroke="#8f6f22" stroke-width="1.8" opacity="0.55"/>
+<circle cx="118" cy="48" r="9" fill="#b8912f"/>
+<path d="M114,48 l3,3.4 l6.5,-7.4" fill="none" stroke="#fbfaf7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="10" y1="94" x2="122" y2="94" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
