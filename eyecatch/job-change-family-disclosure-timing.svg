@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="向かい合う二つの吹き出しの下に、3段階のタイムラインがあり、一番早い印だけチェックマーク付きで塗りつぶされている図"><title>向かい合う二つの吹き出しと、一番早い段階だけ塗りつぶされたタイムライン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M26 18 h32 a4 4 0 0 1 4 4 v13 a4 4 0 0 1 -4 4 h-19 l-7 7 v-7 h-6 a4 4 0 0 1 -4 -4 v-13 a4 4 0 0 1 4 -4 z" fill="#e7d6a6" stroke="#8f6f22" stroke-width="2" stroke-linejoin="round"/>
+<path d="M70 28 h32 a4 4 0 0 1 4 4 v13 a4 4 0 0 1 -4 4 h-6 v7 l-7 -7 h-19 a4 4 0 0 1 -4 -4 v-13 a4 4 0 0 1 4 -4 z" fill="#fbfaf7" stroke="#b8912f" stroke-width="2" stroke-dasharray="2.5,3" stroke-linejoin="round"/>
+<line x1="18" y1="76" x2="114" y2="76" stroke="#e7e5df" stroke-width="2"/>
+<circle cx="30" cy="76" r="7" fill="#b8912f" stroke="#8f6f22" stroke-width="1.6"/>
+<path d="M26.5 76 l2.4 2.6 l5 -5.4" fill="none" stroke="#fbfaf7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="66" cy="76" r="5.5" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.8"/>
+<circle cx="102" cy="76" r="5.5" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.8"/>
+<line x1="10" y1="92" x2="122" y2="92" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
