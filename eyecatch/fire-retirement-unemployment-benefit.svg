@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="砂時計と、積み上がる硬貨を並べた図"><title>砂時計と、積み上がる硬貨を並べた図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<line x1="20" y1="18" x2="62" y2="18" stroke="#8f6f22" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="20" y1="82" x2="62" y2="82" stroke="#8f6f22" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M24 18 L24 30 Q24 42 41 50 Q24 58 24 70 L24 82 M58 18 L58 30 Q58 42 41 50 Q58 58 58 70 L58 82" fill="none" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M30 24 L52 24 Q50 32 41 38 Q32 32 30 24 Z" fill="#e7d6a6"/>
+<line x1="41" y1="42" x2="41" y2="64" stroke="#8f6f22" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 2.5"/>
+<path d="M29 80 Q32 66 41 62 Q50 66 53 80 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6" stroke-linejoin="round"/>
+<ellipse cx="94" cy="78" rx="17" ry="5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<ellipse cx="94" cy="68" rx="17" ry="5" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<ellipse cx="94" cy="58" rx="17" ry="5" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<ellipse cx="94" cy="48" rx="17" ry="5" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<line x1="77" y1="48" x2="77" y2="78" stroke="#b8912f" stroke-width="2"/>
+<line x1="111" y1="48" x2="111" y2="78" stroke="#b8912f" stroke-width="2"/>
+<ellipse cx="94" cy="36" rx="12" ry="12" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2"/>
+<text x="94" y="41" text-anchor="middle" font-family="serif" font-size="14" font-weight="700" fill="#8f6f22">¥</text>
+<line x1="10" y1="92" x2="122" y2="92" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
