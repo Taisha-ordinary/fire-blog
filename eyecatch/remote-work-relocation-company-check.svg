@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="確認リストの書類と家のアイコン"><title>確認リストの書類と家のアイコン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="22" y="14" width="56" height="70" rx="4" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.4"/>
+<rect x="30" y="22" width="22" height="4" rx="1" fill="#e7d6a6"/>
+<path d="M30 38 L34 42 L41 34" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="47" y1="38" x2="70" y2="38" stroke="#e7e5df" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M30 53 L34 57 L41 49" fill="none" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="47" y1="53" x2="70" y2="53" stroke="#e7e5df" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="30" y="64" width="9" height="9" rx="1.5" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.6"/>
+<line x1="47" y1="68" x2="70" y2="68" stroke="#e7e5df" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M82 52 L100 36 L118 52" fill="none" stroke="#8f6f22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="52" width="24" height="26" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.4"/>
+<rect x="96" y="62" width="8" height="16" rx="1" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.4"/>
+<line x1="18" y1="88" x2="118" y2="88" stroke="#8f6f22" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
