@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="下落する折れ線と、その下に並ぶガードレールの図"><title>下落する折れ線と、その下に並ぶガードレールの図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<polyline points="12,26 34,22 52,44 66,62 82,50 100,34 120,30" fill="none" stroke="#b8912f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="66" cy="62" r="4" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2"/>
+<line x1="12" y1="70" x2="120" y2="70" stroke="#e7d6a6" stroke-width="1.4" stroke-dasharray="3 3"/>
+<line x1="12" y1="78" x2="120" y2="78" stroke="#8f6f22" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="12" y1="84" x2="120" y2="84" stroke="#b8912f" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="24" y1="76" x2="24" y2="90" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<line x1="60" y1="76" x2="60" y2="90" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<line x1="96" y1="76" x2="96" y2="90" stroke="#8f6f22" stroke-width="3" stroke-linecap="round"/>
+<line x1="10" y1="94" x2="122" y2="94" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
