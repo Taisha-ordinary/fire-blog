@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="空欄の見積もり表と、後から積み上がる費用の階段を表す図"><title>空欄の見積もり表と、後から積み上がる費用の階段を表す図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="12" y="14" width="46" height="66" rx="3" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2"/>
+<rect x="26" y="9" width="18" height="9" rx="2" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.8"/>
+<line x1="20" y1="30" x2="50" y2="30" stroke="#e7e5df" stroke-width="2" stroke-dasharray="3 3"/>
+<line x1="20" y1="42" x2="50" y2="42" stroke="#e7e5df" stroke-width="2" stroke-dasharray="3 3"/>
+<line x1="20" y1="54" x2="50" y2="54" stroke="#e7e5df" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="35" y="73" text-anchor="middle" font-family="serif" font-size="14" font-weight="700" fill="#8f6f22">?</text>
+<rect x="72" y="62" width="12" height="18" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.8"/>
+<rect x="84" y="50" width="12" height="30" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.8"/>
+<rect x="96" y="36" width="12" height="44" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.8"/>
+<rect x="108" y="20" width="12" height="60" fill="#b8912f" stroke="#8f6f22" stroke-width="1.8"/>
+<path d="M62 46 L68 46" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<path d="M65 43 L69 46 L65 49" fill="none" stroke="#8f6f22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="8" y1="86" x2="124" y2="86" stroke="#e7e5df" stroke-width="1.5"/></svg>
