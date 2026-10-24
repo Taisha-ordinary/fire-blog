@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="ゴールの旗より手前、道の途中に家を置いたことを示す図"><title>ゴールの旗より手前、道の途中に家を置いたことを示す図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<line x1="18" y1="84" x2="66" y2="50" stroke="#b8912f" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="66" y1="50" x2="112" y2="18" stroke="#8f6f22" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+<circle cx="18" cy="84" r="3" fill="#8f6f22"/>
+<g transform="translate(66,50)">
+<path d="M-9 1 L0 -9 L9 1" fill="none" stroke="#8f6f22" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-7" y="1" width="14" height="10" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<rect x="-2" y="5" width="4" height="6" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.2"/>
+</g>
+<g transform="translate(112,18)">
+<line x1="0" y1="0" x2="0" y2="-17" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<path d="M0 -17 L13 -13 L0 -9 Z" fill="#b8912f"/>
+</g>
+<line x1="14" y1="90" x2="118" y2="90" stroke="#e7e5df" stroke-width="1.5"/>
+</svg>
