@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="地図のピンと円のコインで下見費用の補助を表すアイコン"><title>地図のピンと円のコインで下見費用の補助を表すアイコン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M12 70 L34 62 L56 70 L78 62 L78 86 L56 94 L34 86 L12 94 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2" stroke-linejoin="round"/>
+<line x1="34" y1="62" x2="34" y2="86" stroke="#b8912f" stroke-width="1.4"/><line x1="56" y1="70" x2="56" y2="94" stroke="#b8912f" stroke-width="1.4"/>
+<path d="M45 20 C34 20 27 28 27 37 C27 49 45 64 45 64 C45 64 63 49 63 37 C63 28 56 20 45 20 Z" fill="#fbfaf7" stroke="#8f6f22" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="45" cy="37" r="7" fill="#b8912f"/>
+<circle cx="97" cy="42" r="22" fill="#e7d6a6" stroke="#b8912f" stroke-width="3.2"/>
+<circle cx="97" cy="42" r="16" fill="none" stroke="#8f6f22" stroke-width="1.4"/>
+<g stroke="#8f6f22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M89 31 L97 44 L105 31"/><line x1="90" y1="44" x2="104" y2="44"/><line x1="90" y1="50" x2="104" y2="50"/><line x1="97" y1="44" x2="97" y2="55"/></g>
+<line x1="86" y1="86" x2="122" y2="86" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<circle cx="112" cy="20" r="2" fill="#e7d6a6"/><circle cx="72" cy="16" r="1.8" fill="#e7d6a6"/>
+</svg>
