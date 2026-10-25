@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="下がる資産の線が撤退ラインに触れて旗が立つ図"><title>下がる資産の線が撤退ラインに触れて旗が立つ図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<line x1="12" y1="62" x2="120" y2="62" stroke="#8f6f22" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="12" y1="46" x2="120" y2="46" stroke="#e7d6a6" stroke-width="1.4" stroke-dasharray="3 3"/>
+<polyline points="12,20 32,24 50,34 68,50 86,62" fill="none" stroke="#b8912f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="86" cy="62" r="4" fill="#fbfaf7" stroke="#8f6f22" stroke-width="2"/>
+<line x1="100" y1="62" x2="100" y2="34" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<polygon points="100,34 118,40 100,46" fill="#b8912f"/>
+<polyline points="90,82 102,76 114,70" fill="none" stroke="#b8912f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="10" y1="94" x2="122" y2="94" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
