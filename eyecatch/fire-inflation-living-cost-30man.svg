@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="値札と、年々高くなる階段状の線を並べた図"><title>値札と、年々高くなる階段状の線を並べた図</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M14 40 L34 40 L46 52 L34 64 L14 64 Z" fill="#e7d6a6" stroke="#8f6f22" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="21" cy="52" r="2.6" fill="#fbfaf7" stroke="#8f6f22" stroke-width="1.6"/>
+<path d="M27 49 H36 M27 55 H33" stroke="#8f6f22" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M58 80 H72 V68 H86 V56 H100 V42 H114" fill="none" stroke="#b8912f" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M107 34 L116 42 L106 48" fill="none" stroke="#b8912f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54 86 H118" stroke="#e7e5df" stroke-width="2" stroke-linecap="round"/>
+<path d="M58 80 V86 M72 80 V86 M86 68 V86 M100 56 V86" stroke="#e7e5df" stroke-width="1.6"/>
+</svg>
