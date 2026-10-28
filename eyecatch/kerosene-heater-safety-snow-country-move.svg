@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="灯油ストーブと炎、換気の矢印のアイコン"><title>灯油ストーブと炎、換気の矢印のアイコン</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="36" y="46" width="44" height="32" rx="4" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.4"/>
+<line x1="44" y1="54" x2="44" y2="70" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/><line x1="52" y1="54" x2="52" y2="70" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/><line x1="60" y1="54" x2="60" y2="70" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/><line x1="68" y1="54" x2="68" y2="70" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<path d="M58 44 C48 34 56 28 56 18 C66 26 70 36 58 44 Z" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M58 40 C54 35 58 32 58 28 C62 32 63 36 58 40 Z" fill="#e7d6a6" stroke="#8f6f22" stroke-width="1.4" stroke-linejoin="round"/>
+<line x1="40" y1="78" x2="40" y2="84" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/><line x1="76" y1="78" x2="76" y2="84" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="92" y="28" width="26" height="36" rx="2" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.4"/>
+<line x1="105" y1="28" x2="105" y2="64" stroke="#e7d6a6" stroke-width="2"/>
+<path d="M96 76 L112 76 M106 71 L112 76 L106 81" fill="none" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="20" cy="30" r="2" fill="#e7d6a6"/><circle cx="26" cy="52" r="1.6" fill="#e7d6a6"/>
+<line x1="10" y1="88" x2="122" y2="88" stroke="#8f6f22" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
