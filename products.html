@@ -124,6 +124,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
+      <!-- products-kindle-block -->
+      <h2 id="h2-kindle">Kindle本（Kindle Unlimited対象）</h2>
+      <p>
+        Excelキットとは別に、移住の手続きを順番どおりに整理したKindle本も出しています（当ブログ運営者の著書）。Kindle Unlimitedの対象なので、会員の方は追加料金なしで読めます。
+      </p>
+      <aside class="article-end-cta">
+        <a class="sim-article-cta affiliate-article-cta product-cta" href="https://www.amazon.co.jp/dp/B0HRVPTJQ4?tag=taisha-22" target="_blank" rel="sponsored noopener"
+           data-cta-id="products_kindle_amazon_kdp1" data-asp-name="amazon" data-program-category="amazon_associates" data-cta-location="products_kindle">
+          <span class="product-cta-media" aria-hidden="true"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M14 14 Q23 10 32 14 L32 50 Q23 46 14 50 Z" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round"/><path d="M50 14 Q41 10 32 14 L32 50 Q41 46 50 50 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round"/><line x1="32" y1="14" x2="32" y2="50" stroke="#8f6f22" stroke-width="1.6"/><line x1="18" y1="22" x2="27" y2="20" stroke="#e7e5df" stroke-width="1.4"/><line x1="18" y1="28" x2="27" y2="26" stroke="#e7e5df" stroke-width="1.4"/></svg></span>
+          <span class="product-cta-body">
+            <p class="sim-article-cta-label">PR（広告を含みます）</p>
+            <p class="sim-article-cta-title">『地方移住 手続きの全順序』（Kindle版）</p>
+            <p class="sim-article-cta-desc">東京圏から地方都市へ、賃貸で移る子育て世帯のための「移住手続きの順序書」です。転入届・保育園の申込・移住支援金・引っ越し業者・固定費の見直しを、引っ越し当日を基準にT-180日からT+365日までの工程表に並べ直しました。各章末のチェックリスト13本と、記入式の予算表などの付録つきです。</p>
+            <span class="product-cta-foot"><span class="product-cta-price">¥680<span class="product-cta-price-note">Kindle版・2026年11月時点</span></span><span class="product-cta-link">Amazonで見る ›</span></span>
+          </span>
+        </a>
+        <p>※Amazonのアソシエイトとして、当ブログは適格販売により収入を得ています。</p>
+      </aside>
+      <script>
+      /* products.html は related-posts.js を読み込まないため、Kindle本リンクの affiliate_click をここで送る（パラメータは related-posts.js と同じ＋click_location） */
+      (function () {
+        var a = document.querySelector('a[data-cta-location="products_kindle"]');
+        if (!a) return;
+        a.addEventListener('click', function () {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'affiliate_click',
+            asp_name: a.getAttribute('data-asp-name') || '',
+            program_category: a.getAttribute('data-program-category') || '',
+            article_id: 'products.html',
+            cta_id: a.getAttribute('data-cta-id') || '',
+            click_location: a.getAttribute('data-cta-location') || ''
+          });
+        });
+      })();
+      </script>
+      <!-- /products-kindle-block -->
+
       <h2 id="h2-1">まずは無料版から</h2>
       <p>
         いきなり有料版から始める必要はありません。サイト内の<a href="fire-simulator.html">無料FIREシミュレーター</a>で、東京在住を続けた場合と地方移住した場合のFIRE到達年数のざっくりした比較を、まず無料で体験できます。「もっと自分の家計に近い数字で試算したい」と感じたら、Light版・Standard版・Pro版をご検討ください。

@@ -1,0 +1,56 @@
+# FIRE Notes
+
+> 東京から金沢へ移住して3年目の会社員（ペンネーム：Taisha_ordinary）が、地方移住・FIRE（経済的自立と早期退職）・フルリモートの働き方を、家計の実額をもとに記録している個人ブログです。生活費・家賃・引っ越し費用・暖房費などを実際に払った金額で公開し、移住やFIREを検討する人が自分の家計で判断できる材料をまとめています。
+
+- 運営者：Taisha_ordinary（ペンネーム。匿名で運営しています）
+- 拠点：石川県金沢市（東京から移住）
+- 主な数字（記事公開時点の実額）：生活費 月30万円／家賃 月8万円台／引っ越し費用 約50万円／FIRE目標 7,000万円
+- 記事内の金額は各記事の公開・更新時点のものです。制度（税・社会保険・補助金など）は必ず公式の案内で最新情報を確認してください。
+- 記事一覧：https://taisha-ordinary.github.io/fire-blog/complete-guide.html
+- サイトマップ：https://taisha-ordinary.github.io/fire-blog/sitemap.xml
+- RSS：https://taisha-ordinary.github.io/fire-blog/feed.xml
+
+## カテゴリ
+
+- [移住](https://taisha-ordinary.github.io/fire-blog/complete-guide.html#cat-relocation): 東京から金沢への移住の判断、下見、引っ越し費用、役所手続き、住まい選び
+- [お金・FIRE](https://taisha-ordinary.github.io/fire-blog/complete-guide.html#cat-money): 資産推移、インデックス投資、新NISA・iDeCo、FIREの取り崩し・撤退ライン
+- [仕事・ブログ運営](https://taisha-ordinary.github.io/fire-blog/complete-guide.html#cat-work): フルリモートの仕事探し、転職、複業、個人ブログの運営
+- [金沢の暮らし](https://taisha-ordinary.github.io/fire-blog/complete-guide.html#cat-kanazawa): 金沢の生活費、雪・暖房費、車の維持費、季節の暮らし
+
+## 移住
+
+- [金沢移住3年、正直に後悔した点は？](https://taisha-ordinary.github.io/fire-blog/kanazawa-relocation-regrets.html): 家賃・保険・雪国対策で見誤った5つの判断を、移住3年目の視点で振り返る
+- [金沢移住のデメリット、お金で済んだものと済まなかったもの](https://taisha-ordinary.github.io/fire-blog/kanazawa-relocation-demerits-money-vs-time.html): 移住のデメリットを「お金で解決できたもの」と「できなかったもの」に仕分けた記録
+- [東京から金沢へ：地方移住を決めた3つの理由と下見のコツ](https://taisha-ordinary.github.io/fire-blog/why-i-moved-to-kanazawa.html): 金沢を選んだ理由と、移住前の下見で確認したこと
+- [地方移住の引越し費用の目安はいくら？](https://taisha-ordinary.github.io/fire-blog/moving-cost-breakdown.html): 東京から金沢への引っ越しにかかった実額約50万円の内訳
+- [地方移住の役所手続き、転出・転入・住所変更の順番](https://taisha-ordinary.github.io/fire-blog/moving-paperwork-checklist.html): 転出届・転入届・住所変更を実働2時間30分で終えた手順
+- [金沢移住の下見に使える石川県の補助金](https://taisha-ordinary.github.io/fire-blog/ishikawa-relocation-visit-subsidy.html): 下見の交通費・宿泊費に使える石川県の移住体験補助と、申請の注意点
+- [金沢の家賃相場はいくら？](https://taisha-ordinary.github.io/fire-blog/kanazawa-rent-market.html): 中心部と住宅街エリアの家賃相場、実際に契約した家賃8万円の物件と選び方の基準
+- [雪国移住前の冬の下見で確認する5項目](https://taisha-ordinary.github.io/fire-blog/snow-country-move-winter-visit-checklist.html): 金沢で3回冬を越して分かった、冬の下見で見るべきポイント
+- [フルリモートで地方移住する前に会社の書面で確認する5項目](https://taisha-ordinary.github.io/fire-blog/remote-work-relocation-company-check.html): 出社条件・通勤手当・住民税など、移住前に就業規則や書面で確かめること
+- [灯油ストーブの安全対策、雪国移住前の確認5項目](https://taisha-ordinary.github.io/fire-blog/kerosene-heater-safety-snow-country-move.html): 灯油ストーブを使い始める前に確認した安全面のポイント
+
+## 金沢の暮らし
+
+- [金沢移住の生活費は月いくら？](https://taisha-ordinary.github.io/fire-blog/kanazawa-living-cost.html): 移住3年目の月30万円の生活費を項目別の内訳で公開
+- [金沢の雪はどれくらい積もる？](https://taisha-ordinary.github.io/fire-blog/three-winters-in-kanazawa.html): 3年間で見た最大積雪180cm・累計500cm超の冬の記録
+- [金沢の冬の暖房費（電気・灯油）はいくら？](https://taisha-ordinary.github.io/fire-blog/kanazawa-winter-heating-cost.html): フルリモート在宅で測った、冬の暖房費が月12,000円増える内訳
+- [金沢移住で車の維持費は年間いくら？](https://taisha-ordinary.github.io/fire-blog/kanazawa-car-maintenance-cost.html): 3年間の車の維持費・年24万円を項目別に公開
+
+## お金・FIRE
+
+- [移住3年で資産はどう増えた？](https://taisha-ordinary.github.io/fire-blog/asset-growth-three-years-in-kanazawa.html): 世帯資産4,200万円から6,100万円台までの3年間の推移
+- [FIRE目標はなぜ7,000万円に上がった？](https://taisha-ordinary.github.io/fire-blog/why-i-raised-my-fire-target.html): 資産6,000万円台に到達した時点でFIRE目標を引き上げた理由
+- [FIREの取り崩しは4%と3%どっちで考える？](https://taisha-ordinary.github.io/fire-blog/fire-withdrawal-rate-comparison.html): 資産7,000万円・生活費月30万円の条件で取り崩し率を比較した試算
+- [FIREの撤退ライン、資産がいくらまで減ったら働き直す？](https://taisha-ordinary.github.io/fire-blog/fire-fallback-line-return-to-work.html): 資産7,000万円・月30万円から逆算した「働き直すライン」の決め方
+- [FIRE目的の退職で失業保険はもらえる？](https://taisha-ordinary.github.io/fire-blog/fire-retirement-unemployment-benefit.html): 失業手当の受給要件と、FIRE計画に給付を入れない理由（公的な案内に基づく整理）
+
+## 仕事
+
+- [リモートワークの仕事はどう探す？](https://taisha-ordinary.github.io/fire-blog/remote-work-job-hunting.html): 転職4回の経験から、フルリモート求人の探し方と面接での確認点
+
+## ツール・その他
+
+- [FIREシミュレーター](https://taisha-ordinary.github.io/fire-blog/fire-simulator.html): 家賃・生活費・教育費を入力して、地方移住した場合のFIRE到達年数を無料で試算できるツール
+- [プロフィール](https://taisha-ordinary.github.io/fire-blog/profile.html): 運営者（Taisha_ordinary）について
+- Kindle本『地方移住 手続きの全順序』（著者：Taisha_ordinary）: 転入届・保育園・移住支援金などの手続きを、移住の半年前から1年後までの工程表に並べた実務ガイド https://www.amazon.co.jp/dp/B0HRVPTJQ4
