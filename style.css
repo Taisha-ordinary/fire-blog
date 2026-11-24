@@ -1391,3 +1391,48 @@ table.product-compare-table{width:100%;border-collapse:collapse;font-size:.85rem
   .chat-turn--wife .chat-bubble::before{right:-7px;border-width:7px 0 7px 7px;}
   .chat-turn--wife .chat-bubble::after{right:-5.5px;border-width:6px 0 6px 6px;}
 }
+
+/* ===== kindle-books-page：Kindle本の紹介ページ（kindle-books.html）と各ページからの導線（2026-11-24 追加・バックログ #19） =====
+   広告リンク（.affiliate-article-cta）は既存の中立色カードの見た目をそのまま使う。
+   「Amazonで見る ›」は .product-cta-link を使わず .kb-amazon-chip にする
+   （.product-cta-link は nav-toggle.js の click_product_cta＝products.html への1段目の計測フックのため）。 */
+.kb-pr-note{font-size:.78rem;color:var(--muted);margin:-6px 0 20px;}
+.kb-pick{margin:24px 0 8px;padding:18px 22px;border:1px solid var(--rule);border-radius:14px;background:var(--paper);}
+.kb-pick-title{font-family:'Shippori Mincho',serif;font-size:1.05rem;font-weight:700;margin:0 0 10px;color:var(--text);}
+.kb-pick ul{margin:0;}
+.kb-pick-note{font-size:.8rem;color:var(--muted);margin:10px 0 0;}
+.kb-book{margin:44px 0 0;padding-top:32px;border-top:1px solid var(--rule);scroll-margin-top:72px;}
+.kb-book-head{display:flex;gap:22px;align-items:flex-start;margin:0 0 8px;}
+.kb-cover{flex-shrink:0;display:block;width:150px;height:auto;aspect-ratio:5/8;object-fit:cover;background:#fff;border:1px solid var(--panel-line);border-radius:4px;box-shadow:0 6px 18px rgba(20,23,26,.12);}
+.kb-book-meta{flex:1;min-width:0;}
+.kb-book-num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--gold-bright);margin:0 0 6px;}
+.article-body h2.kb-book-title{font-family:'Shippori Mincho',serif;font-size:1.35rem;line-height:1.45;margin:0 0 8px;color:var(--text);}
+.kb-book-sub{font-size:.88rem;color:var(--muted);line-height:1.7;margin:0 0 12px;}
+.kb-badges{display:flex;flex-wrap:wrap;gap:6px;margin:0;}
+.kb-badge{display:inline-block;font-size:.72rem;line-height:1.4;color:var(--gold-bright);border:1px solid var(--gold);border-radius:999px;padding:2px 10px;background:var(--ink);}
+.kb-scope{font-size:.82rem;color:var(--muted);line-height:1.8;}
+.kb-toc{margin:18px 0 0;padding:12px 16px;border:1px solid var(--panel-line);border-radius:10px;background:var(--ink);}
+.kb-toc summary{cursor:pointer;font-weight:700;font-size:.9rem;color:var(--text);}
+.kb-toc-list{margin:10px 0 0;padding-left:1.4em;font-size:.86rem;line-height:1.9;}
+.kb-buy{margin:22px 0 0;}
+.kb-buy .sim-article-cta{margin:0;padding:20px 22px;}
+.kb-buy > p{font-size:.75rem;color:var(--muted);margin:8px 0 0;}
+.kb-amazon-chip{display:inline-block;padding:7px 14px;border:1px solid var(--muted);border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.03em;line-height:1;color:var(--text);white-space:nowrap;}
+.affiliate-article-cta:hover .kb-amazon-chip,.affiliate-article-cta:focus-visible .kb-amazon-chip{background:var(--text);border-color:var(--text);color:var(--ink);}
+.kb-author{font-size:.85rem;color:var(--muted);margin:24px 0 0;}
+/* products.html の Kindle欄（簡潔版）：紹介ページへの誘導ボタン */
+.kb-products-lead{margin:0 0 14px;}
+.kb-page-btn{display:inline-block;margin:4px 0 18px;padding:11px 24px;border-radius:999px;background:var(--gold);color:#fff;font-family:'Zen Kaku Gothic New',sans-serif;font-size:.88rem;font-weight:700;text-decoration:none;transition:background .15s ease;}
+.kb-page-btn:hover,.kb-page-btn:focus-visible{background:var(--gold-bright);color:#fff;}
+.kb-products-list .sim-article-cta{margin:0 0 10px;padding:14px 18px;}
+/* 記事末尾：Kindle告知ブロックの直後に置く1行リンク（.article-end-cta と同じ横幅） */
+.kb-article-link{max-width:760px;margin:-14px auto 28px;padding:0 24px;font-size:13px;line-height:1.7;}
+.kb-article-link a{color:var(--gold-bright);}
+@media (max-width:600px){
+  .kb-book-head{gap:14px;}
+  .kb-cover{width:108px;}
+  .article-body h2.kb-book-title{font-size:1.15rem;}
+  .kb-page-btn{display:block;text-align:center;}
+  .kb-article-link{padding:0 18px;}
+}
+/* /kindle-books-page */
