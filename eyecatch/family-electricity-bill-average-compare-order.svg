@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="請求書と平均を示す横線、稲妻を表す"><title>請求書と平均を示す横線、稲妻を表す</title><rect width="132" height="100" fill="#fbfaf7"/>
+<path d="M24 14 H70 V84 L64 80 L58 84 L52 80 L46 84 L40 80 L34 84 L28 80 L24 84 Z" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="32" y1="26" x2="60" y2="26" stroke="#e7d6a6" stroke-width="3" stroke-linecap="round"/>
+<line x1="32" y1="36" x2="54" y2="36" stroke="#e7d6a6" stroke-width="3" stroke-linecap="round"/>
+<rect x="32" y="48" width="8" height="22" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<rect x="44" y="40" width="8" height="30" fill="#b8912f"/>
+<rect x="56" y="54" width="8" height="16" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<line x1="78" y1="52" x2="122" y2="52" stroke="#8f6f22" stroke-width="2" stroke-dasharray="5 4"/>
+<path d="M104 18 L90 40 H100 L94 62 L116 34 H105 L110 18 Z" fill="#e7d6a6" stroke="#b8912f" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="10" y1="90" x2="122" y2="90" stroke="#8f6f22" stroke-width="1.6"/></svg>
