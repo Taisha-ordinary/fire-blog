@@ -6,7 +6,7 @@
   <atom:link href="https://taisha-ordinary.github.io/fire-blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>移住・お金とFIRE・仕事やブログ運営・金沢での暮らし。自由とつながりを大切にする、等身大のFIRE生活を実体験をもとに記録していきます。</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 29 Nov 2026 00:07:59 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 29 Nov 2026 00:15:05 +0900</lastBuildDate>
   <item>
     <title>子育て世帯の車の維持費、見直す順番は？自動車保険の走行距離区分から始め、車と台数は最後に決める</title>
     <link>https://taisha-ordinary.github.io/fire-blog/kosodate-car-maintenance-review-order-insurance-mileage.html</link>
@@ -14,6 +14,14 @@
     <pubDate>Sat, 28 Nov 2026 21:00:00 +0900</pubDate>
     <category>お金・FIRE</category>
     <description>車1台の維持費は年24万円。子育て世帯が見直すなら、自動車保険の走行距離区分と補償の重なりが先で、車検・台数は後。動かす項目と動かさない項目の分け方を整理した。</description>
+  </item>
+  <item>
+    <title>子育て世帯の生命保険、保障額はいくら必要？遺族年金を先に確かめてから決める順番</title>
+    <link>https://taisha-ordinary.github.io/fire-blog/kosodate-life-insurance-coverage-survivor-pension-order.html</link>
+    <guid isPermaLink="true">https://taisha-ordinary.github.io/fire-blog/kosodate-life-insurance-coverage-survivor-pension-order.html</guid>
+    <pubDate>Fri, 27 Nov 2026 21:00:00 +0900</pubDate>
+    <category>お金・FIRE</category>
+    <description>子育て世帯の生命保険は、遺族年金など公的な給付と手元の資産を差し引いた不足分だけを備える。モデル世帯で不足額を計算する手順と、この考え方が効かない条件を整理した。</description>
   </item>
   <item>
     <title>子育て世帯の電気代は平均と比べて高い？同じ人数・同じ季節で比べる手順と、見直す順番</title>

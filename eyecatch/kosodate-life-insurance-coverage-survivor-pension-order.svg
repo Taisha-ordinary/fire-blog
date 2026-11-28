@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 100" role="img" aria-label="必要額の棒から公的給付と資産を引いた不足分を示す図と盾"><title>必要額の棒から公的給付と資産を引いた不足分を示す図と盾</title><rect width="132" height="100" fill="#fbfaf7"/>
+<rect x="16" y="18" width="20" height="66" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<rect x="16" y="52" width="20" height="32" fill="#e7d6a6" stroke="#b8912f" stroke-width="1.6"/>
+<rect x="16" y="18" width="20" height="34" fill="none" stroke="#8f6f22" stroke-width="1.8" stroke-dasharray="4 3"/>
+<line x1="42" y1="35" x2="58" y2="35" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="42" y1="35" x2="50" y2="29" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="42" y1="35" x2="50" y2="41" stroke="#8f6f22" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M92 14 L118 24 V50 C118 66 106 76 92 82 C78 76 66 66 66 50 V24 Z" fill="#fbfaf7" stroke="#b8912f" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M92 24 L108 31 V50 C108 60 100 67 92 72 C84 67 76 60 76 50 V31 Z" fill="#e7d6a6"/>
+<circle cx="92" cy="48" r="8" fill="#fbfaf7" stroke="#b8912f" stroke-width="2"/>
+<line x1="92" y1="43" x2="92" y2="53" stroke="#8f6f22" stroke-width="2" stroke-linecap="round"/>
+<line x1="10" y1="90" x2="122" y2="90" stroke="#8f6f22" stroke-width="1.6"/></svg>
